@@ -1,0 +1,59 @@
+{
+
+	"name": "flake",
+	"version": "0.0.1-alpha",
+	"description": "Flake",
+
+	"inputs": [
+
+		{
+			"name": "inputNormal",
+			"label": "Input Normal",
+			"description": "To apply flakes on top of an existing perturubed normal, connected it here.",
+			"type": "normal",
+			"defaultValue": [ 0.0, 0.0, 0.0 ]
+		},
+
+		{
+			"name": "density",
+			"label": "Density of Flakes",
+			"description": "Proportion of the surface that is covered by flakes.",
+			"type": "float",
+			"defaultValue": 0.7,
+			"minimumValue": 0.0,
+			"maximumValue": 1.0,
+		},
+
+		{
+			"name": "size",
+			"label": "Size of Flakes",
+			"description": "Size of the flakes",
+			"type": "float",
+			"defaultValue": 0.01,
+			"minimumValue": 0.0
+		},
+
+		{
+			"name": "divergence",
+			"label": "Divergence",
+			"description": "How much the flake normals diverge from the surface normal.",
+			"type": "float",
+			"defaultValue": 0.5,
+			"minimumValue": 0.0,
+			"maximumValue": 1.0
+		}
+
+	],
+
+	"outputs": [
+
+		{
+			"name": "outputNormal",
+			"label": "Perturbed Normal",
+			"description": "The resulting surface normal.",
+			"type": "normal"
+		},
+		
+	]
+
+}
