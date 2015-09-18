@@ -1,8 +1,19 @@
 {
 
-	"name": "bump",
-	"version": "0.0.1-alpha",
-	"description": "Bump",
+	"format": {
+
+		"type": "omg-node",
+		"version": "0.0.1-alpha",
+		
+	},
+
+	"meta": {
+
+		"name": "bump",
+		"version": "0.0.1-alpha",
+		"description": "Bump",
+	
+	},
 
 	"inputs": [
 

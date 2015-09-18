@@ -1,11 +1,22 @@
 {
+	
+	"format": {
 
-	"name": "emitter",
-	"version": "0.0.1-alpha",
+		"type": "omg-bsdf",
+		"version": "0.0.1-alpha",
+		
+	},
 
-	"description": "Emitter",
+	"meta": {
 
-	"parameters": [
+		"name": "emitter",
+		"label": "Emitter",
+		"version": "0.0.1-alpha",
+		"description": "Emitter",
+	
+	},
+
+	"inputs": [
 
 		{
 			"name": "color",

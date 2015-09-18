@@ -1,8 +1,19 @@
 {
 
-	"name": "normal",
-	"version": "0.0.1-alpha",
-	"description": "Normal",
+	"format": {
+
+		"type": "omg-node",
+		"version": "0.0.1-alpha",
+		
+	},
+
+	"meta": {
+
+		"name": "normal",
+		"version": "0.0.1-alpha",
+		"description": "Normal",
+
+	},
 
 	"inputs": [
 

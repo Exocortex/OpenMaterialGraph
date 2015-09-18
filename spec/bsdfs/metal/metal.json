@@ -1,10 +1,23 @@
 {
+	
+	"format": {
 
-	"name": "metal",
-	"version": "0.0.1-alpha",
-	"description": "Metal Layer",
+		"type": "omg-bsdf",
+		"version": "0.0.1-alpha",
+		
+	},
 
-	"parameters": [
+	"meta": {
+
+		"name": "metal",
+		"label": "Metal",
+		"version": "0.0.1-alpha",
+		"description": "Metal Layer",
+		"formatVersion": "0.0.1-alpha",
+
+	},
+
+	"inputs": [
 
 		{
 			"name": "roughness",

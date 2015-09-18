@@ -1,8 +1,19 @@
 {
 
-	"name": "flake",
-	"version": "0.0.1-alpha",
-	"description": "Flake",
+	"format": {
+
+		"type": "omg-node",
+		"version": "0.0.1-alpha",
+		
+	},
+
+	"meta": {
+
+		"name": "flake",
+		"version": "0.0.1-alpha",
+		"description": "Flake",
+
+	},
 
 	"inputs": [
 
