@@ -1,0 +1,52 @@
+{
+
+	"name": "colorspace",
+	"version": "0.0.1-alpha",
+	"description": "Color Space",
+
+	"inputs": [
+
+		{
+			"name": "inputColor",
+			"label": "Input Color",
+			"description": "",
+			"type": "color",
+			"defaultValue": [0.0, 0.0, 0.0]
+		},
+
+		{
+			"name": "inputColorSpace",
+			"label": "Input Color Space",
+			"description": "The input will be transformed from this space to linear Rec.709.",
+			"type": "option",
+			"options": [
+				{
+					"value": "linear",
+				},
+				{
+					"value": "sRGB",
+				},
+				{
+					"value": "Cineon",
+				},
+				{
+					"value": "LogC",
+				},
+			],
+			"defaultValue": "linear"
+		}
+
+	],
+
+	"outputs": [
+
+		{
+			"name": "resultColor",
+			"label": "Result",
+			"description": "The resulting color.",
+			"type": "color"
+		}
+
+	]
+
+}
