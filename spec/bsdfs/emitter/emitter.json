@@ -1,0 +1,20 @@
+{
+
+	"name": "emitter",
+	"version": "0.0.1-alpha",
+
+	"description": "Emitter",
+
+	"parameters": [
+
+		{
+			"name": "color",
+			"label": "Emission Color",
+			"description": "",
+			"type": "color",
+			"defaultValue": [ 1.0, 1.0, 1.0 ]
+		}
+		
+	]
+
+}
