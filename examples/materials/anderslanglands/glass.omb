@@ -1,0 +1,22 @@
+{
+   "omg-format": "0.0.1-alpha",
+
+   "name": "glass",
+   "author": "anderslanglands",
+   "version": "0.0.1",
+
+   "layers": {
+
+      {
+         "bsdf": "ggx_trans",
+         "roughness": 0.0,
+         "ior": 1.5
+      },
+
+      {
+         "bsdf": "ggx_refl",
+         "roughness": 0.0,
+         "ior": 1.5
+      }
+   }
+}

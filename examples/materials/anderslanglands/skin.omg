@@ -1,0 +1,21 @@
+{
+   "omg-format": "0.0.1-alpha",
+
+   "name": "skin",
+   "author": "anderslanglands",
+   "version": "0.0.1",
+
+   "layers": {
+
+      {
+         "bsdf": "sss",
+         "dmfp": {0.439, 0.375, 0.17}
+      },
+
+      {
+         "bsdf": "ggx_refl",
+         "roughness": 0.5,
+         "ior": 1.4
+      }
+   }
+}
