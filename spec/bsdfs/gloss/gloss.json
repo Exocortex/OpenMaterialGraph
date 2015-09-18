@@ -1,0 +1,85 @@
+{
+
+	"name": "gloss",
+	"version": "0.0.1-alpha",
+	"description": "Gloss Layer",
+
+	"parameters": [
+
+		{
+			"name": "glossColor",
+			"label": "Gloss Color",
+			"description": "The glossy/specular color.",
+			"type": "color",
+			"defaultValue": [ 0.6 0.6, 0.6 ]
+		},
+
+		{
+			"name": "glossModel",
+			"label": "Gloss Model",
+			"description": "Specifies the gloss shading model.",
+			"type": "option",
+			"optionsValues": [ "blinn-phong", "microfacet", "ward" ],
+			"defaultValue": "microfacet",
+
+		},
+
+		{
+			"name": "glossRoughness",
+			"label": "Gloss Roughness",
+			"description": "Controls the roughness of the gloss layer according to the model specified.",
+			"type": "float",
+			"defaultValue": 0.1,
+			"minimumValue": 0.0,
+			"maximumValue": 1.0
+		},
+
+		{
+			"name": "glossAnisotropy",
+			"label": "Gloss Anisotropy",
+			"description": "Varyies the highlight from circular to elliptical.",
+			"type": "float",
+			"defaultValue": 0.0,
+			"minimumValue": -1.0,
+			"maximumValue": 1.0
+		},
+
+		{
+			"name": "glossTangent",
+			"label": "Tangent for Gloss Anisotropy",
+			"description": "",
+			"type": "vector",
+			"defaultValue": [ 1.0, 0.0, 0.0 ]
+		},
+
+		{
+			"name": "glossEta",
+			"label": "Gloss Refractive Index",
+			"description": "The dielectric index of refraction.",
+			"type": "color",
+			"defaultValue": [ 1.5, 1.5, 1.5 ],
+			"minimumValue": [ 0.0, 0.0, 0.0 ],
+			"maximumValue": [ 100.0, 100.0, 100.0 ]			
+		},
+
+		{
+			"name": "glossAnisotropyRotation",
+			"label": "Gloss Anisotropy Rotation",
+			"description": "Rotates the anisotropy highlight.",
+			"type": "float",
+			"defaultValue": 0.0,
+			"minimumValue": 0.0,
+			"maximumValue": 1.0
+		},
+
+		{
+			"name": "glossNormal",
+			"label": "Gloss Normal",
+			"description": "Surface normal modulator via bump or normal maps.",
+			"type": "normal",
+			"defaultValue": [ 0.0, 0.0, 0.0 ]
+		}
+
+	]
+
+}

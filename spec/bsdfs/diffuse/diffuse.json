@@ -1,0 +1,45 @@
+{
+
+	"name": "diffuse",
+	"version": "0.0.1-alpha",
+
+	"description": "Oren-Nayar, a Generalized Lambert Diffuse Reflection Model",
+
+	"parameters": [
+
+		{
+			"name": "diffuseColor",
+			"label": "Diffuse Color",
+			"description": "The diffuse color.",
+			"type": "color",
+			"defaultValue": [ 0.6 0.6, 0.6 ]
+		},
+
+		{
+			"name": "roughness",
+			"label": "Diffuse Roughness",
+			"description": "Oren-Nayar microfacet diffuse roughness model.  For classic Lambertian, use a value of 0.  Higher values increases the roughness.",
+			"type": "float",
+			"defaultValue": 0.0,
+			"minimumValue": 0.0
+		},
+
+		{
+			"name": "sheen",
+			"label": "Sheen",
+			"description": "Sheen strength and color.",
+			"type": "color",
+			"defaultValue": [ 0.0, 0.0, 0.0 ]
+		},
+
+		{
+			"name": "diffuseNormal",
+			"label": "Diffuse Normal",
+			"description": "Surface normal modulator via bump or normal maps.",
+			"type": "normal",
+			"defaultValue": [ 0.0, 0.0, 0.0 ]
+		}
+
+	]
+
+}
