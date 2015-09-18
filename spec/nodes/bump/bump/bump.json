@@ -20,8 +20,7 @@
 			"description": "Adjust the strength of the normal pertubation.",
 			"type": "float",
 			"defaultValue": 1.0,
-			"minimumValue": 0.0,
-
+			"minimumValue": 0.0
 		},
 
 		{
@@ -29,8 +28,7 @@
 			"label": "Invert Bump",
 			"description": "Invert the bump map in the input bump texture to match desired result.",
 			"type": "boolean",
-			"defaultValue": false,
-
+			"defaultValue": false
 		}
 
 	],

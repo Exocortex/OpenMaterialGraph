@@ -1,0 +1,38 @@
+{
+
+	"name": "falloff",
+	"version": "0.0.1-alpha",
+	"description": "Falloff, a dot product between camera direction and surface normal",
+
+	"inputs": [
+
+		{
+			"name": "doubleSided",
+			"description": "",
+			"label": "Treat faces as double sided, no negative results",
+			"type": "boolean",
+			"defaultValue": true
+		},
+
+		{
+			"name": "invert",
+			"label": "Invert",
+			"description": "",
+			"type": "boolean",
+			"defaultValue": false
+		}
+
+	],
+
+	"outputs": [
+
+		{
+			"name": "result",
+			"label": "Result",
+			"description": "The resulting float.",
+			"type": "color"
+		}
+
+	]
+
+}

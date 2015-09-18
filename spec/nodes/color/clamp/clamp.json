@@ -19,8 +19,7 @@
 			"label": "Minimum",
 			"description": "",
 			"type": "color",
-			"defaultValue": [0.0, 0.0, 0.0],
-
+			"defaultValue": [0.0, 0.0, 0.0]
 		},
 
 		{
@@ -28,8 +27,7 @@
 			"label": "Maximum",
 			"description": "",
 			"type": "color",
-			"defaultValue": [1.0, 1.0, 1.0],
-
+			"defaultValue": [1.0, 1.0, 1.0]
 		},
 
 	],

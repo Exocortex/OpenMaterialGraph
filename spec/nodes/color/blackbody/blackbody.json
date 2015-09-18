@@ -1,0 +1,48 @@
+{
+
+	"name": "clamp",
+	"version": "0.0.1-alpha",
+	"description": "Generates a Rec709 color from the blackbody spectrum for the given temperature.  Useful for fire, lava, light colors and any self-illuminated object.",
+
+	"inputs": [
+
+		{
+			"name": "temperature",
+			"label": "Temperature",
+			"description": "The temperature value used to generate the color. From low to high the spectrum goes through red, orange, yellow, white, blue.",
+			"type": "float",
+			"defaultValue": 5500.0,
+			"minimumValue": 273.0,
+			"maximumValue": 27000
+		},
+
+		{
+			"name": "intensity",
+			"label": "Intensity",
+			"description": "Multiplier on the brightness of the generated color",
+			"type": "float",
+			"defaultValue": 1.0
+		},
+
+		{
+			"name": "exposure",
+			"label": "Exposure",
+			"description": "An overall exposure value to apply to the color. This is useful to preserve the physical brightness curve but get low-temperature colors into a sensible range.",
+			"type": "float",
+			"defaultValue": 0.0
+		}
+
+	],
+
+	"outputs": [
+
+		{
+			"name": "resultColor",
+			"label": "Result",
+			"description": "The resulting color.",
+			"type": "color"
+		}
+
+	]
+
+}
