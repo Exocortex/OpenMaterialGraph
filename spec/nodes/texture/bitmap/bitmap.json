@@ -1,0 +1,38 @@
+{
+
+	"name": "bitmap",
+	"version": "0.0.1-alpha",
+	"description": "A bitmap loader.",
+
+	"inputs": [
+
+		{
+			"name": "fileName",
+			"label": "File Name",
+			"description": "The name of the bitmap to load.",
+			"type": "string",
+			"defaultValue": ""
+		},
+
+		{
+			"name": "frame",
+			"label": "Frame Number",
+			"description": "If the image is part of a sequence, the #### in the file name will be replaced with this number to load the n'th frame.",
+			"type": "integer",
+			"defaultValue": 0
+		}
+
+	],
+
+	"outputs": [
+
+		{
+			"name": "resultColor",
+			"label": "Result",
+			"description": "The resulting color.",
+			"type": "color"
+		}
+
+	]
+
+}
