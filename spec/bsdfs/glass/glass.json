@@ -42,7 +42,7 @@
 		{
 			"name": "ior",
 			"label": "Index of Refraction",
-			"description": "",
+			"description": "The dielectric index of refraction.",
 			"type": "float",
 			"defaultValue": 1.0,
 			"minimumValue": 0.0

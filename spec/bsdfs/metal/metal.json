@@ -26,6 +26,15 @@
 		},
 
 		{
+			"name": "ior",
+			"label": "Index of Refraction",
+			"description": "The dielectric index of refraction.",
+			"type": "color",
+			"defaultValue": [ 1.5, 1.5, 1.5 ],
+			"minimumValue": [ 0.0, 0.0, 0.0 ]		
+		},
+
+		{
 			"name": "anisotropy",
 			"label": "Anisotropy",
 			"description": "Varyies the highlight from circular to elliptical.",
@@ -36,23 +45,6 @@
 		},
 
 		{
-			"name": "anisotropyTangent",
-			"label": "Tangent for Anisotropy",
-			"description": "",
-			"type": "vector",
-			"defaultValue": [ 1.0, 0.0, 0.0 ]
-		},
-
-		{
-			"name": "eta",
-			"label": "Refractive Index",
-			"description": "The dielectric index of refraction.",
-			"type": "color",
-			"defaultValue": [ 1.5, 1.5, 1.5 ],
-			"minimumValue": [ 0.0, 0.0, 0.0 ]		
-		},
-
-		{
 			"name": "anisotropyRotation",
 			"label": "Anisotropy Rotation",
 			"description": "Rotates the anisotropy highlight.",
@@ -60,6 +52,14 @@
 			"defaultValue": 0.0,
 			"minimumValue": 0.0,
 			"maximumValue": 1.0
+		},
+
+		{
+			"name": "anisotropyTangent",
+			"label": "Tangent for Anisotropy",
+			"description": "",
+			"type": "vector",
+			"defaultValue": [ 1.0, 0.0, 0.0 ]
 		},
 
 		{

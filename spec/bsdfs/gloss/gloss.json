@@ -57,7 +57,7 @@
 
 		{
 			"name": "ior",
-			"label": "Index of Refractive Index",
+			"label": "Index of Refraction",
 			"description": "The dielectric index of refraction.",
 			"type": "color",
 			"defaultValue": [ 1.5, 1.5, 1.5 ],
