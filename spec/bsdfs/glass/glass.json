@@ -1,0 +1,61 @@
+{
+
+	"name": "glass",
+	"version": "0.0.1-alpha",
+
+	"description": "Glass",
+
+	"parameters": [
+
+		{
+			"name": "refractionColor",
+			"label": "Refraction Color",
+			"description": "",
+			"type": "color",
+			"defaultValue": [ 0.8, 0.8, 0.8 ]
+		},
+
+		{
+			"name": "reflectionColor",
+			"label": "Reflection Color",
+			"description": "",
+			"type": "color",
+			"defaultValue": [ 1.0, 1.0, 1.0 ]
+		},
+
+		{
+			"name": "absorption",
+			"label": "Absorption",
+			"description": "",
+			"type": "float",
+			"defaultValue": 0.0
+		},
+
+		{
+			"name": "transmissionColor",
+			"label": "Transmission Color",
+			"description": "",
+			"type": "color",
+			"defaultValue": [ 0.5, 0.5, 0.5 ]
+		},
+
+		{
+			"name": "ior",
+			"label": "Index of Refraction",
+			"description": "",
+			"type": "float",
+			"defaultValue": 1.0,
+			"minimumValue": 0.0
+		},
+
+		{
+			"name": "normal",
+			"label": "Normal",
+			"description": "Surface normal modulator via bump or normal maps.",
+			"type": "normal",
+			"defaultValue": [ 0.0, 0.0, 0.0 ]
+		}
+
+	]
+
+}
