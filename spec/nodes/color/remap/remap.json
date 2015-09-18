@@ -1,0 +1,46 @@
+{
+
+	"name": "remap",
+	"version": "0.0.1-alpha",
+	"description": "Remap",
+
+	"inputs": [
+
+		{
+			"name": "inputColor",
+			"label": "Input Color",
+			"description": "",
+			"type": "color",
+			"defaultValue": [0.0, 0.0, 0.0]
+		},
+
+		{
+			"name": "bias",
+			"label": "Bias",
+			"description": "The center of the gain.",
+			"type": "color",
+			"defaultValue": [ 0.5, 0.5, 0.5 ]
+		},
+
+		{
+			"name": "gain",
+			"label": "Gain",
+			"description": "Gain.",
+			"type": "color",
+			"defaultValue": [ 0.5, 0.5, 0.5 ]
+		}
+		
+	],
+
+	"outputs": [
+
+		{
+			"name": "resultColor",
+			"label": "Result",
+			"description": "The resulting color.",
+			"type": "color"
+		}
+
+	]
+
+}

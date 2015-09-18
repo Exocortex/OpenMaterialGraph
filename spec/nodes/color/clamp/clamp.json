@@ -1,0 +1,48 @@
+{
+
+	"name": "clamp",
+	"version": "0.0.1-alpha",
+	"description": "Clamp",
+
+	"inputs": [
+
+		{
+			"name": "inputColor",
+			"label": "Input Color",
+			"description": "",
+			"type": "color",
+			"defaultValue": [0.0, 0.0, 0.0]
+		},
+
+		{
+			"name": "min",
+			"label": "Minimum",
+			"description": "",
+			"type": "color",
+			"defaultValue": [0.0, 0.0, 0.0],
+
+		},
+
+		{
+			"name": "max",
+			"label": "Maximum",
+			"description": "",
+			"type": "color",
+			"defaultValue": [1.0, 1.0, 1.0],
+
+		},
+
+	],
+
+	"outputs": [
+
+		{
+			"name": "resultColor",
+			"label": "Result",
+			"description": "The resulting color.",
+			"type": "color"
+		}
+
+	]
+
+}

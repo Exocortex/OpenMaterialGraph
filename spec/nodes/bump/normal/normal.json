@@ -1,0 +1,63 @@
+{
+
+	"name": "normal",
+	"version": "0.0.1-alpha",
+	"description": "Normal",
+
+	"inputs": [
+
+		{
+			"name": "inputNormal",
+			"label": "Normal Texture",
+			"description": "The texture input for the normal map.",
+			"type": "color",
+			"defaultValue": [ 0.0, 0.0, 0.0 ]
+		},
+
+		{
+			"name": "scale",
+			"label": "Normal Scale",
+			"description": "Adjust the strength of the normal pertubation.",
+			"type": "float",
+			"defaultValue": 1.0,
+			"minimumValue": 0.0,
+		},
+
+		{
+			"name": "invertNormal",
+			"label": "Invert Normal",
+			"description": "Invert the normals in the input normal texture to match desired result.",
+			"type": "boolean",
+			"defaultValue": false,
+		},
+
+		{
+			"name": "flipX",
+			"label": "Flip X",
+			"description": "Flip the red channel of the normap map.",
+			"type": "boolean",
+			"defaultValue": false,
+		},
+
+		{
+			"name": "flipY",
+			"label": "Flip Y",
+			"description": "Flip the green channel of the normap map.",
+			"type": "boolean",
+			"defaultValue": false,
+		}
+
+	],
+
+	"outputs": [
+
+		{
+			"name": "outputNormal",
+			"label": "Perturbed Normal",
+			"description": "The resulting surface normal.",
+			"type": "normal"
+		},
+		
+	]
+
+}

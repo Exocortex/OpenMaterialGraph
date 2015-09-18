@@ -1,0 +1,46 @@
+{
+
+	"name": "mix",
+	"version": "0.0.1-alpha",
+	"description": "Mix",
+
+	"inputs": [
+
+		{
+			"name": "inputColor1",
+			"label": "Input Color 1",
+			"description": "",
+			"type": "color",
+			"defaultValue": [0.0, 0.0, 0.0]
+		},
+
+		{
+			"name": "inputColor2",
+			"label": "Input Color 2",
+			"description": "",
+			"type": "color",
+			"defaultValue": [0.0, 0.0, 0.0]
+		},
+
+		{
+			"name": "alpha",
+			"label": "Alpha",
+			"description": "0 results in color1, while 1 means color2",
+			"type": "float",
+			"defaultValue": 0.0
+		}
+		
+	],
+
+	"outputs": [
+
+		{
+			"name": "resultColor",
+			"label": "Result",
+			"description": "The resulting color.",
+			"type": "color"
+		}
+
+	]
+
+}

@@ -1,0 +1,39 @@
+{
+
+	"name": "exposure",
+	"version": "0.0.1-alpha",
+	"description": "Exposure",
+
+	"inputs": [
+
+		{
+			"name": "inputColor",
+			"label": "Input Color",
+			"description": "",
+			"type": "color",
+			"defaultValue": [0.0, 0.0, 0.0]
+		},
+
+		{
+			"name": "stops",
+			"label": "Stops",
+			"description": "",
+			"type": "float",
+			"defaultValue": 0.0
+
+		}
+		
+	],
+
+	"outputs": [
+
+		{
+			"name": "resultColor",
+			"label": "Result",
+			"description": "The resulting color.",
+			"type": "color"
+		}
+
+	]
+
+}
