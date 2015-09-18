@@ -1,8 +1,19 @@
 {
 
-	"name": "hsl",
-	"version": "0.0.1-alpha",
-	"description": "HSL",
+	"format": {
+
+		"type": "omg-node",
+		"version": "0.0.1-alpha",
+		
+	},
+
+	"meta": {
+
+		"name": "hsl",
+		"version": "0.0.1-alpha",
+		"description": "HSL",
+
+	},
 
 	"inputs": [
 

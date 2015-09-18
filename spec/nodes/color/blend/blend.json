@@ -1,9 +1,20 @@
 {
 
-	"name": "blend",
-	"version": "0.0.1-alpha",
-	"description": "Blend",
+	"format": {
 
+		"type": "omg-node",
+		"version": "0.0.1-alpha",
+		
+	},
+
+	"meta": {
+
+		"name": "blend",
+		"version": "0.0.1-alpha",
+		"description": "Blend",
+
+	},
+	
 	"inputs": [
 
 		{

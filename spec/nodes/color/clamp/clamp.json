@@ -1,9 +1,20 @@
 {
 
-	"name": "clamp",
-	"version": "0.0.1-alpha",
-	"description": "Clamp",
+	"format": {
 
+		"type": "omg-node",
+		"version": "0.0.1-alpha",
+		
+	},
+
+	"meta": {
+
+		"name": "clamp",
+		"version": "0.0.1-alpha",
+		"description": "Clamp",
+
+	},
+	
 	"inputs": [
 
 		{
