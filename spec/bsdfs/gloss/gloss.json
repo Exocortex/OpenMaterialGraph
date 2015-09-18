@@ -19,7 +19,23 @@
 			"label": "Gloss Model",
 			"description": "Specifies the gloss shading model.",
 			"type": "option",
-			"optionsValues": [ "blinn-phong", "microfacet", "ward" ],
+			"options": [ 
+				{
+					"value": "blinnPhong",
+					"label": "Blinn Phong",
+					"description": ""
+				},
+				{
+					"value": "microfacet",
+					"label": "GGX Microfacet",
+					"description": ""
+				},
+				{
+					"value": "ward",
+					"label": "Ward",
+					"description": ""
+				}
+			],
 			"defaultValue": "microfacet",
 
 		},
