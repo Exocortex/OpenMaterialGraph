@@ -41,7 +41,7 @@
 		{
 			"name": "operation",
 			"label": "Operation",
-			"description": "Addition is color dogde.",
+			"description": "",
 			"type": "option",
 			"options": [ 
 				{

@@ -1,0 +1,66 @@
+{
+
+	"name": "toFloat",
+	"version": "0.0.1-alpha",
+	"description": "To Float",
+
+	"inputs": [
+
+		{
+			"name": "inputColor",
+			"label": "Input Color",
+			"description": "",
+			"type": "color",
+			"defaultValue": [ 0.0, 0.0, 0.0 ]
+		},
+
+
+		{
+			"name": "mode",
+			"label": "Mode",
+			"description": "",
+			"type": "option",
+			"options": [ 
+				{
+					"value": "red",
+					"label": "Red Channel",
+					"description": ""
+				},
+				{
+					"value": "green",
+					"label": "Green Channel",
+					"description": ""
+				},
+				{
+					"value": "blue",
+					"label": "Blue Channel",
+					"description": ""
+				},
+				{
+					"value": "luminance",
+					"label": "Luminance",
+					"description": ""
+				},
+				{
+					"value": "average",
+					"label": "Average",
+					"description": ""
+				}
+			],
+			"defaultValue": "average"
+		}
+
+	],
+
+	"outputs": [
+
+		{
+			"name": "outputFloat",
+			"label": "Output Float",
+			"description": "",
+			"type": "float"
+		},
+
+	]
+
+}

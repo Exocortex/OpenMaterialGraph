@@ -1,0 +1,46 @@
+{
+
+	"name": "floatRGBToColor",
+	"version": "0.0.1-alpha",
+	"description": "Float RGB To Color",
+
+	"inputs": [
+
+		{
+			"name": "inputR",
+			"label": "Input Red",
+			"description": "",
+			"type": "float",
+			"defaultValue": 0.0
+		},
+
+		{
+			"name": "inputG",
+			"label": "Input Green",
+			"description": "",
+			"type": "float",
+			"defaultValue": 0.0
+		},
+
+		{
+			"name": "inputB",
+			"label": "Input Blue",
+			"description": "",
+			"type": "float",
+			"defaultValue": 0.0
+		}
+
+	],
+
+	"outputs": [
+
+		{
+			"name": "outputColor",
+			"label": "Output Color",
+			"description": "",
+			"type": "color"
+		},
+
+	]
+
+}

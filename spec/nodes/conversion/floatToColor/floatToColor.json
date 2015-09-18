@@ -1,0 +1,30 @@
+{
+
+	"name": "floatToColor",
+	"version": "0.0.1-alpha",
+	"description": "Float To Color",
+
+	"inputs": [
+
+		{
+			"name": "input",
+			"label": "Input",
+			"description": "",
+			"type": "float",
+			"defaultValue": 0.0
+		}
+
+	],
+
+	"outputs": [
+
+		{
+			"name": "outputColor",
+			"label": "Output Color",
+			"description": "",
+			"type": "color"
+		},
+
+	]
+
+}
