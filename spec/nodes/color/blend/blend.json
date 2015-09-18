@@ -1,0 +1,114 @@
+{
+
+	"name": "blend",
+	"version": "0.0.1-alpha",
+	"description": "Blend",
+
+	"inputs": [
+
+		{
+			"name": "inputTopColor",
+			"label": "Input Top Color",
+			"description": "",
+			"type": "color",
+			"defaultValue": [0.0, 0.0, 0.0]
+		},
+
+		{
+			"name": "inputTopAlpha",
+			"label": "Input Top Alpha",
+			"description": "",
+			"type": "float",
+			"defaultValue": 0.0
+		},
+
+		{
+			"name": "inputBottomColor",
+			"label": "Input Bottom Color",
+			"description": "",
+			"type": "color",
+			"defaultValue": [0.0, 0.0, 0.0]
+		},
+
+		{
+			"name": "inputBottomAlpha",
+			"label": "Input Bottom Alpha",
+			"description": "",
+			"type": "float",
+			"defaultValue": 0.0
+		},
+
+		{
+			"name": "operation",
+			"label": "Operation",
+			"description": "Addition is color dogde.",
+			"type": "option",
+			"options": [ 
+				{
+					"value": "normal",
+					"label": "Normal",
+					"description": ""
+				},
+				{
+					"value": "color",
+					"label": "Color",
+					"description": ""
+				},
+				{
+					"value": "difference",
+					"label": "Difference",
+					"description": ""
+				},
+				{
+					"value": "addition",
+					"label": "Addition / Color Dogde",
+					"description": ""
+				},
+				{
+					"value": "substract",
+					"label": "Subtract",
+					"description": ""
+				},
+				{
+					"value": "multiply",
+					"label": "Multiply / Modulate",
+					"description": ""
+				},
+				{
+					"value": "divide",
+					"label": "Divide",
+					"description": ""
+				},
+				{
+					"value": "hue",
+					"label": "Hue",
+					"description": ""
+				},
+				{
+					"value": "luminosity",
+					"label": "Luminosity",
+					"description": ""
+				},
+				{
+					"value": "saturation",
+					"label": "Saturation",
+					"description": ""
+				}
+			],
+			"defaultValue": "normal"
+		}
+
+	],
+
+	"outputs": [
+
+		{
+			"name": "result",
+			"label": "Result",
+			"description": "The resulting float.",
+			"type": "color"
+		}
+
+	]
+
+}
