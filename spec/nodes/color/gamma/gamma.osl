@@ -3,5 +3,5 @@ float omg_node_gamma(
 	float gamma,
 	)
 {
-	return exp( inputColor, gamma );
+	return power( inputColor, gamma );
 }
