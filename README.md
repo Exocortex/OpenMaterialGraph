@@ -23,7 +23,7 @@ Email the leads:  info AT openmaterialgraph DOT org
 Credits
 -------
 
-The OSL implementation incorporates or depends upon several other open
+The OMG implementation incorporates or depends upon several other open
 source packages:
 
 [Open Shading Language](https://github.com/imageworks/OpenShadingLanguage)
