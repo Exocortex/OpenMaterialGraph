@@ -1,0 +1,8 @@
+surface diffuse(
+	color diffuseColor,
+	float roughness,
+	float sheen			// TODO
+	)
+{
+    Ci = diffuseColor * oren_nayar( N, roughness );
+}
