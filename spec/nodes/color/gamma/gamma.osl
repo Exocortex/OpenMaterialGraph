@@ -1,0 +1,7 @@
+float omg_node_gamma(
+	color inputColor,
+	float gamma,
+	)
+{
+	return exp( inputColor, gamma );
+}

@@ -11,7 +11,7 @@ float fresnel(float n, float k, float c) {
     return clamp( 0.5*( rs+rp ), 0.0, 1.0 );
 }
 
-surface metal(
+surface omg_bsfd_metal(
     float roughness,                // TODO
     color ior,
     color kappa,

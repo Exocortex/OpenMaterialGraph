@@ -1,4 +1,4 @@
-surface emitter (
+surface omg_bsfd_emitter (
     color emitterColor
     )
 {
