@@ -1,8 +1,19 @@
 {
 
-	"name": "gamma",
-	"version": "0.0.1-alpha",
-	"description": "Gamma",
+	"format": {
+
+		"type": "omg-node",
+		"version": "0.0.1-alpha",
+		
+	},
+
+	"meta": {
+
+		"name": "gamma",
+		"version": "0.0.1-alpha",
+		"description": "Gamma",
+
+	},
 
 	"inputs": [
 

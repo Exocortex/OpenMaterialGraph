@@ -1,11 +1,23 @@
 {
+	
+	"format": {
 
-	"name": "glass",
-	"version": "0.0.1-alpha",
+		"type": "omg-bsdf",
+		"version": "0.0.1-alpha",
+		
+	},
 
-	"description": "Glass",
+	"meta": {
 
-	"parameters": [
+		"name": "glass",
+		"label": "Glass",
+		"version": "0.0.1-alpha",
+		"description": "Glass",
+		"formatVersion": "0.0.1-alpha",
+
+	},
+
+	"inputs": [
 
 		{
 			"name": "refractionColor",

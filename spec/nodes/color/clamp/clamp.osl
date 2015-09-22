@@ -1,0 +1,8 @@
+float omg_node_clamp(
+	color inputColor,
+	color min,
+	color max
+	)
+{
+	return clamp( inputColor, min, max );
+}

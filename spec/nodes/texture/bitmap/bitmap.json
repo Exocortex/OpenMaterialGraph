@@ -1,8 +1,19 @@
 {
 
-	"name": "bitmap",
-	"version": "0.0.1-alpha",
-	"description": "A bitmap loader.",
+	"format": {
+
+		"type": "omg-node",
+		"version": "0.0.1-alpha",
+		
+	},
+
+	"meta": {
+
+		"name": "bitmap",
+		"version": "0.0.1-alpha",
+		"description": "A bitmap loader.",
+
+	},
 
 	"inputs": [
 

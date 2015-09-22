@@ -1,8 +1,19 @@
 {
 
-	"name": "clamp",
-	"version": "0.0.1-alpha",
-	"description": "Generates a Rec709 color from the blackbody spectrum for the given temperature.  Useful for fire, lava, light colors and any self-illuminated object.",
+	"format": {
+
+		"type": "omg-node",
+		"version": "0.0.1-alpha",
+		
+	},
+
+	"meta": {
+
+		"name": "blackbody",
+		"version": "0.0.1-alpha",
+		"description": "Generates a Rec709 color from the blackbody spectrum for the given temperature.  Useful for fire, lava, light colors and any self-illuminated object.",
+
+	},
 
 	"inputs": [
 

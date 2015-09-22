@@ -1,8 +1,19 @@
 {
 
-	"name": "mix",
-	"version": "0.0.1-alpha",
-	"description": "Mix",
+	"format": {
+
+		"type": "omg-node",
+		"version": "0.0.1-alpha",
+		
+	},
+
+	"meta": {
+
+		"name": "mix",
+		"version": "0.0.1-alpha",
+		"description": "Mix",
+
+	},
 
 	"inputs": [
 

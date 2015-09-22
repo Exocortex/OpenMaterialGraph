@@ -1,8 +1,19 @@
 {
 
-	"name": "exposure",
-	"version": "0.0.1-alpha",
-	"description": "Exposure",
+	"format": {
+
+		"type": "omg-node",
+		"version": "0.0.1-alpha",
+		
+	},
+
+	"meta": {
+
+		"name": "exposure",
+		"version": "0.0.1-alpha",
+		"description": "Exposure",
+
+	},
 
 	"inputs": [
 

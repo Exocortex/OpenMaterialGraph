@@ -1,11 +1,22 @@
 {
 
-	"name": "diffuse",
-	"version": "0.0.1-alpha",
+	"format": {
 
-	"description": "Oren-Nayar, a Generalized Lambert Diffuse Reflection Model",
+		"type": "omg-bsdf",
+		"version": "0.0.1-alpha",
+		
+	},
 
-	"parameters": [
+	"meta": {
+
+		"name": "diffuse",
+		"label": "Diffuse",
+		"version": "0.0.1-alpha",
+		"description": "Oren-Nayar, a Generalized Lambert Diffuse Reflection Model",
+
+	},
+
+	"inputs": [
 
 		{
 			"name": "color",

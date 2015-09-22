@@ -1,10 +1,23 @@
 {
+	
+	"format": {
 
-	"name": "gloss",
-	"version": "0.0.1-alpha",
-	"description": "Gloss Layer",
+		"type": "omg-bsdf",
+		"version": "0.0.1-alpha",
 
-	"parameters": [
+	},
+
+	"meta": {
+
+		"name": "gloss",
+		"label": "Gloss",
+		"version": "0.0.1-alpha",
+		"description": "Gloss Layer",
+		"formatVersion": "0.0.1-alpha",
+	
+	},
+
+	"inputs": [
 
 		{
 			"name": "color",

@@ -1,9 +1,20 @@
 {
 
-	"name": "remap",
-	"version": "0.0.1-alpha",
-	"description": "Remap",
+	"format": {
 
+		"type": "omg-node",
+		"version": "0.0.1-alpha",
+		
+	},
+
+	"meta": {
+
+		"name": "remap",
+		"version": "0.0.1-alpha",
+		"description": "Remap",
+
+	},
+	
 	"inputs": [
 
 		{
