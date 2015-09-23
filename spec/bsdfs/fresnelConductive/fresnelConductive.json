@@ -31,7 +31,7 @@
 
 		{
 			"name": "kappa",
-			"label": "Extinction Coefficient",
+			"label": "Wavelength dependent adsoprtion coefficient",
 			"description": "",
 			"type": "color",
 			"defaultValue": [ 5.20643 4.231366 3.754969 ],
@@ -41,38 +41,10 @@
 		{
 			"name": "ior",
 			"label": "Index of Refraction",
-			"description": "The dielectric index of refraction.",
+			"description": "Wavelength dependent index of refraction.",
 			"type": "color",
 			"defaultValue": [ 1.5, 1.5, 1.5 ],
 			"minimumValue": [ 0.0, 0.0, 0.0 ]		
-		},
-
-		{
-			"name": "anisotropy",
-			"label": "Anisotropy",
-			"description": "Varyies the highlight from circular to elliptical.",
-			"type": "float",
-			"defaultValue": 0.0,
-			"minimumValue": -1.0,
-			"maximumValue": 1.0
-		},
-
-		{
-			"name": "anisotropyRotation",
-			"label": "Anisotropy Rotation",
-			"description": "Rotates the anisotropy highlight.",
-			"type": "float",
-			"defaultValue": 0.0,
-			"minimumValue": 0.0,
-			"maximumValue": 1.0
-		},
-
-		{
-			"name": "anisotropyTangent",
-			"label": "Tangent for Anisotropy",
-			"description": "",
-			"type": "vector",
-			"defaultValue": [ 1.0, 0.0, 0.0 ]
 		},
 
 		{
