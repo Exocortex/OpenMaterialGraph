@@ -1,0 +1,7 @@
+translucent:
+	diffuse: color
+	specular: color
+	roughness: float
+	reflectance: color
+	transmittance: color
+	normal: normal

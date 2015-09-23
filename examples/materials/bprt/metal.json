@@ -1,0 +1,10 @@
+metal:
+	ior: color
+	kappa: color
+	roughness: float
+	normal: normal
+
+
+var fresnel = new FresnelConductor( 1, ior, kappa );
+var microfacetDistribution = new TrowbridgeReitzDistribution( roughness, roughness );
+bsdf.add( new MicrofacetReflection( 1, microfacetDistribution, fresnel ) );

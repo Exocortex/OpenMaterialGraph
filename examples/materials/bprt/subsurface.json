@@ -1,0 +1,10 @@
+subsurface:
+	reflectance: color
+	transmittance: color
+	sigmaA: color	// TODO: what is this?
+	sigmaB: color	// TODO: what is this?
+	g: float		// TODO: what is this?
+	ior: float
+	uRoughness: float
+	vRoughness: float
+	normal: normal

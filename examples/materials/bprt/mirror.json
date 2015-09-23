@@ -1,0 +1,9 @@
+mirror:
+  reflectance: color
+  normal: normal
+
+
+if( reflectance !== BLACK )
+	var fresnel = new FresnelNoOp();
+	bsdf.add( new SpecularReflection( reflectance, fresnel ) );
+

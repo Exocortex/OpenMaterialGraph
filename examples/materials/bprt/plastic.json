@@ -1,0 +1,14 @@
+plastic:
+	diffuse: color
+	reflectance: color
+	roughness: float
+	normal: normal
+
+
+if( diffuse !=== BLACK )
+	bsdf.add( new LambertianReflection( diffuse ) );
+
+if( reflectance !=== BLACK )
+	var fresnel = new FresnelDielectric( 1.5, 1.0 );
+	var microfacetDistribution = new TrowbridgeReitzDistribution( roughness, roughness );
+ 	bsdf.add( new MicrofacetReflection( reflectance, microfacetDistribution, fresnel ) )
