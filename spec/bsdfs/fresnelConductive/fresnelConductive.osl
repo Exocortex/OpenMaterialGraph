@@ -16,15 +16,15 @@ float fresnelConductive(float n, float k, float ci) {
 }
 
 surface omg_bsfd_fresnelConductive(
-    color ior,
+    color iorT,
     color kappa,
   )
 {
     float ci = abs( dot( -I,N ) );
 
-    float red   = fresnelConductive( n[0], k[0], ci );
-    float green = fresnelConductive( n[1], k[1], ci );
-    float blue  = fresnelConductive( n[2], k[2], ci );
+    float red   = fresnelConductive( iorT[0], k[0], ci );
+    float green = fresnelConductive( iorT[1], k[1], ci );
+    float blue  = fresnelConductive( iorT[2], k[2], ci );
 
     Ci = Ks * Cs * reflection( N, ior );
 }
