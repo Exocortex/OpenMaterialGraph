@@ -12,3 +12,13 @@ if( reflectance !=== BLACK )
 	var fresnel = new FresnelDielectric( 1.5, 1.0 );
 	var microfacetDistribution = new TrowbridgeReitzDistribution( roughness, roughness );
  	bsdfs.add( new MicrofacetReflection( reflectance, microfacetDistribution, fresnel ) )
+
+
+
+///////////////////////////////////////  Optimized
+
+bsdfs.add( new LambertianReflection( diffuse ) );
+
+var fresnel = new FresnelDielectric( 1.5, 1.0 );
+var microfacetDistribution = new TrowbridgeReitzDistribution( roughness, roughness );
+bsdfs.add( new MicrofacetReflection( reflectance, microfacetDistribution, fresnel ) )

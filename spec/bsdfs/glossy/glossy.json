@@ -9,8 +9,8 @@
 
 	"meta": {
 
-		"name": "gloss",
-		"label": "Gloss",
+		"name": "glossy",
+		"label": "Glossy",
 		"version": "0.0.1-alpha",
 		"description": "Gloss Layer",
 		"formatVersion": "0.0.1-alpha",

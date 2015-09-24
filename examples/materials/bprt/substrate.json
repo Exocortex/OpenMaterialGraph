@@ -6,6 +6,12 @@ substrate:
 	normal: normal
 
 
+
 if( diffuse !== BLACK || specular !== BLACK )
 	var microfacetDistribution = new TrowbridgeReitzDistribution( uRoughness, vRoughness );
 	 bsdfs.add( new FresnelBlend( diffuse, specular, microfacetDistribution ) );
+
+///////////////////////////////////////  Optimized
+
+var microfacetDistribution = new TrowbridgeReitzDistribution( uRoughness, vRoughness );
+bsdfs.add( new FresnelBlend( diffuse, specular, microfacetDistribution ) );

@@ -9,8 +9,7 @@ Microfacet distributions:
 	BeckmannDistribution ( uRoughness, vRoughness );
  	TrowbridgeReitzDistribution( uRoughness, vRoughness )
 
-
-
+ 
 
 List of all BxDFs used by PBRT:
 

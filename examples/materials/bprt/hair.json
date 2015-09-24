@@ -6,3 +6,9 @@ hair:
 
 if( diffuse !== BLACK || specular !== BLACK )
 	bsdfs.add( new KayijaKay( diffuse, specular, roughness ) );
+
+
+
+///////////////////////////////////////  Optimized
+
+bsdfs.add( new KayijaKay( diffuse, specular, roughness ) );

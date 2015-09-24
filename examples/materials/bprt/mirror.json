@@ -7,3 +7,8 @@ if( reflectance !== BLACK )
 	var fresnel = new FresnelNoOp();
 	bsdfs.add( new SpecularReflection( reflectance, fresnel ) );
 
+
+///////////////////////////////////////  Optimized
+
+var fresnel = new FresnelNoOp();
+bsdfs.add( new SpecularReflection( reflectance, fresnel ) );

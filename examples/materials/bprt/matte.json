@@ -8,3 +8,8 @@ if( sigma === 0 )
 	bsdfs.add( new LambertianReflection( diffuse ) );
 else
 	bsdfs.add( new OrenNayar( diffuse ) );	
+
+
+///////////////////////////////////////  Optimized
+
+bsdfs.add( new OrenNayarReflection( diffuse, sigma ) );

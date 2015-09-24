@@ -21,3 +21,16 @@ if( specular !== BLACK )
 	 	bsdfs.add( new MicrofacetReflection( reflectance * specular, microfacetDistribution, fresnel ) );
 	if( transmittance !== BLACK )
 	 	bsdfs.add( new MicrofacetTransmission( transmittance * specular, microfacetDistribution, 1.0, 1.5 ) );
+
+
+///////////////////////////////////////  Optimized
+
+bsdfs.add( new LambertianReflection( reflectance * diffuse ) );
+bsdfs.add( new LambertianTransmission( transmittance * diffuse ) );
+
+var microfacetDistribution = new TrowbridgeReitzDistribution( roughness, roughness );
+var fresnel = new FresnelDielectric( 1, 1.5 );
+bsdfs.add( new MicrofacetReflection( reflectance * specular, microfacetDistribution, fresnel ) );
+bsdfs.add( new MicrofacetTransmission( transmittance * specular, microfacetDistribution, 1.0, 1.5 ) );
+
+
