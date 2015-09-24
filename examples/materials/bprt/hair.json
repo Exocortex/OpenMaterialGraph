@@ -1,0 +1,8 @@
+hair:
+   diffuse: color
+   sigma: float // oren-nayar roughness control, guassian sigma
+   roughness: float
+
+
+if( diffuse !== BLACK || specular !== BLACK )
+	bsdfs.add( new KayijaKay( diffuse, specular, roughness ) );

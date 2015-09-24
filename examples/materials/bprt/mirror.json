@@ -5,5 +5,5 @@ mirror:
 
 if( reflectance !== BLACK )
 	var fresnel = new FresnelNoOp();
-	bsdf.add( new SpecularReflection( reflectance, fresnel ) );
+	bsdfs.add( new SpecularReflection( reflectance, fresnel ) );
 

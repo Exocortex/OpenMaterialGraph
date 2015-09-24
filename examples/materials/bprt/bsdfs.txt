@@ -1,0 +1,36 @@
+List of BRDFs used by PBRT:
+
+Fresnel functions:
+	FresnelDielectric( iorI, iorT )
+	FresnelConductor( iorI, iorT, kappa )
+	FresnelNoOp()
+
+Microfacet distributions:
+ 	TrowbridgeReitzDistribution( uRoughness, vRoughness )
+
+Diffuse BxDFs:
+	OrenNayarReflection( diffuse )
+	LambertianReflection( diffuse )
+	LambertianTransmission( diffuse )
+
+Fresnel BxDFs:
+	FresnelSpecular( reflectance, transmittance, iorI, iorT )
+	FresnelBlend( diffuse, specular, microfacetDistribution )
+
+Perfect Specular BxDFs:
+	SpecularReflection( reflectance, fresnel ) // perfect specular
+	SpecularTransmission( transmittance, iorI, iorT )
+
+Microfacet Specular BxDFs:
+	MicrofacetReflection( reflectance, microfacetDistribution, fresnel )
+	MicrofacetTransmission( reflectance, microfacetDistribution, iorI, iorT )
+
+Hair BxDFs:
+	KayijaKay( diffuse, specular, roughness )
+
+Utility BxDFs:
+	ScaledBxDF( bsdf, color )
+	FourierBSDF( table );
+
+Subsurface BxDFs:
+	TabulatedBSSRDF( mode, ior, sigmaA, sigmaB )

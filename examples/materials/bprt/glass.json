@@ -9,8 +9,9 @@ glass:
 
 var isSpecular = ( uRoughness === 0 && vRoughness === 0 );
 // TODO: what is TransportMode mode?
-//if( isSpecular )
-//	bsdf.add( new FresnelSpecular( reflectance, transmission, 1, ior, mode );
+// TODO: What is allow multiple lobes
+//if( isSpecular  && allowMultpleLobes )
+//	bsdfs.add( new FresnelSpecular( reflectance, transmission, 1, ior, mode );
 //else
 
 var microfacetDistribution = null;
@@ -20,16 +21,16 @@ if( ! isSpecular )
 if( reflectance !== BLACK )
 	var fresnel = new FresnelDielectric( 1, ior );
 	if( isSpecular )
-		bsdf.add( new SpecularReflection( reflectance, fresnel ) );
+		bsdfs.add( new SpecularReflection( reflectance, fresnel ) );
 	else
-	 	bsdf.add( new MicrofacetReflection( reflectance, microfacetDistribution, fresnel ) )
+	 	bsdfs.add( new MicrofacetReflection( reflectance, microfacetDistribution, fresnel ) )
 
 if( transmittance !== BLACK )
 	var fresnel = new FresnelDielectric( 1, ior );
 	if( isSpecular )
-		bsdf.add( new SpecularTransmission( transmittance, 1, ior, mode ) );
+		bsdfs.add( new SpecularTransmission( transmittance, 1, ior, mode ) );
 	else
-	 	bsdf.add( new MicrofacetTransmission( transmittance, microfacetDistribution, 1, ior ) )
+	 	bsdfs.add( new MicrofacetTransmission( transmittance, microfacetDistribution, 1, ior ) )
 
 
 

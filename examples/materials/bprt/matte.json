@@ -5,6 +5,6 @@ matte:
 
 
 if( sigma === 0 )
-	bsdf.add( new LambertianReflection( diffuse ) );
+	bsdfs.add( new LambertianReflection( diffuse ) );
 else
-	bsdf.add( new OrenNayar( diffuse ) );	
+	bsdfs.add( new OrenNayar( diffuse ) );	

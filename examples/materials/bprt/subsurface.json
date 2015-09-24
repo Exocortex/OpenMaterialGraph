@@ -8,3 +8,34 @@ subsurface:
 	uRoughness: float
 	vRoughness: float
 	normal: normal
+
+// subsurface is basically plastic first:
+
+var isSpecular = ( uRoughness === 0 && vRoughness === 0 );
+// TODO: what is TransportMode mode?
+// TODO: What is allow multiple lobes
+//if( isSpecular && allowMultpleLobes )
+//	bsdfs.add( new FresnelSpecular( reflectance, transmission, 1, ior, mode );
+//else
+
+var microfacetDistribution = null;
+if( ! isSpecular )
+ 	microfacetDistribution = new TrowbridgeReitzDistribution( uRoughness, vRoughness );
+
+if( reflectance !== BLACK )
+	var fresnel = new FresnelDielectric( 1, ior );
+	if( isSpecular )
+		bsdfs.add( new SpecularReflection( reflectance, fresnel ) );
+	else
+	 	bsdfs.add( new MicrofacetReflection( reflectance, microfacetDistribution, fresnel ) )
+
+if( transmittance !== BLACK )
+	var fresnel = new FresnelDielectric( 1, ior );
+	if( isSpecular )
+		bsdfs.add( new SpecularTransmission( transmittance, 1, ior, mode ) );
+	else
+	 	bsdfs.add( new MicrofacetTransmission( transmittance, microfacetDistribution, 1, ior ) )
+
+// the following is the only part that isn't unique to plastic:
+
+bsdfs.add( new TabulatedBSSRDF( mode, ior, sigmaA, sigmaB ) );

@@ -1,0 +1,17 @@
+mixmat:
+	m1: material
+	m2: material
+	scale: color
+
+hair:
+   diffuse: color
+   sigma: float // oren-nayar roughness control, guassian sigma
+   roughness: float
+
+
+foreach( bsdf in m1 ):
+	bsdfs.add( new ScaledBxDF( bsdf, color ) );
+
+foreach( bsdf in m2 ):
+	bsdfs.add( new ScaledBxDF( bsdf, 1.0 - color ) );
+	
