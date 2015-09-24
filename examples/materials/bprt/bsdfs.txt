@@ -1,4 +1,4 @@
-List of BRDFs used by PBRT:
+Utilities used by the BxDFs:
 
 Fresnel functions:
 	FresnelDielectric( iorI, iorT )
@@ -6,7 +6,13 @@ Fresnel functions:
 	FresnelNoOp()
 
 Microfacet distributions:
+	BeckmannDistribution ( uRoughness, vRoughness );
  	TrowbridgeReitzDistribution( uRoughness, vRoughness )
+
+
+
+
+List of all BxDFs used by PBRT:
 
 Diffuse BxDFs:
 	OrenNayarReflection( diffuse )
