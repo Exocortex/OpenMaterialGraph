@@ -22,8 +22,8 @@ Perfect Specular BxDFs:
 	SpecularTransmission( transmittance, iorI, iorT )
 
 Microfacet Specular BxDFs:
-	MicrofacetReflection( reflectance, microfacetDistribution, fresnel )
-	MicrofacetTransmission( reflectance, microfacetDistribution, iorI, iorT )
+	MicrofacetReflection( reflectance, microfacetDistribution, fresnel ) -> equivalent to VRay Reflection
+	MicrofacetTransmission( reflectance, microfacetDistribution, iorI, iorT ) -> equivalent to VRay Refraction
 
 Hair BxDFs:
 	KayijaKay( diffuse, specular, roughness )
