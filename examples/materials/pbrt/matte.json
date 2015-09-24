@@ -7,7 +7,7 @@ matte:
 if( sigma === 0 )
 	bsdfs.add( new LambertianReflection( diffuse ) );
 else
-	bsdfs.add( new OrenNayar( diffuse ) );	
+	bsdfs.add( new OrenNayar( diffuse , signma) );	
 
 
 ///////////////////////////////////////  Optimized

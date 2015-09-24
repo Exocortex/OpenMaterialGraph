@@ -1,0 +1,8 @@
+Backscatter:
+	diffusecolor: color
+	diffuseGrazingColor: color
+	diffuseRoughness: float
+	diffuseIOR: float
+	glossyWeight: float
+	glossyRoughness: float
+	normal: normal

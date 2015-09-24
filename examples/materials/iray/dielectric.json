@@ -1,0 +1,8 @@
+Dielectric / Anisotropy Dielectric
+	diffuseColor: color
+	roughness: float
+	reflectedColor: color
+	ior: float
+	anisotropy: float
+	anisotropyRotation: float
+	normal: normal

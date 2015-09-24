@@ -1,0 +1,8 @@
+Conductive / Anisotropy Conductive
+	diffuseColor: color
+	roughness: float
+	reflectedColor: color
+	ior: float
+	anisotropy: float
+	anisotropyRotation: float
+	normal: normal

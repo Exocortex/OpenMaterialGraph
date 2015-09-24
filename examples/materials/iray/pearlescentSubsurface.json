@@ -1,0 +1,8 @@
+PearlescentSubsurface:
+	diffuseColor: color
+	diffuseWeight: float (aka, translucency)
+	reflectionRoughness: float
+	subsurfaceColor: color
+	subsurfaceDistanceScale: float
+	ior: float
+	gelNoise: float

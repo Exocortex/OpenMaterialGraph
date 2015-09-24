@@ -1,0 +1,6 @@
+Diffuse / DiffuseTransmission
+	diffuseColor: color
+	roughness: float
+	transmissionWeight: float
+	transmissionColor: color
+	normal: normal

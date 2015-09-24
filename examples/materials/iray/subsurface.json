@@ -1,0 +1,11 @@
+Subsurface Scattering:
+	diffuseColor: color
+	diffuseWeight: float (aka, translucency)
+	transmissionColor: color
+	reflectionColor: color
+	reflectionRoughness: float
+	subsurfaceColor: color
+	subsurfaceScatterDistance: float
+	subsurfaceAbsorbDistance: float
+	ior: float
+	abbeNumber: float
