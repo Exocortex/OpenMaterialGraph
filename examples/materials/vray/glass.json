@@ -1,0 +1,5 @@
+Glass:
+	color: color
+	transparency: color
+	ior: float
+
