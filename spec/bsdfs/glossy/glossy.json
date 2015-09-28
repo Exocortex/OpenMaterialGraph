@@ -12,7 +12,7 @@
 		"name": "glossy",
 		"label": "Glossy",
 		"version": "0.0.1-alpha",
-		"description": "Gloss Layer",
+		"description": "Gloss Layer, Dielectric Fresnel",
 		"formatVersion": "0.0.1-alpha",
 	
 	},
@@ -100,7 +100,7 @@
 
 		{
 			"name": "anisotropyTangent",
-			"label": "Tangent for Gloss Anisotropy",
+			"label": "Tangent for anisotropy highlight",
 			"description": "",
 			"type": "vector",
 			"defaultValue": [ 1.0, 0.0, 0.0 ]

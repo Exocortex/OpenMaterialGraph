@@ -9,10 +9,10 @@
 
 	"meta": {
 
-		"name": "subsurface",
-		"label": "Subsurface",
+		"name": "metal",
+		"label": "Metal",
 		"version": "0.0.1-alpha",
-		"description": "Subsurface",
+		"description": "Metal Layer, Confuctive Fresnel",
 		"formatVersion": "0.0.1-alpha",
 	
 	},
@@ -20,11 +20,21 @@
 	"inputs": [
 
 		{
-			"name": "color",
-			"label": "Gloss Color",
-			"description": "The glossy/specular color.",
+			"name": "kappa",
+			"label": "Adsorption Coefficients",
+			"description": "Conductive Fresnel Adsorption Coefficients.",
 			"type": "color",
 			"defaultValue": [ 0.6 0.6, 0.6 ]
+		},
+
+		{
+			"name": "ior",
+			"label": "Index of Refraction",
+			"description": "The conductive index of refraction.",
+			"type": "color",
+			"defaultValue": [ 1.5, 1.5, 1.5 ],
+			"minimumValue": [ 0.0, 0.0, 0.0 ],
+			"maximumValue": [ 100.0, 100.0, 100.0 ]			
 		},
 
 		{
@@ -66,16 +76,6 @@
 			"defaultValue": 0.1,
 			"minimumValue": 0.0,
 			"maximumValue": 1.0
-		},
-
-		{
-			"name": "ior",
-			"label": "Index of Refraction",
-			"description": "The dielectric index of refraction.",
-			"type": "color",
-			"defaultValue": [ 1.5, 1.5, 1.5 ],
-			"minimumValue": [ 0.0, 0.0, 0.0 ],
-			"maximumValue": [ 100.0, 100.0, 100.0 ]			
 		},
 
 		{
