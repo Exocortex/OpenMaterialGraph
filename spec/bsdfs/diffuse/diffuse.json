@@ -27,6 +27,14 @@
 		},
 
 		{
+			"name": "transmissionColor",
+			"label": "Transmission Color",
+			"description": "The diffuse color.",
+			"type": "color",
+			"defaultValue": [ 0.6, 0.6, 0.6 ]
+		},
+		
+		{
 			"name": "roughness",
 			"label": "Diffuse Roughness",
 			"description": "Oren-Nayar microfacet diffuse roughness model.  For classic Lambertian, use a value of 0.  Higher values increases the roughness.",

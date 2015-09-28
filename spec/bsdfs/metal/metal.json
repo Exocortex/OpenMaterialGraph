@@ -21,8 +21,8 @@
 
 		{
 			"name": "kappa",
-			"label": "Adsorption Coefficients",
-			"description": "Conductive Fresnel Adsorption Coefficients.",
+			"label": "Absorption Coefficients",
+			"description": "Conductive Fresnel Absorption Coefficients.",
 			"type": "color",
 			"defaultValue": [ 0.6 0.6, 0.6 ]
 		},

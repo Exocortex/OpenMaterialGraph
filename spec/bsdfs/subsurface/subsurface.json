@@ -40,7 +40,9 @@
 			"label": "Scattering Color",
 			"description": "Scattering Coefficient, out-scattering, sigma S, coefficients per collision.",
 			"type": "color",
-			"defaultValue": [ 0, 0, 0 ]		
+			"defaultValue": [ 0, 0, 0 ],
+			"minimumValue": [ 0, 0, 0 ],	
+			"maximumValue": [ 1, 1, 1 ]
 		},
 
 		{

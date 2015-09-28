@@ -20,35 +20,11 @@
 	"inputs": [
 
 		{
-			"name": "reflectionColor",
-			"label": "Reflection Color, what is reflected from the specular surface",
+			"name": "tintColor",
+			"label": "Reflection/Transmission Color.",
 			"description": "",
 			"type": "color",
 			"defaultValue": [ 1.0, 1.0, 1.0 ]
-		},
-
-		{
-			"name": "transmissionColor",
-			"label": "Transmission Color, what is transmitted through the specular surface",
-			"description": "",
-			"type": "color",
-			"defaultValue": [ 0.5, 0.5, 0.5 ]
-		},
-
-		{
-			"name": "absorptionColor",
-			"label": "Absorption Color, what is absorbed by the interior of the glass per meter.",
-			"description": "",
-			"type": "color",
-			"defaultValue": [ 0.0, 0.0, 0.0]
-		},
-
-		{
-			"name": "refractionColor",
-			"label": "Refraction Color",
-			"description": "",
-			"type": "color",
-			"defaultValue": [ 0.8, 0.8, 0.8 ]
 		},
 
 		{
@@ -58,6 +34,16 @@
 			"type": "float",
 			"defaultValue": 1.0,
 			"minimumValue": 0.0
+		},
+
+		{
+			"name": "abbeNumber",
+			"label": "Dispersion Abbe Number",
+			"description": "Control the dispersion of light via the Abbe number.  A value of zero means no disperson.  Typical values are in the range of 20 (high dispersion) to 84 (low disperson.)",
+			"type": "float",
+			"defaultValue": 0.0,
+			"minimumValue": 0.0,
+			"maximumValue": 100.0
 		},
 
 		{
