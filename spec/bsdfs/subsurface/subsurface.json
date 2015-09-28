@@ -12,7 +12,7 @@
 		"name": "subsurface",
 		"label": "Subsurface",
 		"version": "0.0.1-alpha",
-		"description": "Subsurface",
+		"description": "Subsurface, based on the BSSRDF model",
 		"formatVersion": "0.0.1-alpha",
 	
 	},
@@ -20,98 +20,37 @@
 	"inputs": [
 
 		{
-			"name": "color",
-			"label": "Gloss Color",
-			"description": "The glossy/specular color.",
+			"name": "emission",
+			"label": "Emissiion Color",
+			"description": "",
 			"type": "color",
-			"defaultValue": [ 0.6 0.6, 0.6 ]
+			"defaultValue": [ 0.0, 0.0, 0.0 ]
 		},
 
 		{
-			"name": "roughnessModel",
-			"label": "Model",
-			"description": "Specifies the gloss shading model.",
-			"type": "option",
-			"options": [ 
-				{
-					"value": "blinnPhong",
-					"label": "Blinn-Phong",
-					"description": ""
-				},
-				{
-					"value": "ward",
-					"label": "Ward",
-					"description": ""
-				},
-				{
-					"value": "cookTorrance",
-					"label": "Cook-Torrance",
-					"description": ""
-				},
-				{
-					"value": "microfacet",
-					"label": "GGX Microfacet",
-					"description": ""
-				}
-			],
-			"defaultValue": "microfacet",
-
-		},
-
-		{
-			"name": "roughness",
-			"label": "Roughness",
-			"description": "Controls the roughness of the gloss layer according to the model specified.",
-			"type": "float",
-			"defaultValue": 0.1,
-			"minimumValue": 0.0,
-			"maximumValue": 1.0
-		},
-
-		{
-			"name": "ior",
-			"label": "Index of Refraction",
-			"description": "The dielectric index of refraction.",
+			"name": "absorption",
+			"label": "Absorption Color",
+			"description": "Absorption Coefficient, sigma A.  Unit is absoprtion per meter.",
 			"type": "color",
-			"defaultValue": [ 1.5, 1.5, 1.5 ],
-			"minimumValue": [ 0.0, 0.0, 0.0 ],
-			"maximumValue": [ 100.0, 100.0, 100.0 ]			
+			"defaultValue": [ 0, 0, 0 ]
 		},
 
 		{
-			"name": "anisotropy",
-			"label": "Anisotropy",
-			"description": "Varyies the highlight from circular to elliptical.",
+			"name": "scattering",
+			"label": "Scattering Color",
+			"description": "Scattering Coefficient, out-scattering, sigma S, coefficients per collision.",
+			"type": "color",
+			"defaultValue": [ 0, 0, 0 ]		
+		},
+
+		{
+			"name": "phaseFunction",
+			"label": "Anisotropic Phase Function",
+			"description": "Phase Function, in-scattering, G.  Controls the anistropy of the scattering function, favoring forward or backwards scattering.",
 			"type": "float",
 			"defaultValue": 0.0,
 			"minimumValue": -1.0,
 			"maximumValue": 1.0
-		},
-
-		{
-			"name": "anisotropyRotation",
-			"label": "Anisotropy Rotation",
-			"description": "Rotates the anisotropy highlight.",
-			"type": "float",
-			"defaultValue": 0.0,
-			"minimumValue": 0.0,
-			"maximumValue": 1.0
-		},
-
-		{
-			"name": "anisotropyTangent",
-			"label": "Tangent for anisotropy highlight",
-			"description": "",
-			"type": "vector",
-			"defaultValue": [ 1.0, 0.0, 0.0 ]
-		},
-
-		{
-			"name": "normal",
-			"label": "Normal",
-			"description": "Surface normal modulator via bump or normal maps.",
-			"type": "normal",
-			"defaultValue": [ 0.0, 0.0, 0.0 ]
 		}
 
 	]
