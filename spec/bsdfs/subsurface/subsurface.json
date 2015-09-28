@@ -21,7 +21,7 @@
 
 		{
 			"name": "emission",
-			"label": "Emissiion Color",
+			"label": "Emission Color.  Unit is emission per meter^3.",
 			"description": "",
 			"type": "color",
 			"defaultValue": [ 0.0, 0.0, 0.0 ]
@@ -46,7 +46,7 @@
 		{
 			"name": "phaseFunction",
 			"label": "Anisotropic Phase Function",
-			"description": "Phase Function, in-scattering, G.  Controls the anistropy of the scattering function, favoring forward or backwards scattering.",
+			"description": "Phase Function, in-scattering, G.  Controls the anistropy of the scattering function, favoring forward (1) or backwards (-1) scattering.",
 			"type": "float",
 			"defaultValue": 0.0,
 			"minimumValue": -1.0,

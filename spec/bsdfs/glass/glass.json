@@ -20,35 +20,35 @@
 	"inputs": [
 
 		{
-			"name": "refractionColor",
-			"label": "Refraction Color",
-			"description": "",
-			"type": "color",
-			"defaultValue": [ 0.8, 0.8, 0.8 ]
-		},
-
-		{
 			"name": "reflectionColor",
-			"label": "Reflection Color",
+			"label": "Reflection Color, what is reflected from the specular surface",
 			"description": "",
 			"type": "color",
 			"defaultValue": [ 1.0, 1.0, 1.0 ]
 		},
 
 		{
-			"name": "absorption",
-			"label": "Absorption",
-			"description": "",
-			"type": "float",
-			"defaultValue": 0.0
-		},
-
-		{
 			"name": "transmissionColor",
-			"label": "Transmission Color",
+			"label": "Transmission Color, what is transmitted through the specular surface",
 			"description": "",
 			"type": "color",
 			"defaultValue": [ 0.5, 0.5, 0.5 ]
+		},
+
+		{
+			"name": "absorption",
+			"label": "Absorption Color, what is absorbed by the interior of the glass per meter.",
+			"description": "",
+			"type": "color",
+			"defaultValue": [ 0.0, 0.0, 0.0]
+		},
+
+		{
+			"name": "refractionColor",
+			"label": "Refraction Color",
+			"description": "",
+			"type": "color",
+			"defaultValue": [ 0.8, 0.8, 0.8 ]
 		},
 
 		{

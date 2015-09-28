@@ -29,7 +29,7 @@
 
 		{
 			"name": "ior",
-			"label": "Index of Refraction",
+			"label": "Conductive Index of Refraction",
 			"description": "The conductive index of refraction.",
 			"type": "color",
 			"defaultValue": [ 1.5, 1.5, 1.5 ],
