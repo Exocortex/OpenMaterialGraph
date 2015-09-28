@@ -19,8 +19,8 @@
 	"inputs": [
 
 		{
-			"name": "color",
-			"label": "Color",
+			"name": "reflectionColor",
+			"label": "Reflection Color",
 			"description": "The diffuse color.",
 			"type": "color",
 			"defaultValue": [ 0.6, 0.6, 0.6 ]

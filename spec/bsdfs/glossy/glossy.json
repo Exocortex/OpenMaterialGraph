@@ -20,9 +20,9 @@
 	"inputs": [
 
 		{
-			"name": "color",
-			"label": "Gloss Color",
-			"description": "The glossy/specular color.",
+			"name": "reflectionColor",
+			"label": "Glossy Reflection Color",
+			"description": "The glossy/specular reflection color.",
 			"type": "color",
 			"defaultValue": [ 0.6 0.6, 0.6 ]
 		},

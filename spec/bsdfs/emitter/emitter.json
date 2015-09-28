@@ -19,7 +19,7 @@
 	"inputs": [
 
 		{
-			"name": "color",
+			"name": "emissionColor",
 			"label": "Emission Color",
 			"description": "",
 			"type": "color",

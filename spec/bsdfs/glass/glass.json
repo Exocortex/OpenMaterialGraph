@@ -36,7 +36,7 @@
 		},
 
 		{
-			"name": "absorption",
+			"name": "absorptionColor",
 			"label": "Absorption Color, what is absorbed by the interior of the glass per meter.",
 			"description": "",
 			"type": "color",
