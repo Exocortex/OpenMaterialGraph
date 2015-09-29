@@ -1,0 +1,5 @@
+BeckmannDistribution:
+	roughness: float
+	anisotropy: float
+	anisotropyRotation: float
+	anisotropyTangent: vector3

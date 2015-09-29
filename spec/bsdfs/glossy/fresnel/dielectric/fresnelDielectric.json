@@ -1,0 +1,33 @@
+{
+	
+	"format": {
+
+		"type": "omg-bsdf",
+		"version": "0.0.1-alpha",
+		
+	},
+
+	"meta": {
+
+		"name": "metal",
+		"label": "Metal",
+		"version": "0.0.1-alpha",
+		"description": "Metal Layer",
+		"formatVersion": "0.0.1-alpha",
+
+	},
+
+	"inputs": [
+
+		{
+			"name": "ior",
+			"label": "Index of Refraction",
+			"description": "The wavelength dependent index of refraction.",
+			"type": "color",
+			"defaultValue": [ 1.5, 1.5, 1.5 ],
+			"minimumValue": [ 0.0, 0.0, 0.0 ]		
+		}
+
+	]
+
+}
