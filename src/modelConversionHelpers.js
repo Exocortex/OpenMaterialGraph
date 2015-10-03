@@ -19,29 +19,29 @@ function blinnExponentToRoughnessAlpha( float blinnExponent ) {
 }
 
 // source: Vlado
-function vrayGlossinessToPhongExponent( vrayGlossiness ) {
+function vrayPhongGlossinessToPhongShininess( vrayGlossiness ) {
 	return 1.0 / Math.pow( Math.max( 1 - vrayGlossiness, 1e-4 ), 3.5 ) - 1.0;
 }
 // source: Vlado
-function vrayGlossinessToBlinnPhongExponent( vrayGlossiness ) {
+function vrayBlinnPhongGlossinessToBlinnPhongExponent( vrayGlossiness ) {
 	return 1.0 / Math.pow( Math.max( 1 - vrayGlossiness, 1e-4 ), 3.5 ) - 1.0;
 }
 // derived
-function phongExponentToVrayGlossiness( roughnessAlpha ) { // assuming V-Ray Phong shader
-	return 1 - Math.pow( 1 / ( roughnessAlpha + 1 ), 1.0 / 3.5 );
+function phongShininessToVrayPhongGlossiness( phongShininess ) { // assuming V-Ray Phong shader
+	return 1 - Math.pow( 1 / ( phongShininess + 1 ), 1.0 / 3.5 );
 }
 // derived
-function blinnPhongExponentToVrayGlossiness( roughnessAlpha ) { // assuming V-Ray Blinn shader
-	return 1 - Math.pow( 1 / ( roughnessAlpha + 1 ), 1.0 / 3.5 );
+function blinnPhongExponentToVrayBlinnPhongGlossiness( blinnPhongExponent ) { // assuming V-Ray Blinn shader
+	return 1 - Math.pow( 1 / ( blinnPhongExponent + 1 ), 1.0 / 3.5 );
 }
 
 // source: Vlado
-function vrayGlossinessToRoughnessAlpha( vrayGlossiness ) {
+function vrayGGXGlossinessToRoughnessAlpha( vrayGlossiness ) {
 	return Math.pow( Math.max( 1 - vrayGlossiness, 1e-4 ), 2 );
 }
 // derived
-function roughnessAlphaToVrayGlossiness( vrayGlossiness ) { // assuming a V-Ray GGX shader
-	return 1.0 - Math.sqrt( vrayGlossiness );
+function roughnessAlphaToVrayGGXGlossiness( roughnessAlpha ) { // assuming a V-Ray GGX shader
+	return 1.0 - Math.sqrt( roughnessAlpha );
 }
 
 
