@@ -1,4 +1,3 @@
-
 // source: https://en.wikipedia.org/wiki/Blinn%E2%80%93Phong_shading_model#Description
 function phongShininessToBlinnExponent( float phongShininess ) {
 	return phongShininess * 4;
@@ -61,6 +60,20 @@ function dielectricFresnelReflectance( f0, light, half ) {
 	return f0 + ( 1 - f0 ) * Math.pow( 1 - light.dot( half ) ), 5 );
 }
 
+// source: http://jcgt.org/published/0003/04/03/paper.pdf
+function nkToEdgeTint( n, k ) {
+	var r = ( Math.pow( n - 1, 2 ) + k*k ) / ( Math.pow( n + 1, 2 ) + k*k );
+	var t = ( 1 + Math.sqrt( r ) ) / ( 1 - Math.sqrt( r ) );
+	var g = ( t - n ) / ( t - ( 1 - r ) / ( 1 + r ) );
+	return { r: r, g: g };
+}
+
+// source: http://jcgt.org/published/0003/04/03/paper.pdf
+function edgeTintToNK( r, g ) {
+	var n = g * ( 1 - r ) / ( 1 + r ) + ( 1- g ) * ( 1 + Math.sqrt( r ) ) / ( 1 - Math.sqrt( r ) );
+	var k = Math.sqrt( 1 / ( 1 - r ) * ( Math.pow( n + 1, 2 ) + Math.pow( n - 1, 2 ) ) );
+	return { n: n, k: k };
+}
 
 // for Clara.io to match our GGX roughness with V-Ray's Blinn shader we want:
 var vrayGlossiness = blinnPhongExponentToVrayBlinnPhongGlossiness( roughnessAlphaToBlinnExponent( roughnessAlpha ) );
