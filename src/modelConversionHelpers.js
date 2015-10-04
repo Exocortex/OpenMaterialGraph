@@ -44,16 +44,6 @@ function roughnessAlphaToVrayGGXGlossiness( roughnessAlpha ) { // assuming a V-R
 	return 1.0 - Math.sqrt( roughnessAlpha );
 }
 
-//
-// for Clara.io to match our GGX roughness with V-Ray's Blinn shader we want:
-var vrayGlossiness = blinnPhongExponentToVrayBlinnPhongGlossiness( roughnessAlphaToBlinnExponent( roughnessAlpha ) );
-
-// for Clara.io's standard blinn phong exponent to V-Ray's Blin shader
-var vrayGlossiness = blinnPhongExponentToVrayBlinnPhongGlossiness( blinnPhongExponent );
-
-// V-Ray's blinn phong exponent to Clara.io's GGX roughness
-var gtrRoughness = blinnExponentToRoughnessAlpha( vrayBlinnPhongGlossinessToBlinnPhongExponent( vrayBlinnPhongGlossiness ) );
-
 
 // source: http://simonstechblog.blogspot.ca/2011/12/microfacet-brdf.html
 
@@ -61,10 +51,28 @@ var gtrRoughness = blinnExponentToRoughnessAlpha( vrayBlinnPhongGlossinessToBlin
 function dielectricRefractionIndexToF0( n ) ) {
 	return Math.pow( 1 - n, 2.0 ) / ( 1 + n );
 }
+// derived via wolfram alpha: solve( a = ( 1-n )^2 / (1+n), n )
+function f0ToDielectricRefractionIndex( f0 ) {
+	return 0.5 * ( f0 + Math.sqrt( f0 + 8 ) * Math.sqrt( f0 ) + 2 );
+}
+
 // use Schlick to calculate Fresnel curve
 function dielectricFresnelReflectance( f0, light, half ) {
 	return f0 + ( 1 - f0 ) * Math.pow( 1 - light.dot( half ) ), 5 );
 }
+
+
+// for Clara.io to match our GGX roughness with V-Ray's Blinn shader we want:
+var vrayGlossiness = blinnPhongExponentToVrayBlinnPhongGlossiness( roughnessAlphaToBlinnExponent( roughnessAlpha ) );
+var vrayFresnel = f0ToDielectricRefractionIndex( specular * 0.2 );
+
+// for Clara.io's standard blinn phong exponent to V-Ray's Blin shader
+var vrayGlossiness = blinnPhongExponentToVrayBlinnPhongGlossiness( blinnPhongExponent );
+var vrayFresnel = 0;
+
+// V-Ray's blinn phong exponent to Clara.io's GGX roughness
+var gtrRoughness = blinnExponentToRoughnessAlpha( vrayBlinnPhongGlossinessToBlinnPhongExponent( vrayBlinnPhongGlossiness ) );
+var specular = 5 * dielectricRefractionIndexToF0( vrayFresnel );
 
 
 // unknown mappings:
@@ -76,7 +84,7 @@ function glossiness_to_blinn_exponent( glossiness ) {
 }
 
 // PBRT roughness to alpha for GTR & Beckmann:
-function roughToAlpha(rough) {
+function roughnessToAlpha(rough) {
 	rough = Math.max(rough, 1e-3);
 	var x = Math.log(rough);
  	return 1.62142 + 0.819955*x + 0.1734*x*x + 0.0171201*x*x*x + 0.000640711*x*x*x*x;
