@@ -4,7 +4,7 @@ function phongShininessToBlinnExponent( float phongShininess ) {
 }
 // dervied
 function blinnPhongExponentToPhongShininess( float blinnPhongExponent ) {
-	return blinnPhongExponent / 4;
+	return blinnPhongExponent * 0.25;
 }
 
 // NOTEL roughnessAlpha needs to be squared before passing it into the GGX/GTR distribution
@@ -14,7 +14,7 @@ function roughnessAlphaToBlinnExponent( float gtrRoughness ) {
 }
 // source: http://simonstechblog.blogspot.de/2011/12/microfacet-brdf.html
 function blinnExponentToRoughnessAlpha( float blinnExponent ) {
-	return Math.sqrt( 2 / ( roughnessAlpha + 2 );
+	return Math.sqrt( 2 / ( roughnessAlpha + 2 ) );
 }
 
 // source: Vlado
@@ -36,7 +36,8 @@ function blinnPhongExponentToVrayBlinnPhongGlossiness( blinnPhongExponent ) { //
 
 // source: Vlado
 function vrayGGXGlossinessToRoughnessAlpha( vrayGlossiness ) {
-	return Math.pow( Math.max( 1 - vrayGlossiness, 1e-4 ), 2 );
+	var g = Math.max( 1 - vrayGlossiness, 1e-4 );
+	return g*g;
 }
 // derived
 function roughnessAlphaToVrayGGXGlossiness( roughnessAlpha ) { // assuming a V-Ray GGX shader
@@ -48,7 +49,8 @@ function roughnessAlphaToVrayGGXGlossiness( roughnessAlpha ) { // assuming a V-R
 
 // reflection at normal incident, n is dielectric refraction index
 function dielectricRefractionIndexToF0( n ) ) {
-	return Math.pow( 1 - n, 2.0 ) / ( 1 + n );
+	var omn = 1 - n;
+	return omn * omn / ( 1 + n );
 }
 // derived via wolfram alpha: solve( a = ( 1-n )^2 / (1+n), n )
 function f0ToDielectricRefractionIndex( f0 ) {
@@ -62,16 +64,21 @@ function dielectricFresnelReflectance( f0, light, half ) {
 
 // source: http://jcgt.org/published/0003/04/03/paper.pdf
 function nkToEdgeTint( n, k ) {
-	var r = ( Math.pow( n - 1, 2 ) + k*k ) / ( Math.pow( n + 1, 2 ) + k*k );
-	var t = ( 1 + Math.sqrt( r ) ) / ( 1 - Math.sqrt( r ) );
+	var np1 = n + 1, nm1 = n - 1;
+	var kk = k*k;
+	var r = ( nm1*nm1 + kk ) / ( np1*np1 + kk );
+	var sqrt_r = Math.sqrt( r );
+	var t = ( 1 + sqrt_r ) / ( 1 - sqrt_r );
 	var g = ( t - n ) / ( t - ( 1 - r ) / ( 1 + r ) );
 	return { r: r, g: g };
 }
 
 // source: http://jcgt.org/published/0003/04/03/paper.pdf
 function edgeTintToNK( r, g ) {
-	var n = g * ( 1 - r ) / ( 1 + r ) + ( 1- g ) * ( 1 + Math.sqrt( r ) ) / ( 1 - Math.sqrt( r ) );
-	var k = Math.sqrt( 1 / ( 1 - r ) * ( Math.pow( n + 1, 2 ) + Math.pow( n - 1, 2 ) ) );
+	var sqrt_r = Math.sqrt( r );
+	var n = g * ( 1 - r ) / ( 1 + r ) + ( 1 - g ) * ( 1 + sqrt_r ) / ( 1 - sqrt_r );
+	var np1 = n + 1, nm1 = n - 1;
+	var k = Math.sqrt( 1 / ( 1 - r ) * ( np1*np1 + nm1*nm1 ) );
 	return { n: n, k: k };
 }
 
