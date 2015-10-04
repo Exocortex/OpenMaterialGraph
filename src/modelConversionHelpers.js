@@ -44,9 +44,27 @@ function roughnessAlphaToVrayGGXGlossiness( roughnessAlpha ) { // assuming a V-R
 	return 1.0 - Math.sqrt( roughnessAlpha );
 }
 
+//
+// for Clara.io to match our GGX roughness with V-Ray's Blinn shader we want:
+var vrayGlossiness = blinnPhongExponentToVrayBlinnPhongGlossiness( roughnessAlphaToBlinnExponent( roughnessAlpha ) );
 
-// for Clara.io to match our roughness with V-Ray's Blinn shader we want:
-var vrayGlossiness = blinnPhongExponentToVrayGlossiness( roughnessAlphaToBlinnExponent( roughnessAlpha ) );
+// for Clara.io's standard blinn phong exponent to V-Ray's Blin shader
+var vrayGlossiness = blinnPhongExponentToVrayBlinnPhongGlossiness( blinnPhongExponent );
+
+// V-Ray's blinn phong exponent to Clara.io's GGX roughness
+var gtrRoughness = blinnExponentToRoughnessAlpha( vrayBlinnPhongGlossinessToBlinnPhongExponent( vrayBlinnPhongGlossiness ) );
+
+
+// source: http://simonstechblog.blogspot.ca/2011/12/microfacet-brdf.html
+
+// reflection at normal incident, n is dielectric refraction index
+function dielectricRefractionIndexToF0( n ) ) {
+	return Math.pow( 1 - n, 2.0 ) / ( 1 + n );
+}
+// use Schlick to calculate Fresnel curve
+function dielectricFresnelReflectance( f0, light, half ) {
+	return f0 + ( 1 - f0 ) * Math.pow( 1 - light.dot( half ) ), 5 );
+}
 
 
 // unknown mappings:
