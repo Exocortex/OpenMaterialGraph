@@ -66,10 +66,19 @@ measured_bsdf:
 
 // EDF
 
+// Light emitted in all directions from the surface of the object,
+// called Lambertian light distribution by analogy to
+// Lambertian diffuse reflection. 
 diffuse_edf:
 
+// Distribution of the emission based on the cosine between
+// emission direction and surface normal (cosinek distribution)
 spot_edf:
 
+// Light distribution based on a measured light profile.
+// Arbitrary geometric structure for light distribution from the
+// emissive object can be specified based on standard industrial
+// formats called light profiles
 measured_edf:
 
 // parametesr for all EDFs:
