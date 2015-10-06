@@ -1,3 +1,40 @@
+// Material definition:
+
+- Surface properties of front-facing surfaces
+  - Reflection
+  - Transmission
+  - Emission
+- Surface properties of back-facing surfaces
+  - Reflection
+  - Transmission
+  - Emission
+- Volume properties
+- Geometric properties
+- Shared properties
+   - Index of refraction
+   - Surface treated as boundary or volume
+
+struct material_emission {
+	edf emission = edf(); // Light emission DF
+	color intensity = color(0.0);
+	intensity_mode mode = intensity_radiant_exitance;
+};
+
+struct material_surface {
+	bsdf scattering = bsdf(); // Bidirectional scattering DF
+	material_emission emission = material_emission();
+};
+
+struct material {
+	uniform bool thin_walled = false;
+	material_surface surface = material_surface();
+	material_surface backface = material_surface();
+	uniform color ior = color(1.0);
+	material_volume volume = material_volume();
+	material_geometry geometry = material_geometry();
+};
+
+
 // BSDF
 
 diffuse_reflection_bsdf:
