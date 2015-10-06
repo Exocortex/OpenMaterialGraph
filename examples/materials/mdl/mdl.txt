@@ -1,0 +1,81 @@
+// BSDF
+
+diffuse_reflection_bsdf:
+	tint: color
+	roughness: float
+
+diffuse_transmission_bsdf:
+	tint: color
+
+specular_bsdf:
+	tint: color
+	mode: scatter_mode (scatter_reflect, scatter_transmit, scatter_reflect_transmit)
+
+simple_glossy_bsdf:
+	tint: color
+	roughness_u: float
+	roughness_v: float
+	tangent_u: vector3
+	mode: scatter_mode (scatter_reflect, scatter_transmit, scatter_reflect_transmit)
+
+backscattering_glossy_reflection_bsdf:
+
+measured_bsdf:
+
+
+
+
+// EDF
+
+diffuse_edf:
+
+spot_edf:
+
+measured_edf:
+
+// parametesr for all EDFs:
+- intensity: color
+- mode: intensity_mode (intensity_radiant_exitance, intensity_power)
+
+
+
+
+
+
+// VDF
+
+anisotropic_vdf
+
+
+
+
+
+// Layers
+
+weighted_layer:
+	weight: float
+	layer: bsdf
+	base: bsdf
+
+fresnel_layer:
+	ior: float
+	weight: float
+	layer: bsdf
+	base: bsdf
+
+normalized_mix:
+	components: [ weight, bsdf ]
+
+clamped_mix:
+	components: [ weight, bsdf ]
+
+custom_curve_layer:
+	weight: float
+	normal_reflectivity: float
+	grazing_reflectivity: float
+	exponent: float
+	layer: bsdf
+	base: bsdf
+
+measured_curve_layer:
+
