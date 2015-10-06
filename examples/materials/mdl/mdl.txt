@@ -27,6 +27,19 @@ struct material_surface {
 	material_emission emission = material_emission();
 };
 
+struct material_volume {
+	vdf scattering = vdf();
+	color absorption_coefficient = 0.0;
+	color scattering_coefficient = 0.0;
+};
+
+struct material_geometry {
+	float3 displacement = float3(0.0);
+	float cutout_opacity = 1.0;
+	float3 normal = state::normal();
+};
+
+
 struct material {
 	uniform bool thin_walled = false;
 	material_surface surface = material_surface();
@@ -92,6 +105,8 @@ measured_edf:
 
 // VDF
 
+// Addition of absorption effects and subsurface scattering to
+// the material’s volume
 anisotropic_vdf
 
 
