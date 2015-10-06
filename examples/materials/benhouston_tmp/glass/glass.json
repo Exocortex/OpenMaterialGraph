@@ -1,0 +1,59 @@
+{
+	
+	"format": {
+
+		"type": "omg-bsdf",
+		"version": "0.0.1-alpha",
+		
+	},
+
+	"meta": {
+
+		"name": "glass",
+		"label": "Glass",
+		"version": "0.0.1-alpha",
+		"description": "Glass",
+		"formatVersion": "0.0.1-alpha",
+
+	},
+
+	"inputs": [
+
+		{
+			"name": "tintColor",
+			"label": "Reflection/Transmission Color.",
+			"description": "",
+			"type": "color",
+			"defaultValue": [ 1.0, 1.0, 1.0 ]
+		},
+
+		{
+			"name": "ior",
+			"label": "Index of Refraction",
+			"description": "The dielectric index of refraction.",
+			"type": "float",
+			"defaultValue": 1.0,
+			"minimumValue": 0.0
+		},
+
+		{
+			"name": "abbeNumber",
+			"label": "Dispersion Abbe Number",
+			"description": "Control the dispersion of light via the Abbe number.  A value of zero means no disperson.  Typical values are in the range of 20 (high dispersion) to 84 (low disperson.)",
+			"type": "float",
+			"defaultValue": 0.0,
+			"minimumValue": 0.0,
+			"maximumValue": 100.0
+		},
+
+		{
+			"name": "normal",
+			"label": "Normal",
+			"description": "Surface normal modulator via bump or normal maps.",
+			"type": "normal",
+			"defaultValue": [ 0.0, 0.0, 0.0 ]
+		}
+
+	]
+
+}
