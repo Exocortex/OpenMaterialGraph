@@ -1,3 +1,5 @@
+// source: http://www.mdlhandbook.com/pdf/mdl_handbook.150810.LTR.pdf
+
 // Material definition:
 
 - Surface properties of front-facing surfaces
