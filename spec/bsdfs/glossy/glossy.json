@@ -12,12 +12,19 @@
 		"name": "glossy",
 		"label": "Glossy",
 		"version": "0.0.1-alpha",
-		"description": "Gloss Layer, Dielectric Fresnel",
+		"description": "Gloss Layer",
 		"formatVersion": "0.0.1-alpha",
 	
 	},
 
 	"inputs": [
+
+		{
+			"name": "fresnel",
+			"label": "Fresnel Model",
+			"description": "",
+			"type": "Fresnel"			
+		},
 
 		{
 			"name": "reflectionColor",
@@ -36,82 +43,19 @@
 		},
 
 		{
-			"name": "roughnessModel",
-			"label": "Model",
+			"name": "microfacetModel",
+			"label": "Micofacet Model",
 			"description": "Specifies the gloss shading model.",
-			"type": "option",
-			"options": [ 
-				{
-					"value": "blinnPhong",
-					"label": "Blinn-Phong",
-					"description": ""
-				},
-				{
-					"value": "ward",
-					"label": "Ward",
-					"description": ""
-				},
-				{
-					"value": "cookTorrance",
-					"label": "Cook-Torrance",
-					"description": ""
-				},
-				{
-					"value": "microfacet",
-					"label": "GGX Microfacet",
-					"description": ""
-				}
-			],
-			"defaultValue": "microfacet",
-
-		},
-
-		{
-			"name": "roughness",
-			"label": "Roughness",
-			"description": "Controls the roughness of the gloss layer according to the model specified.",
-			"type": "float",
-			"defaultValue": 0.1,
-			"minimumValue": 0.0,
-			"maximumValue": 1.0
+			"type": "MicrofacetModel"
 		},
 
 		{
 			"name": "ior",
 			"label": "Index of Refraction",
-			"description": "The dielectric index of refraction.",
+			"description": "Wavelength dependent index of refraction.",
 			"type": "color",
 			"defaultValue": [ 1.5, 1.5, 1.5 ],
-			"minimumValue": [ 0.0, 0.0, 0.0 ],
-			"maximumValue": [ 100.0, 100.0, 100.0 ]			
-		},
-
-		{
-			"name": "anisotropy",
-			"label": "Anisotropy",
-			"description": "Varyies the highlight from circular to elliptical.",
-			"type": "float",
-			"defaultValue": 0.0,
-			"minimumValue": -1.0,
-			"maximumValue": 1.0
-		},
-
-		{
-			"name": "anisotropyRotation",
-			"label": "Anisotropy Rotation",
-			"description": "Rotates the anisotropy highlight.",
-			"type": "float",
-			"defaultValue": 0.0,
-			"minimumValue": 0.0,
-			"maximumValue": 1.0
-		},
-
-		{
-			"name": "anisotropyTangent",
-			"label": "Tangent for anisotropy highlight",
-			"description": "",
-			"type": "vector",
-			"defaultValue": [ 1.0, 0.0, 0.0 ]
+			"minimumValue": [ 0.0, 0.0, 0.0 ]		
 		},
 
 		{
