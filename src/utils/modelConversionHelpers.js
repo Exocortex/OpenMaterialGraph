@@ -73,6 +73,16 @@ function dielectricFresnelReflectance( f0, light, half ) {
 	return f0 + ( 1 - f0 ) * Math.pow( 1 - light.dot( half ) ), 5 );
 }
 
+// source: http://www.codinglabs.net/article_physically_based_rendering_cook_torrance.aspx
+function conductorRefractionIndexToF( n, k, dotVH ) {
+	var nMinus1 = ( n - 1 );
+	var nPlus1 = ( n + 1 );
+	var kk = k * k;
+	return ( nMinus1*nMinus1 + 4 * n * Math.pow( 1 - dotVH, 5 ) + kk ) /
+		( nPlus1*nPlus1 + kk );
+
+}
+
 // source: http://jcgt.org/published/0003/04/03/paper.pdf
 function nkToEdgeTint( n, k ) {
 	var np1 = n + 1, nm1 = n - 1;

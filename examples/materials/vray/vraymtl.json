@@ -36,11 +36,29 @@ vraymtl:
 
 
 - Surface properties of front-facing surfaces
-  - Reflection
+  - ClearCoat:
+  	- ClearCoatFresnel
+  	- ClearCoat
+
+  - Reflection:
+  	- ReflectionColor
+  	- ReflectionRoughness
+  	- ReflectionAnisotropy
+  	- ReflectionAnisotropyRotation
+
+  - Diffuse:
+  	- DiffuseColor
+  	- DiffuseRoughness
+
   - Transmission
-  - Emission
-- Volume properties
-- Geometric properties
-- Shared properties
-   - Index of refraction
-   - Surface treated as boundary or volume
+	???
+ 	- Index of refraction
+ 	- Abbe Number
+
+  - Emission:
+  	- EmissionColor
+
+  - Subsurface:
+  	- SubsurfaceColor
+  	- SubsurfaceScatterDirection
+  	- SubsurfaceScatterCoefficient
