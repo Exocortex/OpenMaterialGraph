@@ -1,4 +1,4 @@
-shader DisneyPBR21
+shader DisneyPBR22
 (
 	float clearCoatWeight = 0.0,
 	float clearCoatRoughness = 0.0,
@@ -31,6 +31,8 @@ shader DisneyPBR21
 	closure color d = ( baseColor / M_PI ) * diffuse(N, "trace_reflections", 1);
 
 	color sf = DielectricFresnel_Schlick( specularColor, -I, N );
+
+	sf = mix( sf, baseColor, metallic );
 
     closure color s = vray_blinn(N, roughnessToGlossiness( roughness ), 0.0, 0.0, "trace_reflections", 1 );
 
