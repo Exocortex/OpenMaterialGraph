@@ -1,12 +1,12 @@
-shader DisneyPBR2
+shader DisneyPBR21
 (
 	float clearCoatWeight = 0.0,
 	float clearCoatRoughness = 0.0,
 
 	color baseColor = color(1.0,0.0,0.0),
-	color specularColor = color(1.0),
+	color specularColor = color(0.2,0.2,0.2),
 	float ior = 1.5,
-	float roughness = 1.0,
+	float roughness = 0.0,
 	float metallic = 0.0,
 	color emissiveColor = color(0.0),
 
@@ -14,21 +14,30 @@ shader DisneyPBR2
 
 )
 
+
 {
-	closure color d = ( baseColor / M_PI ) * diffuse(N);
 
+	color DielectricFresnel_Schlick( color F0, vector negI, vector n ) {
 
-	color f = mix( specularColor, color( 1.0 ), pow( 1.0 - dot( I, N ), 5.0 );
+		float fresnel = pow( 1.0 - dot( negI, n ), 5.0 );
+		return mix( F0, color( 1.0 ), fresnel );
 
-	// Optimized variant (presented by Epic at SIGGRAPH '13)
-	float fresnel = exp2( ( -5.55437 * dotLH - 6.98316 ) * dotLH );
+	}
 
-	return F0 + ( 1.0 - F0 ) * fresnel;
+	float roughnessToGlossiness( float roughness ) {
+		return 1.0 - roughness;
+	}
 
-}
-    closure color s = specularColor * vray_blinn(N, 1.0 - roughness, 0.0, 0.0, "trace_reflections", 1 );
-	closure color c = color(clearCoatWeight) * vray_blinn(N, 1.0 - clearCoatRoughness, 0.0, 0.0, "trace_reflections", 1);
+	closure color d = ( baseColor / M_PI ) * diffuse(N, "trace_reflections", 1);
+
+	color sf = DielectricFresnel_Schlick( specularColor, -I, N );
+
+    closure color s = vray_blinn(N, roughnessToGlossiness( roughness ), 0.0, 0.0, "trace_reflections", 1 );
+
+	color cf = DielectricFresnel_Schlick( color( clearCoatWeight ), -I, N );
+	closure color c = vray_blinn(N, roughnessToGlossiness( clearCoatRoughness ), 0.0, 0.0, "trace_reflections", 1);
 	closure color e = emissiveColor * emission();
 
-    Result = ( d + s ) * ( 1.0 - clearCoatWeight ) + c + e;
+	//Result = sf * diffuse(N, "trace_reflections", 1);
+    Result = ( d * ( color( 1.0 ) - sf ) + sf * s ) * ( color( 1.0) - cf ) + cf * c + e;
 }
