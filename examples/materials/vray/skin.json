@@ -1,0 +1,25 @@
+subsurfaceScattering:
+	primaryReflectionColor: color
+	primaryReflectionAmount: float
+	primaryReflectionGlossiness: float
+	primaryReflectionFresnelIOR: float
+
+	secondaryReflectionColor: color
+	secondaryReflectionAmount: float
+	secondaryReflectionGlossiness: float
+	secondaryReflectionFresnelIOR: float
+
+	diffuseColor: color
+	diffuseAmount: float
+
+	shallowColor: colors
+	shallowAmount: float
+	shallowRadius: float
+
+	mediumColor: colors
+	mediumAmount: float
+	mediumRadius: float
+
+	deepColor: colors
+	deepAmount: float
+	deepRadius: float

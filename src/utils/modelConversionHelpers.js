@@ -45,21 +45,42 @@ function roughnessAlphaToVrayGGXGlossiness( roughnessAlpha ) { // assuming a V-R
 }
 
 
+// XG conversions
+float maxShininess = 8192.0;
+float gloss = Math.clamp( shininess / maxShininess, 0.0, 1.0 );
+float roughness = Math.clamp( sqrt( 8.0 / ( shininess + 7.0 ) ), 0.0, 1.0 );
+
 // source: http://simonstechblog.blogspot.ca/2011/12/microfacet-brdf.html
 
 // reflection at normal incident, n is dielectric refraction index
-function dielectricRefractionIndexToF0( n ) ) {
-	var omn = 1 - n;
-	return omn * omn / ( 1 + n );
+// source: http://www.codinglabs.net/article_physically_based_rendering_cook_torrance.aspx
+function dielectricRefractionIndicesToF0( n1, n2 ) {
+	var omn = ( n1 - n2 ) / ( n1 + n2 );
+	return omn * omn;
 }
-// derived via wolfram alpha: solve( a = ( 1-n )^2 / (1+n), n )
+
+function dielectricRefractionIndexToF0( n ) {
+	return dielectricRefractionIndicesToF0( 1.0, n );
+}
+
+// derived via wolfram alpha: solve( a = (( 1-n ) / (1+n))^2, n )
 function f0ToDielectricRefractionIndex( f0 ) {
-	return 0.5 * ( f0 + Math.sqrt( f0 + 8 ) * Math.sqrt( f0 ) + 2 );
+	return ( Math.sqrt( f0 ) + 1 ) / ( 1 - Math.sqrt( f0 ) );
 }
 
 // use Schlick to calculate Fresnel curve
 function dielectricFresnelReflectance( f0, light, half ) {
 	return f0 + ( 1 - f0 ) * Math.pow( 1 - light.dot( half ) ), 5 );
+}
+
+// source: http://www.codinglabs.net/article_physically_based_rendering_cook_torrance.aspx
+function conductorRefractionIndexToF( n, k, dotVH ) {
+	var nMinus1 = ( n - 1 );
+	var nPlus1 = ( n + 1 );
+	var kk = k * k;
+	return ( nMinus1*nMinus1 + 4 * n * Math.pow( 1 - dotVH, 5 ) + kk ) /
+		( nPlus1*nPlus1 + kk );
+
 }
 
 // source: http://jcgt.org/published/0003/04/03/paper.pdf
