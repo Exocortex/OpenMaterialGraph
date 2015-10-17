@@ -120,6 +120,7 @@ weighted_layer:
 	layer: bsdf
 	base: bsdf
 
+// (layer * reflection-factor) + (base * (1.0 - reflection-factor))
 fresnel_layer:
 	ior: float
 	weight: float
