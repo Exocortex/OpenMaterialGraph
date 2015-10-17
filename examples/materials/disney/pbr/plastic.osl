@@ -1,0 +1,21 @@
+surface
+plastic
+(
+    color white = 1,
+    color black = 0,
+    float size = 0.5,
+    float diffuse_weight = 0.8,
+    float specular_weight = 0.16,
+    color specular_color = 1,
+    float exponent = 80.0
+)
+{
+    float uPosition = (mod(abs(u), size) / size);
+    float vPosition = (mod(abs(v), size) / size);
+    color checkerValue = mix(black, white, ((uPosition < 0.5) == (vPosition < 0.5)) ? 1.0 : 0.0);
+  
+    closure color diffuse_component = diffuse_weight * checkerValue * diffuse(N);
+    closure color specular_component = specular_weight * specular_color * phong(N, exponent, "trace_reflections", 1);
+  
+    Ci = diffuse_component + specular_component;
+}

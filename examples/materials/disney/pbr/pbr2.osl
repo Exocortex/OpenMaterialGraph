@@ -1,0 +1,24 @@
+shader DisneyPBR2
+(
+	float clearCoatWeight = 0.0,
+	float clearCoatRoughness = 0.0,
+
+	color baseColor = color(1.0,0.0,0.0),
+	color specularColor = color(1.0),
+	float ior = 1.5,
+	float roughness = 1.0,
+	float metallic = 0.0,
+	color emissiveColor = color(0.0),
+
+	output closure color Result = diffuse(0.8)
+
+)
+
+{
+	closure color d = ( baseColor / M_PI ) * diffuse(N);
+    closure color s = specularColor * vray_blinn(N, 1.0 - roughness, 0.0, 0.0, "trace_reflections", 1 );
+	closure color c = color(clearCoatWeight) * vray_blinn(N, 1.0 - clearCoatRoughness, 0.0, 0.0, "trace_reflections", 1);
+	closure color e = emissiveColor * emission();
+
+    Result = s + d;
+}

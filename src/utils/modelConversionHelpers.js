@@ -74,6 +74,7 @@ function dielectricFresnelReflectance( f0, light, half ) {
 }
 
 // source: http://www.codinglabs.net/article_physically_based_rendering_cook_torrance.aspx
+// conductive fresnel matters a lot for gold, silver which have lower than air (?) IORs.
 function conductorRefractionIndexToF( n, k, dotVH ) {
 	var nMinus1 = ( n - 1 );
 	var nPlus1 = ( n + 1 );
