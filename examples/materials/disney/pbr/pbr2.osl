@@ -1,4 +1,4 @@
-shader DisneyPBR22
+shader DisneyPBR31
 (
 	float clearCoatWeight = 0.0,
 	float clearCoatRoughness = 0.0,
@@ -15,7 +15,18 @@ shader DisneyPBR22
 )
 
 
+
 {
+	float roughnessToGlossiness( float roughness ) {
+		return 1.0 - roughness;
+	}
+
+	closure color glossy( vector n, float roughness, float au, float av ) {
+
+		return microfacet_ggx( n, roughness, 1.5, "trace_reflections", 1 );
+		//return vray_blinn( n, roughnessToGlossiness( roughness ), au, av, "trace_reflections", 1 );
+
+	}
 
 	color DielectricFresnel_Schlick( color F0, vector negI, vector n ) {
 
@@ -24,22 +35,23 @@ shader DisneyPBR22
 
 	}
 
-	float roughnessToGlossiness( float roughness ) {
-		return 1.0 - roughness;
-	}
+	closure color diffuseBRDF = diffuse(N, "trace_reflections", 1);
+	color diffuseCoefficient = mix( baseColor, color( 0.0 ), metallic ) * ( 1.0 / M_PI );
 
-	closure color d = ( baseColor / M_PI ) * diffuse(N, "trace_reflections", 1);
+	closure color glossyBRDF = glossy( N, roughness, 0.0, 0.0 );
+	color glossyCoefficient = mix( DielectricFresnel_Schlick( specularColor, -I, N ), baseColor, metallic );
 
-	color sf = DielectricFresnel_Schlick( specularColor, -I, N );
+	closure color clearCoatBRDF = glossy( N, clearCoatRoughness, 0.0, 0.0 );
+	color clearCoatCoefficient = DielectricFresnel_Schlick( color( clearCoatWeight ), -I, N );
 
-	sf = mix( sf, baseColor, metallic );
-
-    closure color s = vray_blinn(N, roughnessToGlossiness( roughness ), 0.0, 0.0, "trace_reflections", 1 );
-
-	color cf = DielectricFresnel_Schlick( color( clearCoatWeight ), -I, N );
-	closure color c = vray_blinn(N, roughnessToGlossiness( clearCoatRoughness ), 0.0, 0.0, "trace_reflections", 1);
 	closure color e = emissiveColor * emission();
 
 	//Result = sf * diffuse(N, "trace_reflections", 1);
-    Result = ( d * ( color( 1.0 ) - sf ) + sf * s ) * ( color( 1.0) - cf ) + cf * c + e;
+    //Result = ( d * ( color( 1.0 ) - sf ) + sf * s ) * ( color( 1.0) - cf ) + cf * c + e;
+    Result =
+    	diffuseBRDF * diffuseCoefficient +
+    	glossyBRDF * glossyCoefficient +
+    	clearCoatBRDF * clearCoatCoefficient +
+    	emissiveBRDF * emissiveCoefficient;
+
 }
