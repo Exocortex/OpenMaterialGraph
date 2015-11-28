@@ -46,7 +46,7 @@ function roughnessAlphaToVrayGGXGlossiness( roughnessAlpha ) { // assuming a V-R
 
 
 // XG conversions
-float maxShininess = 8192.0;
+float maxShininess = 8192.0;http://image.slidesharecdn.com/svc101-131119165024-phpapp02/85/7-use-cases-in-7-minutes-each-the-power-of-workflows-and-automation-svc101-aws-reinvent-2013-28-320.jpg?cb=1434517834
 float gloss = Math.clamp( shininess / maxShininess, 0.0, 1.0 );
 float roughness = Math.clamp( sqrt( 8.0 / ( shininess + 7.0 ) ), 0.0, 1.0 );
 
@@ -80,7 +80,6 @@ function conductorRefractionIndexToF( n, k, dotVH ) {
 	var kk = k * k;
 	return ( nMinus1*nMinus1 + 4 * n * Math.pow( 1 - dotVH, 5 ) + kk ) /
 		( nPlus1*nPlus1 + kk );
-
 }
 
 // source: http://jcgt.org/published/0003/04/03/paper.pdf
