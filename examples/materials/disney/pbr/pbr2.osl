@@ -1,4 +1,30 @@
-shader DisneyPBR31
+float roughnessToGlossiness( float roughness ) {
+	return 1.0 - roughness;
+}
+
+float average( color c ) {
+	return ( c[0] + c[1] + c[2] ) / 3.0;
+}
+
+float f0ToDielectricRefractionIndex( float f0 ) {
+	return ( sqrt( f0 ) + 1 ) / ( 1 - sqrt( f0 ) );
+}
+
+closure color glossy( vector n, float roughness, float eta, float au, float av ) {
+
+	return microfacet_ggx( n, roughness, eta, "trace_reflections", 1 );
+	//return vray_blinn( n, roughnessToGlossiness( roughness ), au, av, "trace_reflections", 1 );
+
+}
+
+color DielectricFresnel_Schlick( color F0, vector negI, vector n ) {
+
+	float fresnel = pow( 1.0 - dot( negI, n ), 5.0 );
+	return mix( F0, color( 1.0 ), fresnel );
+
+}
+
+shader DisneyPBR42
 (
 	float clearCoatWeight = 0.0,
 	float clearCoatRoughness = 0.0,
@@ -9,49 +35,33 @@ shader DisneyPBR31
 	float roughness = 0.0,
 	float metallic = 0.0,
 	color emissiveColor = color(0.0),
+	string diffuseTexture = "diffuse.png",
 
 	output closure color Result = diffuse(0.8)
 
 )
-
-
-
 {
-	float roughnessToGlossiness( float roughness ) {
-		return 1.0 - roughness;
-	}
-
-	closure color glossy( vector n, float roughness, float au, float av ) {
-
-		return microfacet_ggx( n, roughness, 1.5, "trace_reflections", 1 );
-		//return vray_blinn( n, roughnessToGlossiness( roughness ), au, av, "trace_reflections", 1 );
-
-	}
-
-	color DielectricFresnel_Schlick( color F0, vector negI, vector n ) {
-
-		float fresnel = pow( 1.0 - dot( negI, n ), 5.0 );
-		return mix( F0, color( 1.0 ), fresnel );
-
-	}
-
 	closure color diffuseBRDF = diffuse(N, "trace_reflections", 1);
-	color diffuseCoefficient = mix( baseColor, color( 0.0 ), metallic ) * ( 1.0 / M_PI );
+	color diffuseCoefficient = mix( baseColor, color( 0.001 ), metallic ) * ( 1.0 / M_PI );
 
-	closure color glossyBRDF = glossy( N, roughness, 0.0, 0.0 );
-	color glossyCoefficient = mix( DielectricFresnel_Schlick( specularColor, -I, N ), baseColor, metallic );
+	color glossy_F0 = DielectricFresnel_Schlick( specularColor, -I, N );
+	closure color glossyBRDF = glossy( N, roughness, 200, 0.0, 0.0 );
+	color glossyCoefficient = glossy_F0;
 
-	closure color clearCoatBRDF = glossy( N, clearCoatRoughness, 0.0, 0.0 );
-	color clearCoatCoefficient = DielectricFresnel_Schlick( color( clearCoatWeight ), -I, N );
+	color clearCoat_F0 = DielectricFresnel_Schlick( color( clearCoatWeight ), -I, N );
+	closure color clearCoatBRDF = glossy( N, clearCoatRoughness, 200, 0.0, 0.0 );
+	color clearCoatCoefficient = clearCoat_F0;
 
-	closure color e = emissiveColor * emission();
+	closure color emissiveBRDF = emission();
+	color emissiveCoefficient = emissiveColor;
 
 	//Result = sf * diffuse(N, "trace_reflections", 1);
     //Result = ( d * ( color( 1.0 ) - sf ) + sf * s ) * ( color( 1.0) - cf ) + cf * c + e;
     Result =
-    	diffuseBRDF * diffuseCoefficient +
-    	glossyBRDF * glossyCoefficient +
-    	clearCoatBRDF * clearCoatCoefficient +
-    	emissiveBRDF * emissiveCoefficient;
+    	//diffuseBRDF * diffuseCoefficient +
+    	diffuse(0.8, "trace_reflections", 1) * glossyCoefficient;
+    	// +
+    	//clearCoatBRDF * clearCoatCoefficient +
+    	//emissiveBRDF * emissiveCoefficient;
 
 }

@@ -1,0 +1,4 @@
+closure	color	S	=	Scattering_Color	*	henyey_greenstein(eccentricity);
+closure	color	A	=	Absorption_Color	*	absorption();
+closure	color	E	=	Emission_Color	*	emission();
+Ci	=	S	+	A	+	E;

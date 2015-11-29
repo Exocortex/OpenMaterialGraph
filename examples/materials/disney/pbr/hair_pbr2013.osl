@@ -1,0 +1,4 @@
+closure	color	R	=	hair_R(	tangent,	roughness,	eta	);
+closure	color	TRT	=	hair_TRT(	tangent,	rotation,	roughness2,	eta	);
+closure	color	TT	=	hair_TT(	tangent,	roughness_theta,	roughness_phi,	eta	);
+Ci	=	(	R	+	TRT	+	TT	);
