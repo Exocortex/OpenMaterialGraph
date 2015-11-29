@@ -1,0 +1,21 @@
+/**
+ * @author bhouston / http://clara.io
+ */
+
+OMG.BSDF = function () {
+
+};
+
+OMG.BSDF.prototype = {
+
+	constructor: OMG.BSDF,
+
+	toJSON: function() {
+
+	}
+
+};
+
+OMG.BSDF.fromJSON = function( json ) {
+
+};
