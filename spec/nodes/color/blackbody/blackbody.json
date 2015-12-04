@@ -7,18 +7,14 @@
 		
 	},
 
-	"meta": {
+	"name": "blackbody",
+	"label": "Black-Body Radiation",
+	"version": "0.0.1-alpha",
+	"description": "Generates a Rec709 color from the blackbody spectrum for the given temperature.  Useful for fire, lava, light colors and any self-illuminated object.",
 
-		"name": "blackbody",
-		"version": "0.0.1-alpha",
-		"description": "Generates a Rec709 color from the blackbody spectrum for the given temperature.  Useful for fire, lava, light colors and any self-illuminated object.",
+	"inputs": {
 
-	},
-
-	"inputs": [
-
-		{
-			"name": "temperature",
+		"temperature": {
 			"label": "Temperature",
 			"description": "The temperature value used to generate the color. From low to high the spectrum goes through red, orange, yellow, white, blue.",
 			"type": "float",
@@ -27,33 +23,30 @@
 			"maximumValue": 27000
 		},
 
-		{
-			"name": "intensity",
+		"intensity": {
 			"label": "Intensity",
 			"description": "Multiplier on the brightness of the generated color",
 			"type": "float",
 			"defaultValue": 1.0
 		},
 
-		{
-			"name": "exposure",
+		"exposure": {
 			"label": "Exposure",
 			"description": "An overall exposure value to apply to the color. This is useful to preserve the physical brightness curve but get low-temperature colors into a sensible range.",
 			"type": "float",
 			"defaultValue": 0.0
 		}
 
-	],
+	},
 
-	"outputs": [
+	"outputs": {
 
-		{
-			"name": "resultColor",
+		"resultColor": {
 			"label": "Result",
 			"description": "The resulting color.",
 			"type": "color"
 		}
 
-	]
+	}
 
 }
