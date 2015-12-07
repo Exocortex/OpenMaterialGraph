@@ -1,0 +1,96 @@
+{
+    "name": "TexFalloff",
+    "version": "0.0.1",
+    "description": "Auto-generated",
+    "inputs": {
+        "color1": {
+            "type": "acolor texture",
+            "value": "/5S18_CogentConnect_Scarlet/BRDFLayered/texmap_blend_0/Texture/color1"
+        },
+        "color1_tex": {
+            "type": "acolor texture",
+            "value": ""
+        },
+        "color1_tex_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "color1_tex_on": {
+            "type": "bool",
+            "value": "1"
+        },
+        "color1_color": {
+            "type": "color",
+            "value": {
+                "r": [
+                    "0.0"
+                ],
+                "g": [
+                    "0.0"
+                ],
+                "b": [
+                    "0.0"
+                ]
+            }
+        },
+        "color2": {
+            "type": "acolor texture",
+            "value": "/5S18_CogentConnect_Scarlet/BRDFLayered/texmap_blend_0/Texture/color2"
+        },
+        "color2_tex": {
+            "type": "acolor texture",
+            "value": ""
+        },
+        "color2_tex_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "color2_tex_on": {
+            "type": "bool",
+            "value": "1"
+        },
+        "color2_color": {
+            "type": "color",
+            "value": {
+                "r": [
+                    "1.0"
+                ],
+                "g": [
+                    "1.0"
+                ],
+                "b": [
+                    "1.0"
+                ]
+            }
+        },
+        "type": {
+            "type": "integer",
+            "value": "1"
+        },
+        "direction_type": {
+            "type": "integer",
+            "value": "0"
+        },
+        "fresnel_ior": {
+            "type": "float",
+            "value": "1.6"
+        },
+        "dist_extrapolate": {
+            "type": "bool",
+            "value": "0"
+        },
+        "dist_near": {
+            "type": "float",
+            "value": "0.0"
+        },
+        "dist_far": {
+            "type": "float",
+            "value": "100.0"
+        }
+    },
+    "outputs": {
+        "default": {
+            "type": "texture"
+        }
+    }
+}

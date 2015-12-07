@@ -1,0 +1,37 @@
+{
+  "name": "OpenMaterialGraph",
+  "version": "0.1.0",
+  "description": "Open Material Graph",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node test/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Exocortex/OpenMaterialGraph.git"
+  },
+  "keywords": [
+    "specgraph",
+    "Specification",
+    "Graph"
+  ],
+  "author": "Clara.io (https://clara.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Exocortex/OpenMaterialGraph/issues"
+  },
+  "homepage": "https://github.com/Exocortex/OpenMaterialGraph#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-as-promised": "^5.1.0",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "query-string": "^3.0.0",
+    "ramda": "^0.18.0",
+    "superagent": "^1.5.0",
+    "url-template": "^2.0.6",
+    "xml2js": "*.*"
+  }
+}

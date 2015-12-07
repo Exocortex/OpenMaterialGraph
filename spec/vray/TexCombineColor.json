@@ -1,0 +1,28 @@
+{
+    "name": "TexCombineColor",
+    "version": "0.0.1",
+    "description": "Auto-generated",
+    "inputs": {
+        "color": {
+            "type": "color",
+            "value": {
+                "r": "0.5",
+                "g": "0.5",
+                "b": "0.5"
+            }
+        },
+        "texture": {
+            "type": "acolor texture",
+            "value": "/5S18_CogentConnect_Scarlet/BRDFLayered/texmap_blend_1/Texture"
+        },
+        "texture_multiplier": {
+            "type": "float",
+            "value": "1.0"
+        }
+    },
+    "outputs": {
+        "default": {
+            "type": "texture"
+        }
+    }
+}

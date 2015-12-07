@@ -1,0 +1,32 @@
+{
+    "name": "BitmapBuffer",
+    "version": "0.0.1",
+    "description": "Auto-generated",
+    "inputs": {
+        "file": {
+            "type": "string",
+            "value": "Diffuse_Scarlette(5S18).png"
+        },
+        "filter_type": {
+            "type": "integer",
+            "value": "1"
+        },
+        "filter_blur": {
+            "type": "float",
+            "value": "0.01"
+        },
+        "color_space": {
+            "type": "integer",
+            "value": "1"
+        },
+        "gamma": {
+            "type": "float",
+            "value": "0.454545"
+        }
+    },
+    "outputs": {
+        "default": {
+            "type": "bitmap"
+        }
+    }
+}

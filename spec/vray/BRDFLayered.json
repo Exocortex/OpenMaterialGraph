@@ -1,0 +1,32 @@
+{
+    "name": "BRDFLayered",
+    "version": "0.0.1",
+    "description": "Auto-generated",
+    "inputs": {
+        "weights": {
+            "type": "float list",
+            "value": [
+                "/5S18_CogentConnect_Scarlet/BRDFLayered/texmap_blend_1",
+                "/5S18_CogentConnect_Scarlet/BRDFLayered/texmap_blend_0",
+                ""
+            ]
+        },
+        "brdfs": {
+            "type": "brdfs list",
+            "value": [
+                "/Dirt",
+                "/Falloff_Color",
+                "/5S18_CogentConnect_Scarlet"
+            ]
+        },
+        "additive_mode": {
+            "type": "bool",
+            "value": true
+        }
+    },
+    "outputs": {
+        "default": {
+            "type": "BRDF"
+        }
+    }
+}
