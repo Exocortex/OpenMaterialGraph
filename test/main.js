@@ -6,6 +6,12 @@ var R = require('ramda');
 var resourcesDirectory = "/resources";
 
 var currentDirectory = path.resolve(__dirname + resourcesDirectory );
+var specDirectory = path.resolve( (__dirname + resourcesDirectory + "/spec" );
+
+//var specProvider = new OMG.SpecProvider();
+//specProvider.path.push( specDirectory );
+
+//if( fs.exists)
 console.log( 'currentDirectory', currentDirectory );
 fs.readdir( currentDirectory, function( err, files ) {
 	console.log( 'err', err );
@@ -19,10 +25,11 @@ fs.readdir( currentDirectory, function( err, files ) {
 			var outputPath = path.resolve(__dirname + resourcesDirectory + "/output.json" );
 			//console.log( 'outputPath', outputPath );
 
-			VRMat.specCreator( vrMat );
+			VRMat.specCreator( vrMat, function( err, name, data ) {
+				fs.writeFile( name + ".json", JSON.stringify( data, null, 4 ) );
+			} );
 			fs.writeFile( outputPath,  JSON.stringify( vrMat, null, '  ' ) );
 		} );
 	};
 	R.forEach( loadVRMat, files );
 });
-
