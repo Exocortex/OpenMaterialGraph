@@ -51,7 +51,12 @@ fs.readdir( currentDirectory, function( err, files ) {
 		var fullPath = path.resolve( currentDirectory + '/' + file );
 		console.log( 'reading: ', fullPath );
 		OMG.VRMat.parseFromFile( fullPath, specLibrary, ( err, vrMat ) => {
-			//console.log( 'vrMat', vrMat );
+			if( err ) {
+				console.log( "ERROR", err );
+				return;
+			}
+
+			//console.log( "VR MAT", vrMat );
 			//var outputPath = path.resolve(__dirname + resourcesDirectory + "/output.json" );
 			//console.log( 'outputPath', outputPath );
 
