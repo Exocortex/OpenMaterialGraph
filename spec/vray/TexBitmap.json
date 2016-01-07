@@ -1,0 +1,37 @@
+{
+    "name": "TexBitmap",
+    "version": "0.0.1",
+    "description": "Auto-generated",
+    "inputs": {
+        "uvwgen": {
+            "type": "uvwgen",
+            "value": "/5S18_CogentConnect_Scarlet/BRDFVRayMtl/diffuse/Texture/UVWGenChannel"
+        },
+        "bitmap": {
+            "type": "bitmap",
+            "value": "/5S18_CogentConnect_Scarlet/BRDFVRayMtl/diffuse/Texture/BitmapBuffer"
+        },
+        "placement_type": {
+            "type": "integer",
+            "value": "1"
+        },
+        "alpha_from_intensity": {
+            "type": "integer",
+            "value": "0"
+        },
+        "nouvw_color": {
+            "type": "acolor texture",
+            "value": {
+                "r": "0.0",
+                "g": "0.0",
+                "b": "0.0",
+                "a": "0.0"
+            }
+        }
+    },
+    "outputs": {
+        "default": {
+            "type": "texture"
+        }
+    }
+}

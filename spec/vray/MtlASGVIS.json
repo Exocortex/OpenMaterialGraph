@@ -1,0 +1,30 @@
+{
+    "name": "MtlASGVIS",
+    "version": "0.0.1",
+    "description": "Auto-generated",
+    "inputs": {
+        "brdfs": {
+            "type": "brdfs list",
+            "value": [
+                "/5S18_CogentConnect_Scarlet/BRDFVRayMtl"
+            ]
+        },
+        "bump_tex": {
+            "type": "plugin",
+            "value": "/5S18_CogentConnect_Scarlet/Texture"
+        },
+        "bump_tex_mult": {
+            "type": "float",
+            "value": "0.15"
+        },
+        "bump_on": {
+            "type": "bool",
+            "value": true
+        }
+    },
+    "outputs": {
+        "default": {
+            "type": "material"
+        }
+    }
+}

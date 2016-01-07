@@ -1,0 +1,16 @@
+{
+    "name": "MtlSingleBRDF",
+    "version": "0.0.1",
+    "description": "Auto-generated",
+    "inputs": {
+        "brdf": {
+            "type": "brdf",
+            "value": ""
+        }
+    },
+    "outputs": {
+        "default": {
+            "type": "material"
+        }
+    }
+}

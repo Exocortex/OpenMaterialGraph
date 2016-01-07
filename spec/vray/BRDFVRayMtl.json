@@ -1,0 +1,518 @@
+{
+    "name": "BRDFVRayMtl",
+    "version": "0.0.1",
+    "description": "Auto-generated",
+    "inputs": {
+        "reflect_subdivs": {
+            "type": "integer",
+            "value": "8"
+        },
+        "fresnel": {
+            "type": "bool",
+            "value": true
+        },
+        "reflect_depth": {
+            "type": "integer",
+            "value": "5"
+        },
+        "reflect_exit_color": {
+            "type": "color",
+            "value": {
+                "r": "0.0",
+                "g": "0.0",
+                "b": "0.0"
+            }
+        },
+        "refl_interpolation_on": {
+            "type": "bool",
+            "value": true
+        },
+        "hilight_glossiness_lock": {
+            "type": "bool",
+            "value": true
+        },
+        "fresnel_ior_lock": {
+            "type": "bool",
+            "value": true
+        },
+        "reflect_dim_distance": {
+            "type": "float",
+            "value": "100.0"
+        },
+        "reflect_dim_distance_on": {
+            "type": "bool",
+            "value": true
+        },
+        "reflect_dim_distance_falloff": {
+            "type": "float",
+            "value": "0.0"
+        },
+        "reflect_affect_alpha": {
+            "type": "integer",
+            "value": "0"
+        },
+        "refract_subdivs": {
+            "type": "integer",
+            "value": "8"
+        },
+        "fog_color": {
+            "type": "color",
+            "value": {
+                "r": "1.0",
+                "g": "1.0",
+                "b": "1.0"
+            }
+        },
+        "fog_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "fog_bias": {
+            "type": "float",
+            "value": "0.0"
+        },
+        "refract_affect_shadows": {
+            "type": "bool",
+            "value": true
+        },
+        "refract_affect_alpha": {
+            "type": "integer",
+            "value": "0"
+        },
+        "refract_depth": {
+            "type": "integer",
+            "value": "5"
+        },
+        "refract_exit_color": {
+            "type": "color",
+            "value": {
+                "r": "0.0",
+                "g": "0.0",
+                "b": "0.0"
+            }
+        },
+        "refract_exit_color_on": {
+            "type": "bool",
+            "value": true
+        },
+        "refr_interpolation_on": {
+            "type": "bool",
+            "value": true
+        },
+        "dispersion": {
+            "type": "float",
+            "value": "50.0"
+        },
+        "dispersion_on": {
+            "type": "bool",
+            "value": true
+        },
+        "translucency": {
+            "type": "integer",
+            "value": "0"
+        },
+        "translucency_thickness": {
+            "type": "float",
+            "value": "1000.0"
+        },
+        "translucency_scatter_coeff": {
+            "type": "float",
+            "value": "0.0"
+        },
+        "translucency_scatter_dir": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "translucency_light_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "brdf_type": {
+            "type": "integer",
+            "value": "1"
+        },
+        "anisotropy_derivation": {
+            "type": "integer",
+            "value": "0"
+        },
+        "anisotropy_axis": {
+            "type": "integer",
+            "value": "2"
+        },
+        "anisotropy_uvwgen": {
+            "type": "uvwgen",
+            "value": "/Dirt/BRDFVRayMtl/AnisoUVWGen"
+        },
+        "hilight_soften": {
+            "type": "float",
+            "value": "0.0"
+        },
+        "option_fix_dark_edges": {
+            "type": "bool",
+            "value": true
+        },
+        "reflect_trace": {
+            "type": "bool",
+            "value": true
+        },
+        "refract_trace": {
+            "type": "bool",
+            "value": true
+        },
+        "option_double_sided": {
+            "type": "bool",
+            "value": true
+        },
+        "option_reflect_on_back": {
+            "type": "bool",
+            "value": true
+        },
+        "option_use_irradiance_map": {
+            "type": "bool",
+            "value": true
+        },
+        "fog_unit_scale_on": {
+            "type": "bool",
+            "value": true
+        },
+        "option_cutoff": {
+            "type": "float",
+            "value": "0.001"
+        },
+        "option_energy_mode": {
+            "type": "integer",
+            "value": "0"
+        },
+        "environment_priority": {
+            "type": "integer",
+            "value": "0"
+        },
+        "option_glossy_rays_as_gi": {
+            "type": "integer",
+            "value": "1"
+        },
+        "texture_multiplier_mode": {
+            "type": "integer",
+            "value": "1"
+        },
+        "refl_imap_min_rate": {
+            "type": "integer",
+            "value": "-1"
+        },
+        "refl_imap_max_rate": {
+            "type": "integer",
+            "value": "-1"
+        },
+        "refl_imap_samples": {
+            "type": "integer",
+            "value": "20"
+        },
+        "refl_imap_color_thresh": {
+            "type": "float",
+            "value": "0.25"
+        },
+        "refl_imap_norm_thresh": {
+            "type": "float",
+            "value": "0.4"
+        },
+        "refr_imap_min_rate": {
+            "type": "integer",
+            "value": "-1"
+        },
+        "refr_imap_max_rate": {
+            "type": "integer",
+            "value": "-1"
+        },
+        "refr_imap_samples": {
+            "type": "integer",
+            "value": "20"
+        },
+        "refr_imap_color_thresh": {
+            "type": "float",
+            "value": "0.25"
+        },
+        "refr_imap_norm_thresh": {
+            "type": "float",
+            "value": "0.4"
+        },
+        "diffuse": {
+            "type": "acolor texture",
+            "value": "/Dirt/BRDFVRayMtl/diffuse"
+        },
+        "diffuse_tex": {
+            "type": "acolor texture",
+            "value": ""
+        },
+        "diffuse_tex_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "diffuse_tex_on": {
+            "type": "bool",
+            "value": true
+        },
+        "diffuse_color": {
+            "type": "color",
+            "value": {
+                "r": "0.054902",
+                "g": "0.054902",
+                "b": "0.054902"
+            }
+        },
+        "roughness": {
+            "type": "float texture",
+            "value": "/Dirt/BRDFVRayMtl/roughness"
+        },
+        "roughness_tex": {
+            "type": "acolor texture",
+            "value": ""
+        },
+        "roughness_tex_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "roughness_tex_on": {
+            "type": "bool",
+            "value": true
+        },
+        "roughness_float": {
+            "type": "float",
+            "value": "0.0"
+        },
+        "reflect": {
+            "type": "acolor texture",
+            "value": "/Dirt/BRDFVRayMtl/reflect"
+        },
+        "reflect_tex": {
+            "type": "acolor texture",
+            "value": ""
+        },
+        "reflect_tex_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "reflect_tex_on": {
+            "type": "bool",
+            "value": true
+        },
+        "reflect_color": {
+            "type": "color",
+            "value": {
+                "r": "0.0",
+                "g": "0.0",
+                "b": "0.0"
+            }
+        },
+        "hilight_glossiness": {
+            "type": "float texture",
+            "value": "/Dirt/BRDFVRayMtl/hilight_glossiness"
+        },
+        "hilight_glossiness_tex": {
+            "type": "acolor texture",
+            "value": ""
+        },
+        "hilight_glossiness_tex_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "hilight_glossiness_tex_on": {
+            "type": "bool",
+            "value": true
+        },
+        "hilight_glossiness_float": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "reflect_glossiness": {
+            "type": "float texture",
+            "value": "/Dirt/BRDFVRayMtl/reflect_glossiness"
+        },
+        "reflect_glossiness_tex": {
+            "type": "acolor texture",
+            "value": ""
+        },
+        "reflect_glossiness_tex_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "reflect_glossiness_tex_on": {
+            "type": "bool",
+            "value": true
+        },
+        "reflect_glossiness_float": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "anisotropy": {
+            "type": "float texture",
+            "value": "/Dirt/BRDFVRayMtl/anisotropy"
+        },
+        "anisotropy_tex": {
+            "type": "acolor texture",
+            "value": ""
+        },
+        "anisotropy_tex_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "anisotropy_tex_on": {
+            "type": "bool",
+            "value": true
+        },
+        "anisotropy_float": {
+            "type": "float",
+            "value": "0.0"
+        },
+        "anisotropy_rotation": {
+            "type": "float texture",
+            "value": "/Dirt/BRDFVRayMtl/anisotropy_rotation"
+        },
+        "anisotropy_rotation_tex": {
+            "type": "acolor texture",
+            "value": ""
+        },
+        "anisotropy_rotation_tex_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "anisotropy_rotation_tex_on": {
+            "type": "bool",
+            "value": true
+        },
+        "anisotropy_rotation_float": {
+            "type": "float",
+            "value": "0.0"
+        },
+        "fresnel_ior": {
+            "type": "float texture",
+            "value": "/Dirt/BRDFVRayMtl/fresnel_ior"
+        },
+        "fresnel_ior_tex": {
+            "type": "acolor texture",
+            "value": ""
+        },
+        "fresnel_ior_tex_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "fresnel_ior_tex_on": {
+            "type": "bool",
+            "value": true
+        },
+        "fresnel_ior_float": {
+            "type": "float",
+            "value": "1.6"
+        },
+        "refract": {
+            "type": "acolor texture",
+            "value": "/Dirt/BRDFVRayMtl/refract"
+        },
+        "refract_tex": {
+            "type": "acolor texture",
+            "value": ""
+        },
+        "refract_tex_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "refract_tex_on": {
+            "type": "bool",
+            "value": true
+        },
+        "refract_color": {
+            "type": "color",
+            "value": {
+                "r": "0.0",
+                "g": "0.0",
+                "b": "0.0"
+            }
+        },
+        "refract_glossiness": {
+            "type": "float texture",
+            "value": "/Dirt/BRDFVRayMtl/refract_glossiness"
+        },
+        "refract_glossiness_tex": {
+            "type": "acolor texture",
+            "value": ""
+        },
+        "refract_glossiness_tex_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "refract_glossiness_tex_on": {
+            "type": "bool",
+            "value": true
+        },
+        "refract_glossiness_float": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "refract_ior": {
+            "type": "float texture",
+            "value": "/Dirt/BRDFVRayMtl/refract_ior"
+        },
+        "refract_ior_tex": {
+            "type": "acolor texture",
+            "value": ""
+        },
+        "refract_ior_tex_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "refract_ior_tex_on": {
+            "type": "bool",
+            "value": true
+        },
+        "refract_ior_float": {
+            "type": "float",
+            "value": "1.6"
+        },
+        "translucency_color": {
+            "type": "acolor texture",
+            "value": "/Dirt/BRDFVRayMtl/translucency_color"
+        },
+        "translucency_color_tex": {
+            "type": "acolor texture",
+            "value": ""
+        },
+        "translucency_color_tex_mult": {
+            "type": "float",
+            "value": "1.0"
+        },
+        "translucency_color_tex_on": {
+            "type": "bool",
+            "value": true
+        },
+        "translucency_color_color": {
+            "type": "color",
+            "value": {
+                "r": "1.0",
+                "g": "1.0",
+                "b": "1.0"
+            }
+        }
+    },
+    "outputs": {
+        "default": {
+            "type": "BRDF"
+        }
+    }
+}
+
+
+{
+    "name": "MtlSingleBRDF",
+    "version": "0.0.1",
+    "description": "Auto-generated",
+    "inputs": {
+        "brdf": {
+            "type": "brdf",
+            "value": "/Dirt/BRDFVRayMtl"
+        }
+    },
+    "outputs": {
+        "default": {
+            "type": "material"
+        }
+    }
+}

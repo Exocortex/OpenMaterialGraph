@@ -1,0 +1,16 @@
+{
+    "name": "UVWGenChannel",
+    "version": "0.0.1",
+    "description": "Auto-generated",
+    "inputs": {
+        "uvw_channel": {
+            "type": "integer",
+            "value": "1"
+        }
+    },
+    "outputs": {
+        "default": {
+            "type": "UVW"
+        }
+    }
+}
