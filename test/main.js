@@ -53,7 +53,7 @@ fs.readdir( currentDirectory, function( err, files ) {
 		OMG.VRMat.parseFromFile( fullPath, specLibrary, ( err, vrMat ) => {
 			if( err ) {
 				console.log( "ERROR", err );
-				return;
+				return callback( err );
 			}
 
 			//console.log( "VR MAT", vrMat );
@@ -63,20 +63,27 @@ fs.readdir( currentDirectory, function( err, files ) {
 //			VRMat.specCreator( vrMat, specLibrary, function( err, name, data ) {
 	//			specLibrary.add( data );
 			R.forEach( function( node ) {
-				specUsageCount[ name.spec.name ] = ( specUsageCount[ name.spec.name ] || 0 ) + 1;
-				if( name === 'BitmapBuffer' && data.inputs.file && data.inputs.file.value ) {
-					bitmapNames[ data.inputs.file.value ] = ( bitmapNames[ data.inputs.file.value ] || 0 ) + 1;
+			//	console.log( 'node', node );
+				var name = node.spec.name;
+				console.log( 'name', name );
+				specUsageCount[ name ] = ( specUsageCount[ name ] || 0 ) + 1;
+				if( name === 'BitmapBuffer' ) {
+					console.log( node );
+					if( node.inputs.file && node.inputs.file.value ) {
+						bitmapNames[ data.inputs.file.value ] = ( bitmapNames[ node.inputs.file.value ] || 0 ) + 1;
+					}
 				}
-			}, vrMat.nodes );
+			}, R.values( vrMat.nodes ) );
+			console.log( "calling callback()");
 			callback();
 		});
 	};
 
-	fa.c(10).each(files, loadVRMat, function(err) {
+	fa.c(1).each(files, loadVRMat, function(err) {
 		console.log( toSortedTable( specUsageCount ) );
 		console.log( toSortedTable( bitmapNames ) );
-		OMG.SpecIO.saveLibraryToDirectory( specLibrary, __dirname + resourcesDirectory, function() {
-		});
+	//	OMG.SpecIO.saveLibraryToDirectory( specLibrary, __dirname + resourcesDirectory, function() {
+	//	});
 	});
 
 });
