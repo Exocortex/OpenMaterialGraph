@@ -74,9 +74,14 @@ nodeDir.files( currentDirectory, function( err, files ) {
 	if( err ) return console.log( 'err', err );
 	//console.log( 'files', files );
 
+	var callbackCount = 0;
+
 	var loadVRMat = ( file, callback ) => {
+		callbackCount ++;
 		var fullPath = file;//path.resolve( currentDirectory + '/' + file );
 		if( path.extname( fullPath ) !== ".vrmat") {
+			callbackCount --;
+			console.log( "callback() 1 - count: " + callbackCount )
 			return callback();
 		}
 
@@ -84,6 +89,8 @@ nodeDir.files( currentDirectory, function( err, files ) {
 		OMG.VRMat.parseFromFile( fullPath, specLibrary, ( err, vrMat ) => {
 			if( err ) {
 				console.log( "ERROR", err );
+				callbackCount --;
+				console.log( "callback() 3 - count: " + callbackCount )
 				return callback( err );
 			}
 
@@ -106,12 +113,15 @@ nodeDir.files( currentDirectory, function( err, files ) {
 					}
 				}
 			}, R.values( vrMat.nodes ) );
-			//console.log( "calling callback()");
+			console.log( "calling callback()");
+			callbackCount --;
+			console.log( "callback() 2 - count: " + callbackCount )
 			callback();
 		});
 	};
 
-	fa.c(1).each(files, loadVRMat, function(err) {
+	fa.c(10).each(files, loadVRMat, function(err) {
+		console.log( "done!");
 		console.log( toSortedTable( specUsageCount ) );
 		console.log( toSortedTable( bitmapNames ) );
 	//	OMG.SpecIO.saveLibraryToDirectory( specLibrary, __dirname + resourcesDirectory, function() {
