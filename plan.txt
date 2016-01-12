@@ -32,10 +32,18 @@ primaryLayerNode.reflect.texture = Clara.io Image;
 primaryLayerNode.reflect_glossiness.color = RGB
 
 
+Observations:
+
+- MtlASGVIS wraper around the BRDFVRayMtl is used to store the bump map.  So query that for the bump map information.
+- The root node has a duplicate name to the first MtlASGVIS BRDF thus the root node could be renamed as "*_Root" or something like that to make it fully unique.
+- Have paths that can be resolved though the graph, if they exist, and use those paths to read the data.
+- So search in all nodes for those attached to node.spec.name = X, with input.name = Y.  Then count the number of types one sees.
+- Use a path based approach to look for two layer materials and then create a histogram of all the different layer intensities.
+
+
 
 Ideas:
 
-Have paths that can be resolved though the graph, if they exist, and use those paths to read the data.
 
 diffuse -> color, map
 roughness -> roughness
@@ -52,7 +60,14 @@ refract_ior // ignore for now
 translucency_color // ignore for now
 
 
-To to identify the nodes --
+To to identify the nodes -- one can either figure out what they are attached to: node.spec.name + input.name.
+
+ - This will determine the flexibility I need:
+
+ (1) So search in all nodes for those attached to node.spec.name = X, with input.name = Y.  Then count the number of types one sees.
+
+
+
 
 The above can be a TexCombineColor or a TexFalloff node.  If TexFalloff just pick one of the two and use that to start with.
 
