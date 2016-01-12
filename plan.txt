@@ -1,0 +1,77 @@
+VRMat to Physical approach:
+
+
+Find the BaseNode.
+ - Find the "MtlSingleBRDFLayout" without any attached output.
+
+BaseNode has an output:
+  BRDF.  It is connected to a single or dual layered material.
+
+FresnelLayer = BRDF.layer0;
+PrimaryLayer = BRDF.layer1;
+
+PrimaryLayer is a MtlASGVIS
+ BRDFs in MtlASGVIS is one:
+   BRDFVRayMtl
+
+var rootNode;
+
+var numRootLayers = rootNode.inputs.brdfs[0]
+primaryLayerNode = rootNode.inputsbrdfs[1].brdfs[0];
+
+
+primaryLayerNode.diffuse.color = Clara.io Color;
+primaryLayerNode.diffuse.texture = Clara.io Image;
+
+primaryLayerNode.roughness.color = Clara.io Color;
+primaryLayerNode.roughness.Texture = Clara.io Image;
+
+primaryLayerNode.reflect.color = Clara.io Color;
+primaryLayerNode.reflect.texture = Clara.io Image;
+
+primaryLayerNode.reflect_glossiness.color = RGB
+
+
+
+Ideas:
+
+Have paths that can be resolved though the graph, if they exist, and use those paths to read the data.
+
+diffuse -> color, map
+roughness -> roughness
+reflect -> metallic
+hilight_glossiness
+reflect_glossiness
+anisotropy // ignore for now
+anisotropy_rotation // ignore for now
+AnisoUVWGen // ignore for now
+fresnel_ior // ignore for now
+refract // ignore for now
+refract_glossiness // ignore for now
+refract_ior // ignore for now
+translucency_color // ignore for now
+
+
+To to identify the nodes --
+
+The above can be a TexCombineColor or a TexFalloff node.  If TexFalloff just pick one of the two and use that to start with.
+
+
+
+Have a function that takes a "Texture" node and loads the image and creates the Image node with the right UV mapping in it.
+
+Input:
+
+texture.bitmap.file = string;
+texture.uvwGen.wrapU
+texture.uvwGen.wrapV
+texture.uvwGen.uvwChannel
+texture.uvwGen.uvw_transform.x_offset
+texture.uvwGen.uvw_transform.y_offset
+texture.uvwGen.uvw_transform.x_scale
+texture.uvwGen.uvw_transform.y_scale
+
+Validation:
+
+Validate that texture.bitmap is of type "BitmapBuffer."
+Validate that texture.uvwGen is of type "UVWGenChannel."

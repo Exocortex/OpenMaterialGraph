@@ -67,6 +67,11 @@ var walk = function(dir, done) {
   });
 };
 
+var convertToPhysical = function( vrayMatGraph ) {
+	var result = {};
+	result.materialType = "Physical";
+	result.name = "vrayMatGraph"
+}
 //if( fs.exists)
 console.log( 'currentDirectory', currentDirectory );
 
@@ -77,20 +82,15 @@ nodeDir.files( currentDirectory, function( err, files ) {
 	var callbackCount = 0;
 
 	var loadVRMat = ( file, callback ) => {
-		callbackCount ++;
 		var fullPath = file;//path.resolve( currentDirectory + '/' + file );
 		if( path.extname( fullPath ) !== ".vrmat") {
-			callbackCount --;
-			console.log( "callback() 1 - count: " + callbackCount )
 			return callback();
 		}
 
-		console.log( 'reading: ', fullPath );
+		//console.log( 'reading: ', fullPath );
 		OMG.VRMat.parseFromFile( fullPath, specLibrary, ( err, vrMat ) => {
 			if( err ) {
 				console.log( "ERROR", err );
-				callbackCount --;
-				console.log( "callback() 3 - count: " + callbackCount )
 				return callback( err );
 			}
 
@@ -109,19 +109,16 @@ nodeDir.files( currentDirectory, function( err, files ) {
 				if( name === 'BitmapBuffer' ) {
 					//console.log( node );
 					if( node.inputs.file && node.inputs.file.value ) {
-						bitmapNames[ data.inputs.file.value ] = ( bitmapNames[ node.inputs.file.value ] || 0 ) + 1;
+						bitmapNames[ node.inputs.file.value ] = ( bitmapNames[ node.inputs.file.value ] || 0 ) + 1;
 					}
 				}
 			}, R.values( vrMat.nodes ) );
-			console.log( "calling callback()");
-			callbackCount --;
-			console.log( "callback() 2 - count: " + callbackCount )
 			callback();
 		});
 	};
 
 	fa.c(10).each(files, loadVRMat, function(err) {
-		console.log( "done!");
+		console.log( "");
 		console.log( toSortedTable( specUsageCount ) );
 		console.log( toSortedTable( bitmapNames ) );
 	//	OMG.SpecIO.saveLibraryToDirectory( specLibrary, __dirname + resourcesDirectory, function() {
