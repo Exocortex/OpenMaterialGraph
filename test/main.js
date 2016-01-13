@@ -126,7 +126,8 @@ nodeDir.files( currentDirectory, function( err, files ) {
 				//console.log( 'primary BRDF VRay Mtl: ' + primaryBRDFVrayMtl.path() + " <" + primaryBRDFVrayMtl.spec.name + ">");
 			//	OMG.VRMatToPhysical.nodeTreeToString( primaryBRDFVrayMtl, '' );
 			//}
-			console.log( 'physical properties', OMG.VRMatToPhysical.getPhysicalPropertiesFromVRMat( vrMat ) );
+			console.log( path.basename( fullPath ) );
+			console.log( OMG.VRMatToPhysical.getPhysicalPropertiesFromVRMat( vrMat ) );
 			callback();
 		});
 	};
