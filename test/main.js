@@ -113,6 +113,11 @@ nodeDir.files( currentDirectory, function( err, files ) {
 					}
 				}
 			}, R.values( vrMat.nodes ) );
+
+
+			var rootNodes = OMG.VRMatToPhysical.getRootNodes( vrMat );
+			console.log( rootNodes );
+			
 			callback();
 		});
 	};
@@ -124,5 +129,6 @@ nodeDir.files( currentDirectory, function( err, files ) {
 	//	OMG.SpecIO.saveLibraryToDirectory( specLibrary, __dirname + resourcesDirectory, function() {
 	//	});
 	});
+
 
 });
