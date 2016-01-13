@@ -115,16 +115,18 @@ nodeDir.files( currentDirectory, function( err, files ) {
 			}, R.values( vrMat.nodes ) );
 
 
-			var rootNodes = OMG.VRMatToPhysical.getRootNodes( vrMat );
-			for( var i = 0; i < rootNodes.length; i ++ ) {
-				console.log( "Root node: " + rootNodes[i].path() );
-			}
+			//var rootNodes = OMG.VRMatToPhysical.getRootNodes( vrMat );
+			//for( var i = 0; i < rootNodes.length; i ++ ) {
+				//console.log( "Root node: " + rootNodes[i].path() );
+			//}
 
 			//OMG.VRMatToPhysical.treeToString( vrMat, '' );
-			var primaryBRDFVrayMtl = OMG.VRMatToPhysical.findPrimaryBRDFVRayMtl( rootNodes[0] );
-			if( primaryBRDFVrayMtl ) {
-				console.log( 'primary BRDF VRay Mtl: ' + primaryBRDFVrayMtl.path() + " <" + primaryBRDFVrayMtl.spec.name + ">");
-			}
+			//var primaryBRDFVrayMtl = OMG.VRMatToPhysical.findBaseBRDFVRayMtl( rootNodes[0] );
+			//if( primaryBRDFVrayMtl ) {
+				//console.log( 'primary BRDF VRay Mtl: ' + primaryBRDFVrayMtl.path() + " <" + primaryBRDFVrayMtl.spec.name + ">");
+			//	OMG.VRMatToPhysical.nodeTreeToString( primaryBRDFVrayMtl, '' );
+			//}
+			console.log( 'physical properties', OMG.VRMatToPhysical.getPhysicalPropertiesFromVRMat( vrMat ) );
 			callback();
 		});
 	};
