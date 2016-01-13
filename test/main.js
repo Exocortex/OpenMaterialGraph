@@ -120,6 +120,8 @@ nodeDir.files( currentDirectory, function( err, files ) {
 				console.log( "Root node: " + rootNodes[i].path() );
 			}
 
+			OMG.VRMatToPhysical.treeToString( vrMat, '' );
+
 			callback();
 		});
 	};
