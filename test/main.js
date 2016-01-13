@@ -120,8 +120,11 @@ nodeDir.files( currentDirectory, function( err, files ) {
 				console.log( "Root node: " + rootNodes[i].path() );
 			}
 
-			OMG.VRMatToPhysical.treeToString( vrMat, '' );
-
+			//OMG.VRMatToPhysical.treeToString( vrMat, '' );
+			var primaryBRDFVrayMtl = OMG.VRMatToPhysical.findPrimaryBRDFVRayMtl( rootNodes[0] );
+			if( primaryBRDFVrayMtl ) {
+				console.log( 'primary BRDF VRay Mtl: ' + primaryBRDFVrayMtl.path() + " <" + primaryBRDFVrayMtl.spec.name + ">");
+			}
 			callback();
 		});
 	};

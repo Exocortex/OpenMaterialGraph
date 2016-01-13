@@ -90,3 +90,8 @@ Validation:
 
 Validate that texture.bitmap is of type "BitmapBuffer."
 Validate that texture.uvwGen is of type "UVWGenChannel."
+
+
+Parts of extraction - once we have identified the right type of node, extraction is relatively easy - one we have the right VRayMtl, we can proceed to pull out the layer information.
+
+Once we have the TexCombineColor, we can 
