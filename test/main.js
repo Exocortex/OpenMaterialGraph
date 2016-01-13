@@ -116,7 +116,9 @@ nodeDir.files( currentDirectory, function( err, files ) {
 
 
 			var rootNodes = OMG.VRMatToPhysical.getRootNodes( vrMat );
-			//console.log( rootNodes );
+			for( var i = 0; i < rootNodes.length; i ++ ) {
+				console.log( "Root node: " + rootNodes[i].path() );
+			}
 
 			callback();
 		});
