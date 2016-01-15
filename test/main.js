@@ -10,7 +10,7 @@ var resourcesDirectory = "/vrmats";
 
 var specLibrary = new OMG.SpecLibrary();
 
-var currentDirectory = path.resolve(__dirname + resourcesDirectory );
+var currentDirectory = path.resolve(__dirname + resourcesDirectory + "/v1" );
 var specDirectory = path.resolve( __dirname + resourcesDirectory + "/spec" );
 
 //var specProvider = new OMG.SpecProvider();
