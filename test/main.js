@@ -1,6 +1,7 @@
 var fs = require( 'fs' );
 var fa = require( 'fa' );
 var path = require( 'path' );
+var specgraph = require('specgraph');
 var OMG = require('../lib');
 var R = require('ramda');
 var nodeDir = require('node-dir');
