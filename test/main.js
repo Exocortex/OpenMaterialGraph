@@ -6,7 +6,7 @@ var OMG = require('../lib');
 var _ = require('underscore');
 var nodeDir = require('node-dir');
 
-var resourcesDirectory = "/vrmats";
+var resourcesDirectory = "/../examples/vrmats";
 
 var specLibrary = new OMG.SpecLibrary();
 
