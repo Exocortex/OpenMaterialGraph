@@ -3,7 +3,7 @@ var fa = require( 'fa' );
 var path = require( 'path' );
 var specgraph = require('specgraph');
 var OMG = require('../lib');
-var R = require('ramda');
+var _ = require('underscore');
 var nodeDir = require('node-dir');
 
 var resourcesDirectory = "/vrmats";
@@ -102,7 +102,7 @@ nodeDir.files( currentDirectory, function( err, files ) {
 
 //			VRMat.specCreator( vrMat, specLibrary, function( err, name, data ) {
 	//			specLibrary.add( data );
-			R.forEach( function( node ) {
+			_.each( vrMat.nodes, function( node ) {
 			//	console.log( 'node', node );
 				var name = node.spec.name;
 				//console.log( 'name', name );
@@ -113,7 +113,7 @@ nodeDir.files( currentDirectory, function( err, files ) {
 						bitmapNames[ node.inputs.file.value ] = ( bitmapNames[ node.inputs.file.value ] || 0 ) + 1;
 					}
 				}
-			}, R.values( vrMat.nodes ) );
+			} );
 
 
 			//var rootNodes = OMG.VRMatToPhysical.getRootNodes( vrMat );
