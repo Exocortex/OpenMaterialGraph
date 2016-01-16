@@ -10,7 +10,7 @@ var resourcesDirectory = "/vrmats";
 
 var specLibrary = new OMG.SpecLibrary();
 
-var currentDirectory = path.resolve(__dirname + resourcesDirectory + "/v1" );
+var currentDirectory = path.resolve(__dirname + resourcesDirectory );
 var specDirectory = path.resolve( __dirname + resourcesDirectory + "/spec" );
 
 //var specProvider = new OMG.SpecProvider();
@@ -90,8 +90,8 @@ nodeDir.files( currentDirectory, function( err, files ) {
 
 		//console.log( 'reading: ', fullPath );
 		OMG.VRMat.parseFromFile( fullPath, specLibrary, ( err, vrMat ) => {
-			if( err ) {
-				console.log( "ERROR", err );
+			if( err || ! vrMat ) {
+				console.log( "ERROR", err, vrMat );
 				return callback( err );
 			}
 
@@ -127,8 +127,9 @@ nodeDir.files( currentDirectory, function( err, files ) {
 				//console.log( 'primary BRDF VRay Mtl: ' + primaryBRDFVrayMtl.path() + " <" + primaryBRDFVrayMtl.spec.name + ">");
 			//	OMG.VRMatToPhysical.nodeTreeToString( primaryBRDFVrayMtl, '' );
 			//}
-			console.log( path.basename( fullPath ) );
-			console.log( OMG.VRMatToPhysical.getPhysicalPropertiesFromVRMat( vrMat ) );
+			console.log( 'fullpath', path.basename( fullPath ) );
+		//	console.log( 'vrMat', vrMat );
+			console.log( 'physical', OMG.VRMatToPhysical.getPhysicalPropertiesFromVRMat( vrMat ) );
 			callback();
 		});
 	};
