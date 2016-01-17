@@ -10,7 +10,7 @@ var resourcesDirectory = "/../examples/vrmats";
 
 var specLibrary = new OMG.SpecLibrary();
 
-var currentDirectory = path.resolve(__dirname + resourcesDirectory + "/v1" );
+var currentDirectory = path.resolve(__dirname + resourcesDirectory );
 var specDirectory = path.resolve( __dirname + resourcesDirectory + "/spec" );
 
 //var specProvider = new OMG.SpecProvider();
@@ -68,11 +68,6 @@ var walk = function(dir, done) {
   });
 };
 
-var convertToPhysical = function( vrayMatGraph ) {
-	var result = {};
-	result.materialType = "Physical";
-	result.name = "vrayMatGraph"
-}
 //if( fs.exists)
 console.log( 'currentDirectory', currentDirectory );
 
@@ -81,6 +76,8 @@ nodeDir.files( currentDirectory, function( err, files ) {
 	//console.log( 'files', files );
 
 	var callbackCount = 0;
+
+	var inputNodeVariations = {};
 
 	var loadVRMat = ( file, callback ) => {
 		var fullPath = file;//path.resolve( currentDirectory + '/' + file );
@@ -130,12 +127,14 @@ nodeDir.files( currentDirectory, function( err, files ) {
 			console.log( 'fullpath', path.basename( fullPath ) );
 			//console.log( 'vrMat', vrMat );
 			console.log( 'physical', OMG.VRMatToPhysical.getPhysicalPropertiesFromVRMat( vrMat ) );
+			inputNodeVariations = OMG.VRMatToPhysical.collectNodeInputVariations( vrMat.nodes, inputNodeVariations );
 			callback();
 		});
 	};
 
 	fa.c(10).each(files, loadVRMat, function(err) {
 		console.log( "");
+		console.log( 'inputNodeVariations', inputNodeVariations );
 		console.log( toSortedTable( specUsageCount ) );
 		console.log( toSortedTable( bitmapNames ) );
 	//	OMG.SpecIO.saveLibraryToDirectory( specLibrary, __dirname + resourcesDirectory, function() {
