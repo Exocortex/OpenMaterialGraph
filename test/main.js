@@ -134,7 +134,10 @@ nodeDir.files( currentDirectory, function( err, files ) {
 
 	fa.c(10).each(files, loadVRMat, function(err) {
 		console.log( "");
-		console.log( 'inputNodeVariations', inputNodeVariations );
+		//console.log( 'inputNodeVariations', inputNodeVariations );
+
+		var variations = OMG.VRMatToPhysical.identifyVaryingNodeInputs( inputNodeVariations );
+		console.log( 'varyingParameters', variations );
 		console.log( toSortedTable( specUsageCount ) );
 		console.log( toSortedTable( bitmapNames ) );
 	//	OMG.SpecIO.saveLibraryToDirectory( specLibrary, __dirname + resourcesDirectory, function() {
