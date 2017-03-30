@@ -1,8 +1,0 @@
-BRDFBlinn/CookTorrance/Ward/Phong:
-	color: color
-	transparency: color
-	highlightGlossiness: float
-	reflectionGlossiness: float
-	anisotropy: float
-	anisotropyRotation: float
-	anisotropyTangent: vector

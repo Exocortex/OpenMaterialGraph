@@ -1,8 +1,0 @@
-//	Skin	diffusion	profile
-closure	color	scattering	=	0;
-scattering		=		bssrdf_gaussian(0.0064)	*		color(	0.233,	0.455,	0.649);
-scattering		+=	bssrdf_gaussian(0.0484)	*		color(	0.1,			0.336,	0.344);
-scattering		+=	bssrdf_gaussian(0.187)		*		color(	0.118,	0.198,	0.0);
-scattering		+=	bssrdf_gaussian(0.567)		*		color(	0.113,	0.007,	0.007);
-scattering		+=	bssrdf_gaussian(1.99)			*		color(	0.358,	0.004,	0.0);
-scattering		+=	bssrdf_gaussian(7.41)			*		color(	0.078,	0.0,			0.0);

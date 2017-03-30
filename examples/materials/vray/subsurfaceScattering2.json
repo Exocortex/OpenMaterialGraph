@@ -1,5 +1,0 @@
-subsurfaceScattering2:
-	ior: float
-	diffuseReflectance: color
-	scatterRadius: float
-	phaseFunction: float

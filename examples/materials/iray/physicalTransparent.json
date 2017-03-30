@@ -1,7 +1,0 @@
-Physical Transparent
-	tintColor: color 	// reflection/transmission
-	subsurfaceAbsorptionColor: color
-	subsurfaceScatter: float
-	subsurfaceDistanceScale: float
-	ior: float
-	abbeNumber: float

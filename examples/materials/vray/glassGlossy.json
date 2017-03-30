@@ -1,7 +1,0 @@
-Glass:
-	color: color
-	transparency: color
-	ior: float
-	glossiness: float
-	disperson: float (AbbeNumber?)
-	
