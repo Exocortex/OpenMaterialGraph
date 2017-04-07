@@ -27,3 +27,8 @@ The OMG implementation incorporates or depends upon several other open
 source packages:
 
 [Open Shading Language](https://github.com/imageworks/OpenShadingLanguage)
+
+Note to Self
+------------
+
+To update github repository, use `git subrepo push vendor/OpenMaterialGraph`.

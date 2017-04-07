@@ -1,9 +1,0 @@
-
-
-
-
-if( diffuse !== BLACK )
-	if( reflectance !== BLACK )
-		bsdfs.add( new LambertianReflection( reflectance * diffuse ) );
-	if( transmittance !== BLACK )
-		bsdfs.add( new LambertianTransmission( transmittance * diffuse ) );

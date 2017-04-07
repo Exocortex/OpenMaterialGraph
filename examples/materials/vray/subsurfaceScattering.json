@@ -1,7 +1,0 @@
-subsurfaceScattering:
-	color: color
-	translucency: float
-	glossiness: float
-	thickness: float
-	scatterCoefficient: float
-	scatterDirection: float

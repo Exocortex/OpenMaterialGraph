@@ -1,8 +1,0 @@
-flakes:
-	color: color
-	glossiness: float
-	orientation: float
-	density: float
-	scale: float
-	size: float
-

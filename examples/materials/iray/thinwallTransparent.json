@@ -1,3 +1,0 @@
-ThinwallTransparent:
-	reflectionColor: color    // reflection/transmission
-	ior: float
