@@ -1,0 +1,1896 @@
+<vrmat>
+<Asset renderer="vray" url="/5S18_CogentConnect_Scarlet_Base/BRDFVRayMtl/environment_override" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/Texture/BitmapBuffer" type="bitmap" layout="">
+ <plugin>
+  <vrayplugin version="4" type="bitmap" name="BitmapBuffer">
+   <parameters>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="color_space" label="Color Space">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="frame_sequence" label="Frame Sequence">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="maya_compatible" label="Maya Compatible">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="frame_offset" label="Frame Offset">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="list" name="psd_alpha_name" label="psd_alpha_name">
+     <value>
+      <list/>
+     </value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="filter_type" label="Filter Type">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="filter_blur" label="Filter Blur">
+     <value>0.250000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="list" name="psd_group_name" label="psd_group_name">
+     <value>
+      <list/>
+     </value>
+    </parameter>
+    <parameter handler="FileBrowserHandler" listType="none" type="string" name="file" label="File">
+     <value>C:/Users/bhouston/Dropbox/ExocortexSteelcase/Demo Files/Demo Materials/6205_Black/bump_noise_seamless_v1.jpg</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="allow_negative_colors" label="Allow negative colors">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="use_data_window" label="use_data_window">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="frame_number" label="Frame Number">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="gamma" label="Gamma">
+     <value>0.454545</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/Texture/UVWGenChannel" type="UVW" layout="">
+ <plugin>
+  <vrayplugin version="4" type="uvw" name="UVWGenChannel">
+   <parameters>
+    <parameter handler="TextureTransformHandler" listType="none" type="componentTransform" name="uvw_transform" label="uvw_transform">
+     <value>
+      <componentTransform>
+       <x_rotation>0.000000</x_rotation>
+       <y_rotation>0.000000</y_rotation>
+       <z_rotation>0.000000</z_rotation>
+       <x_scale>1.666670</x_scale>
+       <y_scale>1.666670</y_scale>
+       <z_scale>1.000000</z_scale>
+       <x_mirror>0</x_mirror>
+       <y_mirror>0</y_mirror>
+       <z_mirror>0</z_mirror>
+       <x_offset>0.000000</x_offset>
+       <y_offset>0.000000</y_offset>
+       <z_offset>0.000000</z_offset>
+      </componentTransform>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="crop_u" label="crop_u">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="output vector texture" name="uvw_coords" label="uvw_coords"/>
+    <parameter handler="default" listType="none" type="bool" name="use_double_sided_mode" label="Enable double-sided mode">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="wrap_mode" label="wrap_mode">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="plugin" name="uvwgen" label="uvwgen">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="wrap_u" label="wrap_u">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="wrap_w" label="wrap_w">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="wrap_v" label="wrap_v">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="crop_w" label="crop_w">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="uvw_channel" label="Channel">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="vector" name="coverage" label="coverage">
+     <value>
+      <x>1.000000</x>
+      <y>1.000000</y>
+      <z>1.000000</z>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="crop_v" label="crop_v">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="transform" name="tex_transform" label="tex_transform">
+     <value>
+      <vector>
+       <x>1.000000</x>
+       <y>0.000000</y>
+       <z>0.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>1.000000</y>
+       <z>0.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>0.000000</y>
+       <z>1.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>0.000000</y>
+       <z>0.000000</z>
+      </vector>
+     </value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/Texture" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexBitmap">
+   <parameters>
+    <parameter handler="default" listType="none" type="float" name="uv_noise_amount" label="Amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="jitter" label="Jitter">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="invert_alpha" label="Invert Alpha">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="output acolor texture" name="color" label="Color"/>
+    <parameter handler="None" listType="none" type="plugin" name="bitmap" label="Bitmap">
+     <value>/6249_Platinum/Texture/BitmapBuffer</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="alpha_from_intensity" label="Alpha From Intensity">
+     <value>2</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="compatibility_with" label="compatibility with">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="invert" label="Invert">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="plugin" name="uvwgen" label="uvwgen">
+     <value>/6249_Platinum/Texture/UVWGenChannel</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="output float texture" name="out_alpha" label="out_alpha"/>
+    <parameter handler="default" listType="none" type="bool" name="tile" label="Tile">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="uv_noise_size" label="Size">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="CheckBoxHandler" listType="none" type="integer" name="uv_noise_on" label="On">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="nouvw_color" label="No UVW Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+      <a>0.000000</a>
+     </value>
+    </parameter>
+    <parameter handler="DoubleSpinBoxHandler" listType="none" type="float texture" name="alpha_offset" label="Alpha Offset">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="un_noise_phase" label="Phase">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="uv_noise_levels" label="Levels">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="output acolor texture" name="out_transparency" label="out_transparency"/>
+    <parameter handler="DoubleSpinBoxHandler" listType="none" type="float texture" name="alpha_mult" label="Alpha Multiplier">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="h" label="Height">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="placement_type" label="Placement Type">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="tile_v" label="Tile V">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="tile_u" label="Tile U">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="u" label="U">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="w" label="Width">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="v" label="V">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_mult" label="Color Multiplier"/>
+    <parameter handler="CheckBoxHandler" listType="none" type="integer" name="uv_noise_animate" label="Animate">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="output float texture" name="out_intensity" label="out_intensity"/>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_offset" label="Color Offset"/>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/(5S18)_CogentConnect_Scarlet_Base/BRDFVRayMtl/opacity" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/AnisoUVWGen" type="UVW" layout="">
+ <plugin>
+  <vrayplugin version="4" type="uvw" name="UVWGenChannel">
+   <parameters>
+    <parameter handler="TextureTransformHandler" listType="none" type="componentTransform" name="uvw_transform" label="uvw_transform">
+     <value>
+      <componentTransform>
+       <x_rotation>0.000000</x_rotation>
+       <y_rotation>0.000000</y_rotation>
+       <z_rotation>0.000000</z_rotation>
+       <x_scale>1.000000</x_scale>
+       <y_scale>1.000000</y_scale>
+       <z_scale>1.000000</z_scale>
+       <x_mirror>0</x_mirror>
+       <y_mirror>0</y_mirror>
+       <z_mirror>0</z_mirror>
+       <x_offset>0.000000</x_offset>
+       <y_offset>0.000000</y_offset>
+       <z_offset>0.000000</z_offset>
+      </componentTransform>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="crop_u" label="crop_u">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="output vector texture" name="uvw_coords" label="uvw_coords"/>
+    <parameter handler="default" listType="none" type="bool" name="use_double_sided_mode" label="Enable double-sided mode">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="wrap_mode" label="wrap_mode">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="plugin" name="uvwgen" label="uvwgen">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="wrap_u" label="wrap_u">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="wrap_w" label="wrap_w">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="wrap_v" label="wrap_v">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="crop_w" label="crop_w">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="uvw_channel" label="Channel">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="vector" name="coverage" label="coverage">
+     <value>
+      <x>1.000000</x>
+      <y>1.000000</y>
+      <z>1.000000</z>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="crop_v" label="crop_v">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="transform" name="tex_transform" label="tex_transform">
+     <value>
+      <vector>
+       <x>1.000000</x>
+       <y>0.000000</y>
+       <z>0.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>1.000000</y>
+       <z>0.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>0.000000</y>
+       <z>1.000000</z>
+      </vector>
+      <vector>
+       <x>0.000000</x>
+       <y>0.000000</y>
+       <z>0.000000</z>
+      </vector>
+     </value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/reflect_glossiness/Texture/color1" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/reflect_glossiness/Texture/color2" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/Material #134/BRDFVRayMtl/environment_override1" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/reflect/Texture/color1" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/reflect/Texture/color2" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/reflect/Texture" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexFalloff">
+   <parameters>
+    <parameter handler="default" listType="none" type="output float texture" name="blend_output" label="blend_output"/>
+    <parameter handler="default" listType="none" type="output acolor texture" name="color" label="Color"/>
+    <parameter handler="default" listType="none" type="bool" name="use_blend_input" label="Use Blend Input">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="alpha_from_intensity" label="Alpha from Intensity">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="compatibility_with" label="compatibility_with">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="angle_stop" label="Stop Angle">
+     <value>75.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="invert" label="Invert">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="output float texture" name="out_alpha" label="out_alpha"/>
+    <parameter handler="default" listType="none" type="float texture" name="alpha_mult" label="Alpha Mult">
+     <value></value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="type" label="Type">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="fresnel_ior" label="Fresnel IOR">
+     <value>1.600000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="invert_alpha" label="Invert Alpha">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="dist_near" label="Near">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="dist_far" label="Far">
+     <value>100.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="color1" label="Color 1">
+     <value>/6249_Platinum/BRDFVRayMtl/reflect/Texture/color1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="nouvw_color" label="No UVW Color"/>
+    <parameter handler="default" listType="none" type="acolor texture" name="color2" label="Color 2">
+     <value>/6249_Platinum/BRDFVRayMtl/reflect/Texture/color2</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float texture" name="alpha_offset" label="Alpha Offset">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="output acolor texture" name="out_transparency" label="out_transparency"/>
+    <parameter handler="default" listType="none" type="float" name="angle_start" label="Start Angle">
+     <value>30.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="vector" name="explicit_dir" label="Explicit Dir">
+     <value>
+      <x>0.000000</x>
+      <y>0.000000</y>
+      <z>1.000000</z>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="dist_extrapolate" label="Extrapolate">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float texture" name="blend_input" label="Blend Input">
+     <value></value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="direction_type" label="Direction">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_mult" label="Color Mult"/>
+    <parameter handler="default" listType="none" type="output float texture" name="out_intensity" label="out_intensity"/>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_offset" label="Color Offset"/>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/opacity" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6205_Black/BRDFVRayMtl/opacity" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/reflect_glossiness/Texture" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexFalloff">
+   <parameters>
+    <parameter handler="default" listType="none" type="output float texture" name="blend_output" label="blend_output"/>
+    <parameter handler="default" listType="none" type="output acolor texture" name="color" label="Color"/>
+    <parameter handler="default" listType="none" type="bool" name="use_blend_input" label="Use Blend Input">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="alpha_from_intensity" label="Alpha from Intensity">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="compatibility_with" label="compatibility_with">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="angle_stop" label="Stop Angle">
+     <value>75.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="invert" label="Invert">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="output float texture" name="out_alpha" label="out_alpha"/>
+    <parameter handler="default" listType="none" type="float texture" name="alpha_mult" label="Alpha Mult">
+     <value></value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="type" label="Type">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="fresnel_ior" label="Fresnel IOR">
+     <value>1.600000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="invert_alpha" label="Invert Alpha">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="dist_near" label="Near">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="dist_far" label="Far">
+     <value>100.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="color1" label="Color 1">
+     <value>/6249_Platinum/BRDFVRayMtl/reflect_glossiness/Texture/color1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="nouvw_color" label="No UVW Color"/>
+    <parameter handler="default" listType="none" type="acolor texture" name="color2" label="Color 2">
+     <value>/6249_Platinum/BRDFVRayMtl/reflect_glossiness/Texture/color2</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float texture" name="alpha_offset" label="Alpha Offset">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="output acolor texture" name="out_transparency" label="out_transparency"/>
+    <parameter handler="default" listType="none" type="float" name="angle_start" label="Start Angle">
+     <value>30.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="vector" name="explicit_dir" label="Explicit Dir">
+     <value>
+      <x>0.000000</x>
+      <y>0.000000</y>
+      <z>1.000000</z>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="dist_extrapolate" label="Extrapolate">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float texture" name="blend_input" label="Blend Input">
+     <value></value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="direction_type" label="Direction">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_mult" label="Color Mult"/>
+    <parameter handler="default" listType="none" type="output float texture" name="out_intensity" label="out_intensity"/>
+    <parameter handler="default" listType="none" type="acolor texture" name="color_offset" label="Color Offset"/>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/reflect_glossiness" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture">
+     <value>/6249_Platinum/BRDFVRayMtl/reflect_glossiness/Texture</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/V-Ray/BRDFVRayMtl/environment_override" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/Material #132/BRDFVRayMtl/opacity1" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/Material #132/BRDFVRayMtl/environment_override1" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/translucency_color" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/roughness" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/anisotropy_rotation" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/refract_glossiness" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/anisotropy" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/hilight_glossiness" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/refract_ior" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.600000</r>
+      <g>1.600000</g>
+      <b>1.600000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/fresnel_ior" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>12.100000</r>
+      <g>12.100000</g>
+      <b>12.100000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/diffuse" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.231373</r>
+      <g>0.231373</g>
+      <b>0.235294</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/reflect" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.313726</r>
+      <g>0.313726</g>
+      <b>0.313726</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture">
+     <value>/6249_Platinum/BRDFVRayMtl/reflect/Texture</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/refract" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl" type="BRDF" layout="BRDFVRayMtlLayout">
+ <plugin>
+  <vrayplugin version="4" type="BRDF" name="BRDFVRayMtl">
+   <parameters>
+    <parameter isUserData="1" handler="default" listType="none" type="acolor texture" name="translucency_color_tex" label="Back-side color">
+     <value></value>
+    </parameter>
+    <parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="refract_glossiness" label="Glossiness">
+     <value>/6249_Platinum/BRDFVRayMtl/refract_glossiness</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="fog_unit_scale_on" label="Fog system units scaling">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="reflect_glossiness_tex_on" label="reflect_glossiness_tex_on">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="reflect_trace" label="Trace reflections">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="reflect_dim_distance_falloff" label="Dim falloff">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="anisotropy_rotation" label="Rotation">
+     <value>/6249_Platinum/BRDFVRayMtl/anisotropy_rotation</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="refl_imap_min_rate" label="Min rate">
+     <value>-1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="roughness_tex_on" label="roughness_tex_on">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="opacity_tex_on" label="opacity_tex_on">
+     <value>1</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="option_energy_mode" label="Energy preservation mode">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="color" name="reflect_exit_color" label="Exit color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter isUserData="1" handler="TextureHandler" listType="none" type="float texture" name="fresnel_ior_tex" label="Fresnel IOR">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="refl_imap_color_thresh" label="Clr thresh">
+     <value>0.250000</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="option_glossy_rays_as_gi" label="Treat glossy rays as GI">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="fresnel_ior_tex_on" label="fresnel_ior_tex_on">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="anisotropy_rotation_tex_mult" label="anisotropy_rotation_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="option_use_irradiance_map" label="Use irradiance map">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="TextureHandler" listType="none" type="float texture" name="roughness_tex" label="Roughness">
+     <value></value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="refract_tex_mult" label="refract_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="TextureHandler" listType="none" type="acolor texture" name="reflect_tex" label="Reflect">
+     <value>/6249_Platinum/BRDFVRayMtl/reflect/Texture</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="reflect_subdivs" label="Subdivs">
+     <value>211</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="refr_imap_samples" label="Interp. samples">
+     <value>20</value>
+    </parameter>
+    <parameter handler="TextureHandler" listType="none" type="float texture" name="hilight_glossiness_tex" label="Highlight glossiness">
+     <value></value>
+    </parameter>
+    <parameter isUserData="1" handler="ComboBoxHandler" listType="none" type="integer" name="texture_multiplier_mode" label="Texture multiplier mode">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="reflect_dim_distance_on" label="reflect_dim_distance_on">
+     <value>0</value>
+    </parameter>
+    <parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="anisotropy" label="Anisotropy (-1..1)">
+     <value>/6249_Platinum/BRDFVRayMtl/anisotropy</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="brdf_type" label="Type">
+     <value>4</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="anisotropy_derivation" label="Derivation">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="fresnel" label="Fresnel reflections">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="color" name="diffuse_color" label="Diffuse">
+     <value>
+      <r>0.231373</r>
+      <g>0.231373</g>
+      <b>0.235294</b>
+     </value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="anisotropy_tex_mult" label="anisotropy_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="environment_priority" label="Environment priority">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="TextureHandler" listType="none" type="float texture" name="reflect_glossiness_tex" label="Refl. glossiness">
+     <value>/6249_Platinum/BRDFVRayMtl/reflect_glossiness/Texture</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="dispersion_on" label="Dispersion">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="hilight_glossiness_float" label="Highlight glossiness">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="opacity_float" label="Opacity">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float texture" name="refract_ior_tex" label="IOR">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="color" name="fog_color" label="Fog color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="refract_ior_tex_on" label="refract_ior_tex_on">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="color" name="refract_color" label="Refract">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="hilight_glossiness" label="Highlight glossiness">
+     <value>/6249_Platinum/BRDFVRayMtl/hilight_glossiness</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="diffuse_tex_mult" label="diffuse_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="color" name="reflect_color" label="Reflect">
+     <value>
+      <r>0.313726</r>
+      <g>0.313726</g>
+      <b>0.313726</b>
+     </value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="refract_glossiness_tex_mult" label="refract_glossiness_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="roughness_float" label="Roughness">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="fog_color_tex" label="fog_color_tex"/>
+    <parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="refract_ior" label="IOR">
+     <value>/6249_Platinum/BRDFVRayMtl/refract_ior</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="translucency_scatter_dir" label="Fwd/back coeff">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="translucency_color_tex_mult" label="translucency_color_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="anisotropy_float" label="Anisotropy (-1..1)">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="refl_imap_norm_thresh" label="Nrm thresh">
+     <value>0.400000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="refract_exit_color_on" label="Exit color">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="option_cutoff" label="Cutoff">
+     <value>0.001000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float texture" name="refract_glossiness_tex" label="Glossiness">
+     <value></value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="diffuse_tex_on" label="diffuse_tex_on">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="hilight_glossiness_tex_on" label="hilight_glossiness_tex_on">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="refl_imap_max_rate" label="Max rate">
+     <value>-1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="translucency_scatter_coeff" label="Scatter coeff">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="CheckBoxHandler" listType="none" type="integer" name="refr_interpolation_on" label="Use interpolation">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="option_double_sided" label="Double-sided">
+     <value>1</value>
+    </parameter>
+    <parameter handler="LockButtonHandler" listType="none" type="bool" name="hilight_glossiness_lock" label="hilight_glossiness_lock">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="translucency_color_tex_on" label="translucency_color_tex_on">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="anisotropy_tex_on" label="anisotropy_tex_on">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="fresnel_ior_tex_mult" label="fresnel_ior_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="dispersion" label="Abbe">
+     <value>50.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="TextureHandler" listType="none" type="acolor texture" name="diffuse_tex" label="Diffuse">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="option_reflect_on_back" label="Reflect on back side">
+     <value>0</value>
+    </parameter>
+    <parameter handler="LockButtonHandler" listType="none" type="bool" name="fresnel_ior_lock" label="fresnel_ior_lock">
+     <value>0</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="translucency" label="Type">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="refract_glossiness_tex_on" label="refract_glossiness_tex_on">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="refract_affect_shadows" label="Affect shadows">
+     <value>0</value>
+    </parameter>
+    <parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="fresnel_ior" label="Fresnel IOR">
+     <value>/6249_Platinum/BRDFVRayMtl/fresnel_ior</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="hilight_soften" label="Soften">
+     <value>0.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="fresnel_ior_float" label="Fresnel IOR">
+     <value>12.100000</value>
+    </parameter>
+    <parameter handler="ColorTexFrameHandler" listType="none" type="acolor texture" name="translucency_color" label="Back-side color">
+     <value>/6249_Platinum/BRDFVRayMtl/translucency_color</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="acolor texture" name="environment_override_tex" label="environment_override_tex"/>
+    <parameter handler="default" listType="none" type="float" name="translucency_thickness" label="Thickness">
+     <value>1000.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="refract_ior_float" label="IOR">
+     <value>1.600000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="refr_imap_color_thresh" label="Clr thresh">
+     <value>0.250000</value>
+    </parameter>
+    <parameter isUserData="1" handler="TextureHandler" listType="none" type="float texture" name="opacity_tex" label="Opacity">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="reflect_dim_distance" label="Dim distance">
+     <value>100.000000</value>
+    </parameter>
+    <parameter handler="CheckBoxHandler" listType="none" type="integer" name="refl_interpolation_on" label="Use interpolation">
+     <value>0</value>
+    </parameter>
+    <parameter handler="CheckBoxHandler" listType="none" type="integer" name="option_fix_dark_edges" label="Fix dark glossy edges">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="opacity_tex_mult" label="opacity_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="hilight_glossiness_tex_mult" label="hilight_glossiness_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="ColorTexFrameHandler" gammaCorrect="1" listType="none" type="acolor texture" name="diffuse" label="Diffuse">
+     <value>/6249_Platinum/BRDFVRayMtl/diffuse</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="reflect_tex_mult" label="reflect_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="reflect_depth" label="Max depth">
+     <value>5</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="refl_imap_samples" label="Interp. samples">
+     <value>20</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="fog_bias" label="Fog bias">
+     <value>0.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="anisotropy_rotation_tex_on" label="anisotropy_rotation_tex_on">
+     <value>1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="anisotropy_rotation_float" label="Rotation">
+     <value>0.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="refract_glossiness_float" label="Glossiness">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="reflect_glossiness" label="Refl. glossiness">
+     <value>/6249_Platinum/BRDFVRayMtl/reflect_glossiness</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="environment_override_tex_mult" label="environment_override_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="acolor texture" name="refract_tex" label="Refract">
+     <value></value>
+    </parameter>
+    <parameter isUserData="1" handler="TextureHandler" listType="none" type="float texture" name="anisotropy_rotation_tex" label="Rotation">
+     <value></value>
+    </parameter>
+    <parameter handler="UVWHandler" listType="none" type="plugin" name="anisotropy_uvwgen" label="UVW">
+     <value>/6249_Platinum/BRDFVRayMtl/AnisoUVWGen</value>
+    </parameter>
+    <parameter handler="ColorTexFrameHandler" gammaCorrect="1" listType="none" type="acolor texture" name="environment_override" label="Environment override">
+     <value></value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="reflect_glossiness_tex_mult" label="reflect_glossiness_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="TextureHandler" listType="none" type="float texture" name="anisotropy_tex" label="Anisotropy (-1..1)">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="color" name="refract_exit_color" label="Exit color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="environment_override_tex_on" label="environment_override_tex_on">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="fog_mult" label="Fog multiplier">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="roughness" label="Roughness">
+     <value>/6249_Platinum/BRDFVRayMtl/roughness</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="reflect_affect_alpha" label="Affect channels">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="refract_ior_tex_mult" label="refract_ior_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="refract_trace" label="Trace refractions">
+     <value>1</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="anisotropy_axis" label="Local axis">
+     <value>2</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="translucency_light_mult" label="Light multiplier">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="color" name="translucency_color_color" label="Back-side color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="FloatTexFrameHandler" listType="none" type="float texture" name="opacity" label="Opacity">
+     <value></value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="refract_tex_on" label="refract_tex_on">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="refr_imap_min_rate" label="Min rate">
+     <value>-1</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="roughness_tex_mult" label="roughness_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="ColorTexFrameHandler" listType="none" type="acolor texture" name="reflect" label="Reflect">
+     <value>/6249_Platinum/BRDFVRayMtl/reflect</value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="refract_affect_alpha" label="Affect channels">
+     <value>0</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="reflect_glossiness_float" label="Refl. glossiness">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="reflect_tex_on" label="reflect_tex_on">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="refr_imap_norm_thresh" label="Nrm thresh">
+     <value>0.400000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="refr_imap_max_rate" label="Max rate">
+     <value>-1</value>
+    </parameter>
+    <parameter handler="ColorTexFrameHandler" listType="none" type="acolor texture" name="refract" label="Refract">
+     <value>/6249_Platinum/BRDFVRayMtl/refract</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="refract_subdivs" label="Subdivs">
+     <value>8</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="refract_depth" label="Max depth">
+     <value>5</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="color" name="environment_override_color" label="environment_override_color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/(5S18)_CogentConnect_Scarlet_Base/BRDFVRayMtl/environment_override" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/Material #132/BRDFVRayMtl/environment_override" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/Material #134/BRDFVRayMtl/opacity1" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/V-Ray/BRDFVRayMtl/opacity" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/Material #132/BRDFVRayMtl/opacity" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6205_Black/BRDFVRayMtl/environment_override" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum" type="material" layout="defvrmat">
+ <preview>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</preview>
+ <plugin>
+  <vrayplugin version="4" type="material" name="MtlASGVIS">
+   <parameters>
+    <parameter handler="default" listType="none" type="bool" name="compute_bump_for_shadows" label="Compute bump for shadows">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="displace_continuity" label="Keep continuity">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="refract_tex_mult" label="refract_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="TextureHandler" listType="none" type="plugin" name="displace_tex" label="displace_tex">
+     <value></value>
+    </parameter>
+    <parameter handler="PluginListPicker" listType="none" type="list" name="channels" label="Material result">
+     <value>
+      <list/>
+     </value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="integer" name="trace_depth_dummy" label="Refraction Max Depth">
+     <value>-1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="alpha" label="Alpha Contribution">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="displace_view_dependent" label="View dependent">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="cast_shadow" label="Cast Shadows">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="bump_delta_scale" label="bump_delta_scale">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="effected_by_mtl_override" label="Can be Overridden">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="displace_water_level" label="Water Level">
+     <value>0.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="trace_reflections_dummy" label="Trace Reflections">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="gi_tex_mult" label="gi_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="displace_tex_mult" label="displace_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="displace_edge_length" label="Edge length">
+     <value>4.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="displace_use_globals" label="Use globals">
+     <value>1</value>
+    </parameter>
+    <parameter handler="TextureHandler" listType="none" type="plugin" name="gi_tex" label="gi_tex">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="color" name="refract_color" label="refract_color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="override_reflect" label="Reflection">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="ignore_objects" label="On">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="override_gi" label="GI">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float texture" name="bump_tex_mult_tex" label="Bump amount texture">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="integer" name="displace_max_subdivs" label="Max subdivs">
+     <value>256</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="reflect_on_backside_dummy" label="Reflect on Backside">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="override_bg" label="Background">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="only_visible_in_secondary" label="Only in Secondary">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="color" name="gi_color" label="gi_color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="color" name="reflect_color" label="reflect_color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="alpha_tex_mult" label="alpha_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="TextureHandler" listType="none" type="plugin" name="bump_tex" label="bump_tex">
+     <value>/6249_Platinum/Texture</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="color" name="bg_color" label="bg_color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="TextureHandler" listType="none" type="plugin" name="reflect_tex" label="reflect_tex">
+     <value></value>
+    </parameter>
+    <parameter handler="ComboBoxHandler" listType="none" type="integer" name="map_type" label="Bump type">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="bump_shadows" label="bump_shadows">
+     <value>0</value>
+    </parameter>
+    <parameter handler="TextureHandler" listType="none" type="plugin" name="refract_tex" label="refract_tex">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="double_sided" label="Double-Sided">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="reflect_tex_mult" label="reflect_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="bool" name="trace_refractions_dummy" label="Trace Refractions">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="bump_tex_mult" label="bump_tex_mult">
+     <value>0.010000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="plugin" name="normal_uvwgen" label="Normal uvw">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="override_refract" label="Refraction">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="displace_shift" label="Shift">
+     <value>0.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="disable_volume_fog" label="Disable Volume Fog">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="short_circuit" label="Optimize exclusion">
+     <value>0</value>
+    </parameter>
+    <parameter handler="TextureHandler" listType="none" type="plugin" name="bg_tex" label="bg_tex">
+     <value></value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="bump_on" label="Bump">
+     <value>1</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="color" name="material_id_color" label="ID Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="bg_tex_mult" label="bg_tex_mult">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="bool" name="displace_on" label="Displacement">
+     <value>0</value>
+    </parameter>
+    <parameter handler="default" listType="plugin" type="list" name="brdfs" label="brdfs">
+     <value>
+      <list>
+       <entry>/6249_Platinum/BRDFVRayMtl</entry>
+      </list>
+     </value>
+    </parameter>
+    <parameter isUserData="1" handler="default" listType="none" type="float" name="cutoff_dummy" label="Cutoff">
+     <value>0.010000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="alpha_tex" label="alpha_tex"/>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/black/BRDFVRayMtl/environment_override" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/6249_Platinum/BRDFVRayMtl/environment_override" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/5S18_CogentConnect_Scarlet_Base/BRDFVRayMtl/opacity" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/Material #134/BRDFVRayMtl/opacity" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/Material #134/BRDFVRayMtl/environment_override" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>0.000000</r>
+      <g>0.000000</g>
+      <b>0.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+<Asset renderer="vray" url="/black/BRDFVRayMtl/opacity" type="texture" layout="">
+ <plugin>
+  <vrayplugin version="4" type="texture" name="TexCombineColor">
+   <parameters>
+    <parameter handler="default" listType="none" type="color" name="color" label="Color">
+     <value>
+      <r>1.000000</r>
+      <g>1.000000</g>
+      <b>1.000000</b>
+     </value>
+    </parameter>
+    <parameter handler="default" listType="none" type="float" name="texture_multiplier" label="Blend amount">
+     <value>1.000000</value>
+    </parameter>
+    <parameter handler="default" listType="none" type="acolor texture" name="texture" label="Texture"/>
+    <parameter handler="default" listType="none" type="bool" name="result_invert" label="Invert">
+     <value>0</value>
+    </parameter>
+   </parameters>
+  </vrayplugin>
+ </plugin>
+</Asset>
+</vrmat>

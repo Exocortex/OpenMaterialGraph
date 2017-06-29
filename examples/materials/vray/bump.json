@@ -1,0 +1,3 @@
+BRDFBump:
+	base_brdf: brdf
+	bump: normal

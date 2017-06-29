@@ -1,0 +1,6 @@
+surface omg_bsfd_emitter (
+    color emitterColor
+    )
+{
+    Ci = ( 1.0 / ( M_PI * surfacearea() ) ) * emitterColor * emission();
+}

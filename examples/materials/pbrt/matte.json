@@ -1,0 +1,15 @@
+matte:
+   diffuse: color
+   sigma: float // oren-nayar roughness control, guassian sigma
+   normal: normal
+
+
+if( sigma === 0 )
+	bsdfs.add( new LambertianReflection( diffuse ) );
+else
+	bsdfs.add( new OrenNayar( diffuse , signma) );	
+
+
+///////////////////////////////////////  Optimized
+
+bsdfs.add( new OrenNayarReflection( diffuse, sigma ) );

@@ -1,0 +1,39 @@
+color DielectricFresnel_Schlick( color F0 ) {
+
+	float fresnel = pow( 1.0 - dot( -I, N ), 5.0 );
+	return mix( F0, color( 1.0 ), fresnel );
+
+}
+
+closure color glossy( vector n, float roughness, float eta, float au, float av ) {
+
+	return microfacet_ggx( n, roughness, eta, "trace_reflections", 1 );
+	//return vray_blinn( n, roughnessToGlossiness( roughness ), au, av, "trace_reflections", 1 );
+
+}
+
+shader DisneyPBR44
+(
+	color baseColor = color(1.0,0.0,0.0),
+	color specularColor = color(0.2,0.2,0.2),
+	float roughness = 0.0,
+
+	output closure color Result = diffuse(0.8)
+
+)
+{
+	closure color diffuseBRDF = diffuse(N, "trace_reflections", 1);
+	color diffuseCoefficient = baseColor * ( 1.0 / M_PI );
+
+	closure color glossyBRDF = glossy( N, roughness, 200, 0.0, 0.0 );
+	color glossyCoefficient = DielectricFresnel_Schlick( specularColor );
+
+
+    Result =
+    	//diffuseBRDF * diffuseCoefficient +
+    	diffuse(0, "trace_reflections", 1) * glossyCoefficient;
+    	// +
+    	//clearCoatBRDF * clearCoatCoefficient +
+    	//emissiveBRDF * emissiveCoefficient;
+
+}

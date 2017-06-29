@@ -1,0 +1,10 @@
+Reflection:
+	color: color
+	transparency: float
+	highlightGlossiness: float
+	reflectionGlossiness: float  (clear coat?, if so how to turn off)
+	anisotropy: float
+	anisotropyRotation: float
+	anisotropyTangent: vector
+
+

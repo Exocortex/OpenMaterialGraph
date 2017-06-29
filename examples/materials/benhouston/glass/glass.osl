@@ -1,0 +1,46 @@
+surface omg_bsfd_glass(
+    color reflectionColor,
+    color refractionColor,
+    color transmissionColor,        // TODO
+    float absorption,               // TODO
+    float ior
+    )
+{
+    if( backfacing() ) { // Take into account backfacing to invert ior accordingly
+        ior = 1.0 / ior;
+    }
+
+    Ci = reflectionColor * reflection( N, ior )
+        + refractionColor * refraction( N, ior );
+}
+
+
+// with fresnel
+
+float FresnelDielectric(vector i, normal n, float eta)
+{
+    float c = fabs(dot(i, n));
+    float g = eta * eta - 1 + c * c;
+    float result = 1.0;
+    
+    if (g > 0) {
+        g = sqrt(g);
+        float a = (g - c) / (g + c);
+        float b = (c * (g + c) - 1) / (c * (g + c) + 1);
+        result = 0.5 * a * a * (1 + b * b);
+    }
+    
+    return result;
+}
+
+surface Glass(
+    color diffuse_col = 0.8, 
+    float ior = 1.45, 
+    output closure color bsdf = 0)
+{
+    float real_ior = max(ior, IOR_THRESHOLD);
+    float eta = backfacing()? 1.0 / real_ior : real_ior;
+    float fr = FresnelDielectric(I, N, eta);
+    
+    bsdf = diffuse_col * (fr * reflection(N) + (1.0 - fr) * refraction(N, eta));
+}

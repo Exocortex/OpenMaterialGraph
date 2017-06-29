@@ -1,0 +1,28 @@
+{
+   "omg-format": "0.0.1-alpha",
+
+   "name": "carpaint",
+   "author": "anderslanglands",
+   "version": "0.0.1",
+   
+   "layers": {
+
+      {
+         "bsdf": "diffuse",
+         "roughness": 0.0,
+      },
+
+      {
+         "bsdf": "ggx_refl",
+         "color": {0.55, 0.05, 0.03},
+         "roughness": 0.4
+         "ior": 1000
+      },
+
+      {
+         "bsdf": "ggx_refl",
+         "roughness": 0.0,
+         "ior": 1.6
+      }
+   }
+}

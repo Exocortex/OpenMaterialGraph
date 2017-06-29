@@ -1,0 +1,1504 @@
+<vismat>
+	<Asset url="/25L5_Virginia_Walnut/BRDFLayered/texmap_blend_0" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.5</r><g>0.5</g><b>0.5</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value>/25L5_Virginia_Walnut/BRDFLayered/texmap_blend_0/Texture</value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt/BRDFVRayMtl/diffuse" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.117647</r><g>0.054902</g><b>0.0313726</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt/BRDFVRayMtl/roughness" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt/BRDFVRayMtl/reflect" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt/BRDFVRayMtl/hilight_glossiness" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>1.0</r><g>1.0</g><b>1.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt/BRDFVRayMtl/reflect_glossiness" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>1.0</r><g>1.0</g><b>1.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt/BRDFVRayMtl/anisotropy" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt/BRDFVRayMtl/anisotropy_rotation" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt/BRDFVRayMtl/fresnel_ior" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>1.6</r><g>1.6</g><b>1.6</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt/BRDFVRayMtl/refract" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt/BRDFVRayMtl/refract_glossiness" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>1.0</r><g>1.0</g><b>1.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt/BRDFVRayMtl/refract_ior" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>1.6</r><g>1.6</g><b>1.6</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt/BRDFVRayMtl/translucency_color" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>1.0</r><g>1.0</g><b>1.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt/BRDFVRayMtl/AnisoUVWGen" type="UVW" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="UVWGenChannel" type="UVW">
+				<parameters>
+					<parameter handler="default" name="uvw_channel" type="integer">
+						<value>1</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt/BRDFVRayMtl" type="BRDF" layout="BRDFVRayMtlLayout" renderer="vray">
+		<plugin>
+			<vrayplugin name="BRDFVRayMtl" type="BRDF">
+				<parameters>
+					<parameter handler="default" name="reflect_subdivs" type="integer">
+						<value>8</value>
+					</parameter>
+					<parameter handler="default" name="fresnel" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="reflect_depth" type="integer">
+						<value>5</value>
+					</parameter>
+					<parameter handler="default" name="reflect_exit_color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="fresnel" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="refl_interpolation_on" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="hilight_glossiness_lock" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="fresnel_ior_lock" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="reflect_dim_distance" type="float">
+						<value>100.0</value>
+					</parameter>
+					<parameter handler="default" name="reflect_dim_distance_on" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="reflect_dim_distance_falloff" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="default" name="reflect_affect_alpha" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="refract_subdivs" type="integer">
+						<value>8</value>
+					</parameter>
+					<parameter handler="default" name="fog_color" type="color">
+						<value><r>1.0</r><g>1.0</g><b>1.0</b></value>
+					</parameter>
+					<parameter handler="default" name="fog_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="default" name="fog_bias" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="default" name="refract_affect_shadows" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="refract_affect_alpha" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="refract_depth" type="integer">
+						<value>5</value>
+					</parameter>
+					<parameter handler="default" name="refract_exit_color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="refract_exit_color_on" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="refr_interpolation_on" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="dispersion" type="float">
+						<value>50.0</value>
+					</parameter>
+					<parameter handler="default" name="dispersion_on" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="translucency" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="translucency_thickness" type="float">
+						<value>1000.0</value>
+					</parameter>
+					<parameter handler="default" name="translucency_scatter_coeff" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="default" name="translucency_scatter_dir" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="default" name="translucency_light_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="default" name="brdf_type" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="anisotropy_derivation" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="anisotropy_axis" type="integer">
+						<value>2</value>
+					</parameter>
+					<parameter handler="default" name="anisotropy_uvwgen" type="plugin">
+						<value>/Dirt/BRDFVRayMtl/AnisoUVWGen</value>
+					</parameter>
+					<parameter handler="default" name="hilight_soften" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="default" name="option_fix_dark_edges" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="reflect_trace" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="refract_trace" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="option_double_sided" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="option_reflect_on_back" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="option_use_irradiance_map" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="fog_unit_scale_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="option_cutoff" type="float">
+						<value>0.001</value>
+					</parameter>
+					<parameter handler="default" name="option_energy_mode" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="environment_priority" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="option_glossy_rays_as_gi" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="ComboBoxHandler" name="texture_multiplier_mode" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="refl_imap_min_rate" type="integer">
+						<value>-1</value>
+					</parameter>
+					<parameter handler="default" name="refl_imap_max_rate" type="integer">
+						<value>-1</value>
+					</parameter>
+					<parameter handler="default" name="refl_imap_samples" type="integer">
+						<value>20</value>
+					</parameter>
+					<parameter handler="default" name="refl_imap_color_thresh" type="float">
+						<value>0.25</value>
+					</parameter>
+					<parameter handler="default" name="refl_imap_norm_thresh" type="float">
+						<value>0.4</value>
+					</parameter>
+					<parameter handler="default" name="refr_imap_min_rate" type="integer">
+						<value>-1</value>
+					</parameter>
+					<parameter handler="default" name="refr_imap_max_rate" type="integer">
+						<value>-1</value>
+					</parameter>
+					<parameter handler="default" name="refr_imap_samples" type="integer">
+						<value>20</value>
+					</parameter>
+					<parameter handler="default" name="refr_imap_color_thresh" type="float">
+						<value>0.25</value>
+					</parameter>
+					<parameter handler="default" name="refr_imap_norm_thresh" type="float">
+						<value>0.4</value>
+					</parameter>
+					<parameter gammaCorrect="1" handler="ColorTexFrameHandler" name="diffuse" type="acolor texture">
+						<value>/Dirt/BRDFVRayMtl/diffuse</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="diffuse_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="diffuse_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="diffuse_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="diffuse_color" type="color">
+						<value><r>0.117647</r><g>0.054902</g><b>0.0313726</b></value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="roughness" type="float texture">
+						<value>/Dirt/BRDFVRayMtl/roughness</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="roughness_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="roughness_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="roughness_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="roughness_float" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="ColorTexFrameHandler" name="reflect" type="acolor texture">
+						<value>/Dirt/BRDFVRayMtl/reflect</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="reflect_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="reflect_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="reflect_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="reflect_color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="hilight_glossiness" type="float texture">
+						<value>/Dirt/BRDFVRayMtl/hilight_glossiness</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="hilight_glossiness_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="hilight_glossiness_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="hilight_glossiness_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="hilight_glossiness_float" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="reflect_glossiness" type="float texture">
+						<value>/Dirt/BRDFVRayMtl/reflect_glossiness</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="reflect_glossiness_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="reflect_glossiness_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="reflect_glossiness_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="reflect_glossiness_float" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="anisotropy" type="float texture">
+						<value>/Dirt/BRDFVRayMtl/anisotropy</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="anisotropy_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="anisotropy_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="anisotropy_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="anisotropy_float" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="anisotropy_rotation" type="float texture">
+						<value>/Dirt/BRDFVRayMtl/anisotropy_rotation</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="anisotropy_rotation_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="anisotropy_rotation_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="anisotropy_rotation_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="anisotropy_rotation_float" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="fresnel_ior" type="float texture">
+						<value>/Dirt/BRDFVRayMtl/fresnel_ior</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="fresnel_ior_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="fresnel_ior_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="fresnel_ior_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="fresnel_ior_float" type="float">
+						<value>1.6</value>
+					</parameter>
+					<parameter handler="ColorTexFrameHandler" name="refract" type="acolor texture">
+						<value>/Dirt/BRDFVRayMtl/refract</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="refract_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="refract_glossiness" type="float texture">
+						<value>/Dirt/BRDFVRayMtl/refract_glossiness</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="refract_glossiness_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_glossiness_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_glossiness_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_glossiness_float" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="refract_ior" type="float texture">
+						<value>/Dirt/BRDFVRayMtl/refract_ior</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="refract_ior_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_ior_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_ior_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_ior_float" type="float">
+						<value>1.6</value>
+					</parameter>
+					<parameter handler="ColorTexFrameHandler" name="translucency_color" type="acolor texture">
+						<value>/Dirt/BRDFVRayMtl/translucency_color</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="translucency_color_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="translucency_color_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="translucency_color_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="translucency_color_color" type="color">
+						<value><r>1.0</r><g>1.0</g><b>1.0</b></value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/Dirt" type="material" layout="MtlSingleBRDFLayout" renderer="vray">
+		<plugin>
+			<vrayplugin name="MtlSingleBRDF" type="material">
+				<parameters>
+					<parameter handler="default" name="brdf" type="plugin">
+						<value>/Dirt/BRDFVRayMtl</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/diffuse/Texture/UVWGenChannel" type="UVW" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="UVWGenChannel" type="UVW">
+				<parameters>
+					<parameter handler="default" name="uvw_channel" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="wrap_u" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="crop_u" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="wrap_v" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="crop_v" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="wrap_mode" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="TextureTransformHandler" name="uvw_transform" type="componentTransform">
+						<value>
+							<componentTransform>
+								<x_rotation>0.0</x_rotation>
+								<y_rotation>0.0</y_rotation>
+								<z_rotation>0.0</z_rotation>
+								<x_offset>0.15</x_offset>
+								<y_offset>0.15</y_offset>
+								<z_offset>0.0</z_offset>
+								<x_scale>0.7</x_scale>
+								<y_scale>0.7</y_scale>
+								<z_scale>1</z_scale>
+								<x_mirror>0</x_mirror>
+								<y_mirror>0</y_mirror>
+								<z_mirror>0</z_mirror>
+							</componentTransform>
+						</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/diffuse/Texture/BitmapBuffer" type="bitmap" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="BitmapBuffer" type="bitmap">
+				<parameters>
+					<parameter handler="FileBrowserHandler" name="file" type="string">
+						<value>diffuse_laminate_Virginia_Walnut.png</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" name="filter_type" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="filter_blur" type="float">
+						<value>0.5</value>
+					</parameter>
+					<parameter handler="default" name="color_space" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="gamma" type="float">
+						<value>0.454545</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/diffuse/Texture" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexBitmap" type="texture">
+				<parameters>
+					<parameter handler="default" name="uvwgen" type="plugin">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/diffuse/Texture/UVWGenChannel</value>
+					</parameter>
+					<parameter handler="default" name="bitmap" type="plugin">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/diffuse/Texture/BitmapBuffer</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" name="placement_type" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="alpha_from_intensity" type="integer">
+						<value>2</value>
+					</parameter>
+					<parameter handler="default" name="nouvw_color" type="acolor texture">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b><a>0.0</a></value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/diffuse" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.388235</r><g>0.2</g><b>0.0980392</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/diffuse/Texture</value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/roughness" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/reflect/Texture/color1" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/reflect/Texture/color2" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>1.0</r><g>1.0</g><b>1.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/reflect/Texture" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexFalloff" type="texture">
+				<parameters>
+					<parameter handler="ColorTexFrameHandler" name="color1" type="acolor texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/reflect/Texture/color1</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="color1_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="color1_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="color1_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="color1_color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="ColorTexFrameHandler" name="color2" type="acolor texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/reflect/Texture/color2</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="color2_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="color2_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="color2_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="color2_color" type="color">
+						<value><r>1.0</r><g>1.0</g><b>1.0</b></value>
+					</parameter>
+					<parameter handler="default" name="type" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="direction_type" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="fresnel_ior" type="float">
+						<value>1.6</value>
+					</parameter>
+					<parameter handler="default" name="dist_extrapolate" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="dist_near" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="default" name="dist_far" type="float">
+						<value>100.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/reflect" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/reflect/Texture</value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/hilight_glossiness" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>1.0</r><g>1.0</g><b>1.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/reflect_glossiness" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.65</r><g>0.65</g><b>0.65</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/anisotropy" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/anisotropy_rotation" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/fresnel_ior" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.300001</r><g>0.300001</g><b>0.300001</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/refract" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/refract_glossiness" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>1.0</r><g>1.0</g><b>1.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/refract_ior" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>1.6</r><g>1.6</g><b>1.6</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/translucency_color" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexCombineColor" type="texture">
+				<parameters>
+					<parameter handler="default" name="color" type="color">
+						<value><r>1.0</r><g>1.0</g><b>1.0</b></value>
+					</parameter>
+					<parameter handler="default" name="texture" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter handler="default" name="texture_multiplier" type="float">
+						<value>1.0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl/AnisoUVWGen" type="UVW" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="UVWGenChannel" type="UVW">
+				<parameters>
+					<parameter handler="default" name="uvw_channel" type="integer">
+						<value>1</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFVRayMtl" type="BRDF" layout="BRDFVRayMtlLayout" renderer="vray">
+		<plugin>
+			<vrayplugin name="BRDFVRayMtl" type="BRDF">
+				<parameters>
+					<parameter handler="default" name="reflect_subdivs" type="integer">
+						<value>32</value>
+					</parameter>
+					<parameter handler="default" name="fresnel" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="reflect_depth" type="integer">
+						<value>5</value>
+					</parameter>
+					<parameter handler="default" name="reflect_exit_color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="fresnel" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="refl_interpolation_on" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="hilight_glossiness_lock" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="fresnel_ior_lock" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="reflect_dim_distance" type="float">
+						<value>100.0</value>
+					</parameter>
+					<parameter handler="default" name="reflect_dim_distance_on" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="reflect_dim_distance_falloff" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="default" name="reflect_affect_alpha" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="refract_subdivs" type="integer">
+						<value>8</value>
+					</parameter>
+					<parameter handler="default" name="fog_color" type="color">
+						<value><r>1.0</r><g>1.0</g><b>1.0</b></value>
+					</parameter>
+					<parameter handler="default" name="fog_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="default" name="fog_bias" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="default" name="refract_affect_shadows" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="refract_affect_alpha" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="refract_depth" type="integer">
+						<value>5</value>
+					</parameter>
+					<parameter handler="default" name="refract_exit_color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="default" name="refract_exit_color_on" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="refr_interpolation_on" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="dispersion" type="float">
+						<value>50.0</value>
+					</parameter>
+					<parameter handler="default" name="dispersion_on" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="translucency" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="translucency_thickness" type="float">
+						<value>1000.0</value>
+					</parameter>
+					<parameter handler="default" name="translucency_scatter_coeff" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="default" name="translucency_scatter_dir" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="default" name="translucency_light_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="default" name="brdf_type" type="integer">
+						<value>4</value>
+					</parameter>
+					<parameter handler="default" name="anisotropy_derivation" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="anisotropy_axis" type="integer">
+						<value>2</value>
+					</parameter>
+					<parameter handler="default" name="anisotropy_uvwgen" type="plugin">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/AnisoUVWGen</value>
+					</parameter>
+					<parameter handler="default" name="hilight_soften" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="default" name="option_fix_dark_edges" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="reflect_trace" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="refract_trace" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="option_double_sided" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="option_reflect_on_back" type="bool">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="option_use_irradiance_map" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="fog_unit_scale_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="option_cutoff" type="float">
+						<value>0.001</value>
+					</parameter>
+					<parameter handler="default" name="option_energy_mode" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="environment_priority" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="option_glossy_rays_as_gi" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="ComboBoxHandler" name="texture_multiplier_mode" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="refl_imap_min_rate" type="integer">
+						<value>-1</value>
+					</parameter>
+					<parameter handler="default" name="refl_imap_max_rate" type="integer">
+						<value>-1</value>
+					</parameter>
+					<parameter handler="default" name="refl_imap_samples" type="integer">
+						<value>20</value>
+					</parameter>
+					<parameter handler="default" name="refl_imap_color_thresh" type="float">
+						<value>0.25</value>
+					</parameter>
+					<parameter handler="default" name="refl_imap_norm_thresh" type="float">
+						<value>0.4</value>
+					</parameter>
+					<parameter handler="default" name="refr_imap_min_rate" type="integer">
+						<value>-1</value>
+					</parameter>
+					<parameter handler="default" name="refr_imap_max_rate" type="integer">
+						<value>-1</value>
+					</parameter>
+					<parameter handler="default" name="refr_imap_samples" type="integer">
+						<value>20</value>
+					</parameter>
+					<parameter handler="default" name="refr_imap_color_thresh" type="float">
+						<value>0.25</value>
+					</parameter>
+					<parameter handler="default" name="refr_imap_norm_thresh" type="float">
+						<value>0.4</value>
+					</parameter>
+					<parameter gammaCorrect="1" handler="ColorTexFrameHandler" name="diffuse" type="acolor texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/diffuse</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="diffuse_tex" type="acolor texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/diffuse/Texture</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="diffuse_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="diffuse_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="diffuse_color" type="color">
+						<value><r>0.388235</r><g>0.2</g><b>0.0980392</b></value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="roughness" type="float texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/roughness</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="roughness_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="roughness_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="roughness_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="roughness_float" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="ColorTexFrameHandler" name="reflect" type="acolor texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/reflect</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="reflect_tex" type="acolor texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/reflect/Texture</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="reflect_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="reflect_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="reflect_color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="hilight_glossiness" type="float texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/hilight_glossiness</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="hilight_glossiness_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="hilight_glossiness_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="hilight_glossiness_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="hilight_glossiness_float" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="reflect_glossiness" type="float texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/reflect_glossiness</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="reflect_glossiness_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="reflect_glossiness_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="reflect_glossiness_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="reflect_glossiness_float" type="float">
+						<value>0.65</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="anisotropy" type="float texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/anisotropy</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="anisotropy_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="anisotropy_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="anisotropy_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="anisotropy_float" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="anisotropy_rotation" type="float texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/anisotropy_rotation</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="anisotropy_rotation_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="anisotropy_rotation_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="anisotropy_rotation_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="anisotropy_rotation_float" type="float">
+						<value>0.0</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="fresnel_ior" type="float texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/fresnel_ior</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="fresnel_ior_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="fresnel_ior_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="fresnel_ior_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="fresnel_ior_float" type="float">
+						<value>0.300001</value>
+					</parameter>
+					<parameter handler="ColorTexFrameHandler" name="refract" type="acolor texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/refract</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="refract_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_color" type="color">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b></value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="refract_glossiness" type="float texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/refract_glossiness</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="refract_glossiness_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_glossiness_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_glossiness_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_glossiness_float" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="FloatTexFrameHandler" name="refract_ior" type="float texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/refract_ior</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="refract_ior_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_ior_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_ior_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="refract_ior_float" type="float">
+						<value>1.6</value>
+					</parameter>
+					<parameter handler="ColorTexFrameHandler" name="translucency_color" type="acolor texture">
+						<value>/25L5_Virginia_Walnut/BRDFVRayMtl/translucency_color</value>
+					</parameter>
+					<parameter isUserData="1" handler="TextureHandler" name="translucency_color_tex" type="acolor texture">
+						<value></value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="translucency_color_tex_mult" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="translucency_color_tex_on" type="bool">
+						<value>1</value>
+					</parameter>
+					<parameter isUserData="1" handler="default" name="translucency_color_color" type="color">
+						<value><r>1.0</r><g>1.0</g><b>1.0</b></value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/Texture/UVWGenChannel" type="UVW" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="UVWGenChannel" type="UVW">
+				<parameters>
+					<parameter handler="default" name="uvw_channel" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="wrap_u" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="crop_u" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="wrap_v" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="crop_v" type="integer">
+						<value>0</value>
+					</parameter>
+					<parameter handler="default" name="wrap_mode" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="TextureTransformHandler" name="uvw_transform" type="componentTransform">
+						<value>
+							<componentTransform>
+								<x_rotation>0.0</x_rotation>
+								<y_rotation>0.0</y_rotation>
+								<z_rotation>0.0</z_rotation>
+								<x_offset>-1.0</x_offset>
+								<y_offset>-1.0</y_offset>
+								<z_offset>0.0</z_offset>
+								<x_scale>3.0</x_scale>
+								<y_scale>3.0</y_scale>
+								<z_scale>1</z_scale>
+								<x_mirror>0</x_mirror>
+								<y_mirror>0</y_mirror>
+								<z_mirror>0</z_mirror>
+							</componentTransform>
+						</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/Texture/BitmapBuffer" type="bitmap" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="BitmapBuffer" type="bitmap">
+				<parameters>
+					<parameter handler="FileBrowserHandler" name="file" type="string">
+						<value>bump_noise_seamless_v1.jpg</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" name="filter_type" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="filter_blur" type="float">
+						<value>1.0</value>
+					</parameter>
+					<parameter handler="default" name="color_space" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="gamma" type="float">
+						<value>0.454545</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/Texture" type="texture" layout="" renderer="vray">
+		<plugin>
+			<vrayplugin name="TexBitmap" type="texture">
+				<parameters>
+					<parameter handler="default" name="uvwgen" type="plugin">
+						<value>/25L5_Virginia_Walnut/Texture/UVWGenChannel</value>
+					</parameter>
+					<parameter handler="default" name="bitmap" type="plugin">
+						<value>/25L5_Virginia_Walnut/Texture/BitmapBuffer</value>
+					</parameter>
+					<parameter handler="ComboBoxHandler" name="placement_type" type="integer">
+						<value>1</value>
+					</parameter>
+					<parameter handler="default" name="alpha_from_intensity" type="integer">
+						<value>2</value>
+					</parameter>
+					<parameter handler="default" name="nouvw_color" type="acolor texture">
+						<value><r>0.0</r><g>0.0</g><b>0.0</b><a>0.0</a></value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut" type="material" layout="defvrmat" renderer="vray">
+		<plugin>
+			<vrayplugin name="MtlASGVIS" type="material">
+				<parameters>
+					<parameter handler="default" name="brdfs" listType="plugin" type="list">
+						<value>
+							<list>
+								<entry>/25L5_Virginia_Walnut/BRDFVRayMtl</entry>
+							</list>
+						</value>
+					</parameter>
+					<parameter handler="TextureHandler" name="bump_tex" type="plugin">
+						<value>/25L5_Virginia_Walnut/Texture</value>
+					</parameter>
+					<parameter handler="default" name="bump_tex_mult" type="float">
+						<value>0.05</value>
+					</parameter>
+					<parameter handler="default" name="bump_on" type="bool">
+						<value>1</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut/BRDFLayered" type="BRDF" layout="BRDFLayeredLayout" renderer="vray">
+		<plugin>
+			<vrayplugin name="BRDFLayered" type="BRDF">
+				<parameters>
+					<parameter handler="default" name="weights" listType="plugin" type="list">
+						<value>
+							<list>
+								<entry>/25L5_Virginia_Walnut/BRDFLayered/texmap_blend_0</entry>
+								<entry></entry>
+							</list>
+						</value>
+					</parameter>
+					<parameter handler="default" name="brdfs" listType="plugin" type="list">
+						<value>
+							<list>
+								<entry>/Dirt</entry>
+								<entry>/25L5_Virginia_Walnut</entry>
+							</list>
+						</value>
+					</parameter>
+					<parameter handler="default" name="additive_mode" type="bool">
+						<value>0</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+	<Asset url="/25L5_Virginia_Walnut" type="material" layout="MtlSingleBRDFLayout" renderer="vray">
+		<plugin>
+			<vrayplugin name="MtlSingleBRDF" type="material">
+				<parameters>
+					<parameter handler="default" name="brdf" type="plugin">
+						<value>/25L5_Virginia_Walnut/BRDFLayered</value>
+					</parameter>
+				</parameters>
+			</vrayplugin>
+		</plugin>
+	</Asset>
+</vismat>

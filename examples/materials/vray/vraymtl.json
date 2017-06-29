@@ -1,0 +1,64 @@
+vraymtl:
+	opacity: float
+
+	// if IOR is <= 1.0, no clearCoat layer
+	fresnelIOR: float
+
+	// if reflectionColor = black, no glossyReflection bsdf
+	reflectionColor: color
+	reflectionGlossiness: float
+	anisotropy: float
+	anisotropyRotation: float
+	
+	// if diffuse color = black, no diffuse bsdf
+	diffuseColor: color
+	diffuseRoughness: float
+
+	// if emission color = black, no emissive bsdf
+	emissionColor: color
+
+	// if refractionColor = black, no refraction bsdf
+	refractionColor: color
+	refractionGlossiness: color
+	refractionIOR: float
+	dispersionAbbeNumber: float
+
+	// linear or exponential fog
+	fogColor: color
+	fogBias: float
+	fogMultiplier: float
+
+	// if translucencyColor = black, no SSS bsdf
+	translucency: color
+	translucencyScatterDirection: float	// 0 - backwards, 1 - forwards
+	translucencyScatterCoefficient: float // 0 - no scattering, 1 - full scattering
+
+
+
+- Surface properties of front-facing surfaces
+  - ClearCoat:
+  	- ClearCoatFresnel
+  	- ClearCoat
+
+  - Reflection:
+  	- ReflectionColor
+  	- ReflectionRoughness
+  	- ReflectionAnisotropy
+  	- ReflectionAnisotropyRotation
+
+  - Diffuse:
+  	- DiffuseColor
+  	- DiffuseRoughness
+
+  - Transmission
+	???
+ 	- Index of refraction
+ 	- Abbe Number
+
+  - Emission:
+  	- EmissionColor
+
+  - Subsurface:
+  	- SubsurfaceColor
+  	- SubsurfaceScatterDirection
+  	- SubsurfaceScatterCoefficient
